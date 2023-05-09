@@ -59,9 +59,9 @@ namespace CapaPresentacion
             cbobusqueda.SelectedIndex = 0;
 
             //Mostrar Lista de todos los usuarios
-            List<Usuario> listaUsuario = new CN_Usuario().Listar(); 
+            List<Usuario> lista = new CN_Usuario().Listar(); 
 
-            foreach (Usuario item in listaUsuario)
+            foreach (Usuario item in lista)
             {
                 dgvdata.Rows.Add(new object[] {"",item.IdUsuario,item.Documento,item.NombreCompleto,item.Correo,item.Clave,
                     item.oRol.IdRol,item.oRol.Descripcion,item.Estado == true ?1 : 0, item.Estado==true ?"Activo" : "No Activo"
