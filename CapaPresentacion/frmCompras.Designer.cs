@@ -628,3 +628,4 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label12;
         private FontAwesome.Sharp.IconButton btnregistrar;
     }
+}
