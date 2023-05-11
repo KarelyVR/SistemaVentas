@@ -59,7 +59,7 @@ namespace CapaPresentacion
             cbobusqueda.SelectedIndex = 0;
 
             //Mostrar Lista de todos los usuarios
-            List<Usuario> lista = new CN_Usuario().Listar(); 
+            List<Usuario> lista = new CN_Usuario().Listar();
 
             foreach (Usuario item in lista)
             {
@@ -82,11 +82,11 @@ namespace CapaPresentacion
                 Correo = txtcorreo.Text,
                 Clave = txtclave.Text,
                 oRol = new Rol() { IdRol = Convert.ToInt32(((OpcionCombo)cborol.SelectedItem).Valor) },
-                Estado = Convert.ToInt32(((OpcionCombo)cboestado.SelectedItem).Valor) == 1 ? true : false 
+                Estado = Convert.ToInt32(((OpcionCombo)cboestado.SelectedItem).Valor) == 1 ? true : false
             };
 
             //validar cuando va a registrar y cuando va a editar
-            if(objusuario.IdUsuario == 0)
+            if (objusuario.IdUsuario == 0)
             {
                 //Insersion del usuario mediante procedimiento almacenado
                 int idusuariogenerado = new CN_Usuario().Registrar(objusuario, out mensaje);
@@ -132,7 +132,7 @@ namespace CapaPresentacion
                     MessageBox.Show(mensaje, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
-           
+
         }
 
         //metodo para limpiar los controles
@@ -155,16 +155,16 @@ namespace CapaPresentacion
         {
             if (e.RowIndex < 0)
                 return;
-            if(e.ColumnIndex == 0)
+            if (e.ColumnIndex == 0)
             {
-                e.Paint(e.CellBounds,DataGridViewPaintParts.All);
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
                 //obtener el ancho
                 var w = Properties.Resources.icheck.Width;
                 //obtener alto
 
                 var h = Properties.Resources.icheck.Height;
                 //obtener posicion x
-                var x = e.CellBounds.Left + (e.CellBounds.Width - w)/2;
+                var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
                 //obtener posicion y
                 var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
 
@@ -195,7 +195,7 @@ namespace CapaPresentacion
                     //combobox rol
                     foreach (OpcionCombo oc in cborol.Items)
                     {
-                        if(Convert.ToInt32(oc.Valor) == Convert.ToInt32(dgvdata.Rows[indice].Cells["IdRol"].Value))
+                        if (Convert.ToInt32(oc.Valor) == Convert.ToInt32(dgvdata.Rows[indice].Cells["IdRol"].Value))
                         {
                             //obtener el indice del combobox
                             int indice_combo = cborol.Items.IndexOf(oc);
@@ -216,7 +216,7 @@ namespace CapaPresentacion
                         }
                     }
                 }
-            } 
+            }
 
         }
 
@@ -229,7 +229,7 @@ namespace CapaPresentacion
         {
             if (Convert.ToInt32(txtid.Text) != 0)
             {
-                if(MessageBox.Show("¿Desea eliminar el usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("¿Desea eliminar el usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     string mensaje = string.Empty;
                     Usuario objusuario = new Usuario()
@@ -255,7 +255,7 @@ namespace CapaPresentacion
         {
             string columnaFiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
 
-            if (dgvdata.Rows.Count > 0) 
+            if (dgvdata.Rows.Count > 0)
             {
                 foreach (DataGridViewRow row in dgvdata.Rows)
                 {
@@ -275,5 +275,11 @@ namespace CapaPresentacion
                 row.Visible = true;
             }
         }
+
+        private void cboestado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
