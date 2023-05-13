@@ -18,8 +18,8 @@ namespace CapaDatos
             List<Usuario> lista = new List<Usuario>();
             using(SqlConnection oconexion = new SqlConnection(Conexion.cadena))
             {
-                /*try
-                {*/
+                try
+                {
 
                 StringBuilder query = new StringBuilder();
                 query.AppendLine("SELECT u.IdUsuario,u.Documento,u.NombreCompleto,u.Correo,u.Clave,u.Estado, r.IdRol, r.Descripcion from USUARIO u");
@@ -48,11 +48,12 @@ namespace CapaDatos
                         }
                     }
 
-                /*}catch (Exception ex)
+                }
+                catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                     lista = new List<Usuario>();
-                }*/
+                }
             }
             return lista;
         }

@@ -8,19 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaPresentacion
+namespace CapaPresentacion.Modales
 {
-    public partial class frmProducto : Form
+    public partial class mdAcercade : Form
     {
-        public frmProducto()
+        public mdAcercade()
         {
             InitializeComponent();
         }
 
-        private void frmProducto_Load(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
     }
 }
-
