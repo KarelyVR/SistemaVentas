@@ -246,7 +246,6 @@ namespace CapaPresentacion
             this.menuacercade.Size = new System.Drawing.Size(80, 69);
             this.menuacercade.Text = "Acerca De";
             this.menuacercade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuacercade.Click += new System.EventHandler(this.menuacercade_Click);
             // 
             // menuTitulo
             // 
