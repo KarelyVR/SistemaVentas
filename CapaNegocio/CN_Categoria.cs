@@ -1,10 +1,10 @@
-﻿using CapaDatos;
-using CapaEntidad;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CapaDatos;
+using CapaEntidad;
 
 namespace CapaNegocio
 {
@@ -65,11 +65,6 @@ namespace CapaNegocio
         public bool Eliminar(Categoria obj, out string Mensaje)
         {
             return objcd_Categoria.Eliminar(obj, out Mensaje);
-        }
-
-        public bool Eliminar(Usuario obj, out string mensaje)
-        {
-            throw new NotImplementedException();
         }
     }
 }

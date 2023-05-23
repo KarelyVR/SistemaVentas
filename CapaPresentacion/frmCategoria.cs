@@ -44,7 +44,7 @@ namespace CapaPresentacion
             cbobusqueda.ValueMember = "Valor";
             cbobusqueda.SelectedIndex = 0;
 
-            //Mostrar Lista de todos los usuarios
+            //MOSTRAR TODOS LOS USUARIOS
             List<Categoria> lista = new CN_Categoria().Listar();
 
             foreach (Categoria item in lista)
@@ -57,12 +57,7 @@ namespace CapaPresentacion
             }
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dgvdata.Columns[e.ColumnIndex].Name == "btnseleccionar")
             {
@@ -72,7 +67,7 @@ namespace CapaPresentacion
                     txtindice.Text = indice.ToString();
                     //para cambiar en los textbox
                     txtid.Text = dgvdata.Rows[indice].Cells["Id"].Value.ToString();
-                    txtdocumento.Text = dgvdata.Rows[indice].Cells["Descripcion"].Value.ToString();
+                    txtdescripcion.Text = dgvdata.Rows[indice].Cells["Descripcion"].Value.ToString();
 
                     //combobox estado
                     foreach (OpcionCombo oc in cboestado.Items)
@@ -124,15 +119,127 @@ namespace CapaPresentacion
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
+            string mensaje = string.Empty;
+
+            Categoria obj = new Categoria()
+            {
+                IdCategoria = Convert.ToInt32(txtid.Text),
+                Descripcion = txtdescripcion.Text,
+                Estado = Convert.ToInt32(((OpcionCombo)cboestado.SelectedItem).Valor) == 1 ? true : false
+            };
+
+            //validar cuando va a registrar y cuando va a editar
+            if (obj.IdCategoria == 0)
+            {
+                //Insersion del usuario mediante procedimiento almacenado
+                int idgenerado = new CN_Categoria().Registrar(obj, out mensaje);
+
+                if (idgenerado != 0)
+                {
+                    dgvdata.Rows.Add(new object[] {"",idgenerado,txtdescripcion.Text,
+                         ((OpcionCombo)cboestado.SelectedItem).Valor.ToString(),
+                         ((OpcionCombo)cboestado.SelectedItem).Texto.ToString()
+                    });
+                    Limpiar();
+                }
+                else
+                {
+                    MessageBox.Show(mensaje);
+                }
+            }
+            else
+            {
+                //Modificacon del usuario mediante procedimiento almacenado
+                bool resultado = new CN_Categoria().Editar(obj, out mensaje);
+
+                if (resultado)
+                {
+                    DataGridViewRow row = dgvdata.Rows[Convert.ToInt32(txtindice.Text)];
+
+                    row.Cells["Id"].Value = txtid.Text;
+                    row.Cells["Descripcion"].Value = txtdescripcion.Text;
+                    row.Cells["EstadoValor"].Value = ((OpcionCombo)cboestado.SelectedItem).Valor.ToString();
+                    row.Cells["Estado"].Value = ((OpcionCombo)cboestado.SelectedItem).Texto.ToString();
+
+                    Limpiar();
+                }
+                else
+                {
+                    MessageBox.Show(mensaje, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+
+        }
+
+        private void Limpiar()
+        {
+            txtindice.Text = "-1";
+            txtid.Text = "0";
+            txtdescripcion.Text = "";
+            cboestado.SelectedIndex = 0;
+
+            txtdescripcion.Select();
+        }
+
+        private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvdata.Columns[e.ColumnIndex].Name == "btnseleccionar")
+            {
+                int indice = e.RowIndex;
+                if (indice >= 0)
+                {
+                    txtindice.Text = indice.ToString();
+                    //para cambiar en los textbox
+                    txtid.Text = dgvdata.Rows[indice].Cells["Id"].Value.ToString();
+                    txtdescripcion.Text = dgvdata.Rows[indice].Cells["Descripcion"].Value.ToString();
+
+                    //para cambiar en los combobox
+
+                    //combobox estado
+                    foreach (OpcionCombo oc in cboestado.Items)
+                    {
+                        if (Convert.ToInt32(oc.Valor) == Convert.ToInt32(dgvdata.Rows[indice].Cells["EstadoValor"].Value))
+                        {
+                            //obtener el indice del combobox
+                            int indice_combo = cboestado.Items.IndexOf(oc);
+                            cboestado.SelectedIndex = indice_combo;
+                            break;
+                        }
+                    }
+                }
+            }
 
         }
 
         private void btnlimpiarcampos_Click(object sender, EventArgs e)
         {
-            txtbusqueda.Text = "";
-            foreach (DataGridViewRow row in dgvdata.Rows)
+            Limpiar();
+        }
+
+        private void btneliminar_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(txtid.Text) != 0)
             {
-                row.Visible = true;
+                if (MessageBox.Show("¿Desea eliminar la categoría?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    string mensaje = string.Empty;
+                    Categoria obj = new Categoria()
+                    {
+                        IdCategoria = Convert.ToInt32(txtid.Text)
+                    };
+
+                    bool respuesta = new CN_Categoria().Eliminar(obj, out mensaje);
+
+                    if (respuesta)
+                    {
+                        dgvdata.Rows.RemoveAt(Convert.ToInt32(txtindice.Text));
+                        Limpiar();
+                    }
+                    else
+                    {
+                        MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
             }
         }
 
@@ -149,6 +256,37 @@ namespace CapaPresentacion
                     else
                         row.Visible = false;
                 }
+            }
+        }
+
+        private void dgvdata_CellPainting_1(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+            if (e.ColumnIndex == 0)
+            {
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+                //obtener el ancho
+                var w = Properties.Resources.icheck.Width;
+                //obtener alto
+                var h = Properties.Resources.icheck.Height;
+                //obtener posicion x
+                var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
+                //obtener posicion y
+                var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
+                //dibujar la imagen
+                e.Graphics.DrawImage(Properties.Resources.icheck, new Rectangle(x, y, w, h));
+                //dar permiso para dar permiso de clic
+                e.Handled = true;
+            }
+        }
+
+        private void btnlimpiar_Click_1(object sender, EventArgs e)
+        {
+            txtbusqueda.Text = "";
+            foreach (DataGridViewRow row in dgvdata.Rows)
+            {
+                row.Visible = true;
             }
         }
     }
