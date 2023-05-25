@@ -83,7 +83,7 @@ namespace CapaPresentacion
         {
             if (e.KeyCode == Keys.Enter)
             {
-                Producto oProducto = new CN__Producto().Listar().Where(p => p.Codigo == txtcodproducto.Text && p.Estado == true).FirstOrDefault();
+                Producto oProducto = new CN_Producto().Listar().Where(p => p.Codigo == txtcodproducto.Text && p.Estado == true).FirstOrDefault();
 
                 if (oProducto != null)
                 {
@@ -122,7 +122,7 @@ namespace CapaPresentacion
                 txtprecio.Select();
                 return;
             }
-            if (!decimal.TryParse(txtstock.Text) < Convert.ToInt32(txtcantidad.Value.ToString()))
+            if (Convert.ToInt32(txtstock.Text) < Convert.ToInt32(txtcantidad.Value.ToString()))
             {
                 MessageBox.Show("La cantidad no puede ser mayor al stock", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
