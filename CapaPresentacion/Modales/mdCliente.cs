@@ -62,13 +62,13 @@ namespace CapaPresentacion.Modales
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
-            string columnaFiltro = ((OpcionCombo)cbobusqueda.SelectedIndex).Valor.ToString();
+            string columnaFiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
 
             if (dgvdata.Rows.Count > 0)
             {
                 foreach (DataGridViewRow row in dgvdata.Rows)
                 {
-                    if (row.Cells[columnaFiltro].Value.ToString_().Trim().ToUpper().Contains(txtbusqueda.Text.Trim().ToUpper()))
+                    if (row.Cells[columnaFiltro].Value.ToString().Trim().ToUpper().Contains(txtbusqueda.Text.Trim().ToUpper()))
                         row.Visible = true;
                     else
                         row.Visible = false;
