@@ -1,4 +1,5 @@
 ﻿using CapaEntidad;
+using CapaNegocio;
 using CapaPresentacion.Utilidades;
 using System;
 using System.Collections.Generic;
