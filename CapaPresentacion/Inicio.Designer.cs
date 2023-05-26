@@ -125,7 +125,6 @@ namespace CapaPresentacion
             this.submenunegocio.Name = "submenunegocio";
             this.submenunegocio.Size = new System.Drawing.Size(125, 22);
             this.submenunegocio.Text = "Negocio";
-            this.submenunegocio.Click += new System.EventHandler(this.submenunegocio_Click);
             // 
             // menuventas
             // 

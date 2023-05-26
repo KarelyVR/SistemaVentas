@@ -40,6 +40,7 @@ namespace CapaPresentacion
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtidproveedor = new System.Windows.Forms.TextBox();
+            this.btnbuscar = new FontAwesome.Sharp.IconButton();
             this.txtnombreproveedor = new System.Windows.Forms.TextBox();
             this.txtcodproveedor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,6 +53,7 @@ namespace CapaPresentacion
             this.txtpreciocompra = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtidproducto = new System.Windows.Forms.TextBox();
+            this.btnbuscarproducto = new FontAwesome.Sharp.IconButton();
             this.txtproducto = new System.Windows.Forms.TextBox();
             this.txtcodproducto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -68,8 +70,6 @@ namespace CapaPresentacion
             this.label12 = new System.Windows.Forms.Label();
             this.btnregistrar = new FontAwesome.Sharp.IconButton();
             this.btnagregarproducto = new FontAwesome.Sharp.IconButton();
-            this.btnbuscarproducto = new FontAwesome.Sharp.IconButton();
-            this.btnbuscar = new FontAwesome.Sharp.IconButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -106,9 +106,9 @@ namespace CapaPresentacion
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(39, 71);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(326, 83);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
@@ -119,7 +119,7 @@ namespace CapaPresentacion
             this.cbotipodocumento.BackColor = System.Drawing.SystemColors.Control;
             this.cbotipodocumento.FormattingEnabled = true;
             this.cbotipodocumento.Location = new System.Drawing.Point(141, 47);
-            this.cbotipodocumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbotipodocumento.Margin = new System.Windows.Forms.Padding(2);
             this.cbotipodocumento.Name = "cbotipodocumento";
             this.cbotipodocumento.Size = new System.Drawing.Size(176, 21);
             this.cbotipodocumento.TabIndex = 27;
@@ -128,7 +128,7 @@ namespace CapaPresentacion
             // 
             this.txtfecha.BackColor = System.Drawing.SystemColors.Control;
             this.txtfecha.Location = new System.Drawing.Point(8, 47);
-            this.txtfecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtfecha.Margin = new System.Windows.Forms.Padding(2);
             this.txtfecha.Name = "txtfecha";
             this.txtfecha.Size = new System.Drawing.Size(119, 20);
             this.txtfecha.TabIndex = 26;
@@ -165,9 +165,9 @@ namespace CapaPresentacion
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(392, 71);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(364, 83);
             this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
@@ -177,17 +177,36 @@ namespace CapaPresentacion
             // 
             this.txtidproveedor.BackColor = System.Drawing.Color.White;
             this.txtidproveedor.Location = new System.Drawing.Point(326, 16);
-            this.txtidproveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtidproveedor.Margin = new System.Windows.Forms.Padding(2);
             this.txtidproveedor.Name = "txtidproveedor";
             this.txtidproveedor.Size = new System.Drawing.Size(23, 20);
             this.txtidproveedor.TabIndex = 30;
             this.txtidproveedor.Visible = false;
             // 
+            // btnbuscar
+            // 
+            this.btnbuscar.BackColor = System.Drawing.Color.White;
+            this.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnbuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnbuscar.IconColor = System.Drawing.Color.Black;
+            this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnbuscar.IconSize = 16;
+            this.btnbuscar.Location = new System.Drawing.Point(115, 47);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(28, 18);
+            this.btnbuscar.TabIndex = 29;
+            this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnbuscar.UseVisualStyleBackColor = false;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
             // txtnombreproveedor
             // 
             this.txtnombreproveedor.BackColor = System.Drawing.SystemColors.Control;
             this.txtnombreproveedor.Location = new System.Drawing.Point(154, 48);
-            this.txtnombreproveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtnombreproveedor.Margin = new System.Windows.Forms.Padding(2);
             this.txtnombreproveedor.Name = "txtnombreproveedor";
             this.txtnombreproveedor.Size = new System.Drawing.Size(195, 20);
             this.txtnombreproveedor.TabIndex = 27;
@@ -196,7 +215,7 @@ namespace CapaPresentacion
             // 
             this.txtcodproveedor.BackColor = System.Drawing.SystemColors.Control;
             this.txtcodproveedor.Location = new System.Drawing.Point(8, 47);
-            this.txtcodproveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcodproveedor.Margin = new System.Windows.Forms.Padding(2);
             this.txtcodproveedor.Name = "txtcodproveedor";
             this.txtcodproveedor.Size = new System.Drawing.Size(103, 20);
             this.txtcodproveedor.TabIndex = 26;
@@ -239,9 +258,9 @@ namespace CapaPresentacion
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Location = new System.Drawing.Point(39, 172);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(625, 83);
             this.groupBox3.TabIndex = 31;
             this.groupBox3.TabStop = false;
@@ -250,7 +269,7 @@ namespace CapaPresentacion
             // txtcantidad
             // 
             this.txtcantidad.Location = new System.Drawing.Point(527, 43);
-            this.txtcantidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcantidad.Margin = new System.Windows.Forms.Padding(2);
             this.txtcantidad.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -280,7 +299,7 @@ namespace CapaPresentacion
             // 
             this.txtprecioventa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtprecioventa.Location = new System.Drawing.Point(415, 43);
-            this.txtprecioventa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtprecioventa.Margin = new System.Windows.Forms.Padding(2);
             this.txtprecioventa.Name = "txtprecioventa";
             this.txtprecioventa.Size = new System.Drawing.Size(100, 20);
             this.txtprecioventa.TabIndex = 34;
@@ -301,7 +320,7 @@ namespace CapaPresentacion
             // 
             this.txtpreciocompra.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtpreciocompra.Location = new System.Drawing.Point(303, 45);
-            this.txtpreciocompra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpreciocompra.Margin = new System.Windows.Forms.Padding(2);
             this.txtpreciocompra.Name = "txtpreciocompra";
             this.txtpreciocompra.Size = new System.Drawing.Size(100, 20);
             this.txtpreciocompra.TabIndex = 32;
@@ -322,17 +341,36 @@ namespace CapaPresentacion
             // 
             this.txtidproducto.BackColor = System.Drawing.Color.White;
             this.txtidproducto.Location = new System.Drawing.Point(105, 21);
-            this.txtidproducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtidproducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtidproducto.Name = "txtidproducto";
             this.txtidproducto.Size = new System.Drawing.Size(22, 20);
             this.txtidproducto.TabIndex = 30;
             this.txtidproducto.Visible = false;
             // 
+            // btnbuscarproducto
+            // 
+            this.btnbuscarproducto.BackColor = System.Drawing.Color.White;
+            this.btnbuscarproducto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscarproducto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnbuscarproducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbuscarproducto.ForeColor = System.Drawing.Color.Black;
+            this.btnbuscarproducto.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnbuscarproducto.IconColor = System.Drawing.Color.Black;
+            this.btnbuscarproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnbuscarproducto.IconSize = 16;
+            this.btnbuscarproducto.Location = new System.Drawing.Point(130, 45);
+            this.btnbuscarproducto.Name = "btnbuscarproducto";
+            this.btnbuscarproducto.Size = new System.Drawing.Size(28, 18);
+            this.btnbuscarproducto.TabIndex = 29;
+            this.btnbuscarproducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnbuscarproducto.UseVisualStyleBackColor = false;
+            this.btnbuscarproducto.Click += new System.EventHandler(this.btnbuscarproducto_Click);
+            // 
             // txtproducto
             // 
             this.txtproducto.BackColor = System.Drawing.SystemColors.Control;
             this.txtproducto.Location = new System.Drawing.Point(169, 45);
-            this.txtproducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtproducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtproducto.Name = "txtproducto";
             this.txtproducto.Size = new System.Drawing.Size(121, 20);
             this.txtproducto.TabIndex = 27;
@@ -341,7 +379,7 @@ namespace CapaPresentacion
             // 
             this.txtcodproducto.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtcodproducto.Location = new System.Drawing.Point(8, 47);
-            this.txtcodproducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcodproducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtcodproducto.Name = "txtcodproducto";
             this.txtcodproducto.Size = new System.Drawing.Size(119, 20);
             this.txtcodproducto.TabIndex = 26;
@@ -472,7 +510,7 @@ namespace CapaPresentacion
             // 
             this.txttotalpagar.BackColor = System.Drawing.SystemColors.Control;
             this.txttotalpagar.Location = new System.Drawing.Point(669, 481);
-            this.txttotalpagar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txttotalpagar.Margin = new System.Windows.Forms.Padding(2);
             this.txttotalpagar.Name = "txttotalpagar";
             this.txttotalpagar.Size = new System.Drawing.Size(97, 20);
             this.txttotalpagar.TabIndex = 38;
@@ -521,43 +559,6 @@ namespace CapaPresentacion
             this.btnagregarproducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnagregarproducto.UseVisualStyleBackColor = false;
             this.btnagregarproducto.Click += new System.EventHandler(this.btnagregarproducto_Click);
-            // 
-            // btnbuscarproducto
-            // 
-            this.btnbuscarproducto.BackColor = System.Drawing.Color.White;
-            this.btnbuscarproducto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnbuscarproducto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnbuscarproducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnbuscarproducto.ForeColor = System.Drawing.Color.Black;
-            this.btnbuscarproducto.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnbuscarproducto.IconColor = System.Drawing.Color.Black;
-            this.btnbuscarproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnbuscarproducto.IconSize = 16;
-            this.btnbuscarproducto.Location = new System.Drawing.Point(130, 45);
-            this.btnbuscarproducto.Name = "btnbuscarproducto";
-            this.btnbuscarproducto.Size = new System.Drawing.Size(28, 18);
-            this.btnbuscarproducto.TabIndex = 29;
-            this.btnbuscarproducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnbuscarproducto.UseVisualStyleBackColor = false;
-            this.btnbuscarproducto.Click += new System.EventHandler(this.btnbuscarproducto_Click);
-            // 
-            // btnbuscar
-            // 
-            this.btnbuscar.BackColor = System.Drawing.Color.White;
-            this.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnbuscar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnbuscar.ForeColor = System.Drawing.Color.Black;
-            this.btnbuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnbuscar.IconColor = System.Drawing.Color.Black;
-            this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnbuscar.IconSize = 16;
-            this.btnbuscar.Location = new System.Drawing.Point(115, 47);
-            this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(28, 18);
-            this.btnbuscar.TabIndex = 29;
-            this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnbuscar.UseVisualStyleBackColor = false;
             // 
             // frmCompras
             // 

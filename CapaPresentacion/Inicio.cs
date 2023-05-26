@@ -123,10 +123,5 @@ namespace CapaPresentacion
             mdAcercade md = new mdAcercade();
             md.ShowDialog();
         }
-
-        private void submenunegocio_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(menumantenedor, new frmNegocio());
-        }
     }
 }
