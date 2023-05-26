@@ -372,7 +372,6 @@
             this.Controls.Add(this.label10);
             this.Name = "frmDetalleVenta";
             this.Text = "frmDetalleVenta";
-            this.Load += new System.EventHandler(this.frmDetalleVenta_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).EndInit();

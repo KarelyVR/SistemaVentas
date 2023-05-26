@@ -61,11 +61,6 @@ namespace CapaPresentacion
                 return;
             }
             string Texto_Html = Properties.Resources.PlantillaCompra.ToString();
-            Negocio odatos = new CN_Negocio().ObtenerDatos();
-
-            Texto_Html = Texto_Html.Replace("@nombrenegocio", odatos.Nombre.ToUpper());
-            Texto_Html = Texto_Html.Replace("@docnegocio", odatos.RUC);
-            Texto_Html = Texto_Html.Replace("@direcnegocio", odatos.Direccion);
 
             Texto_Html = Texto_Html.Replace("@tipodocumento", txttipodocumento.Text.ToUpper());
             Texto_Html = Texto_Html.Replace("@numerodocumento", txtnumerodocumento.Text);
@@ -101,17 +96,6 @@ namespace CapaPresentacion
                     PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
                     pdfDoc.Open();
 
-                    bool obtenido = true;
-                    byte[] byteImage = new CN_Negocio().ObtenerLogo(out obtenido);
-
-                    if (obtenido)
-                    {
-                        iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(byteImage);
-                        img.ScaleToFit(60, 60);
-                        img.Alignment = iTextSharp.text.Image.UNDERLYING;
-                        img.SetAbsolutePosition(pdfDoc.Left, pdfDoc.GetTop(51));
-                        pdfDoc.Add(img);
-                    }
                     using (StringReader sr = new StringReader(Texto_Html))
                     {
                         XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
@@ -121,11 +105,6 @@ namespace CapaPresentacion
                     MessageBox.Show("Documento Generado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-        }
-
-        private void frmDetalleCompra_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btndescargar_Click_1(object sender, EventArgs e)

@@ -410,7 +410,6 @@ namespace CapaPresentacion
             this.Controls.Add(this.label9);
             this.Name = "frmDetalleCompra";
             this.Text = "frmDetalleCompra";
-            this.Load += new System.EventHandler(this.frmDetalleCompra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

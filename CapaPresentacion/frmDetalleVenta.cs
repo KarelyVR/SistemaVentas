@@ -23,11 +23,6 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
-        private void frmDetalleVenta_Load(object sender, EventArgs e)
-        {
-            txtnumerodocumento.Select();
-        }
-
         private void btnbuscar_Click(object sender, EventArgs e)
         {
             Venta oVenta = new CN_Venta().ObtenerVenta(txtnumerodocumento.Text);

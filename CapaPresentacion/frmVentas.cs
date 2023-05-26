@@ -41,7 +41,7 @@ namespace CapaPresentacion
 
         private void btnbuscarproducto_Click(object sender, EventArgs e)
         {
-            using (var modal = new mdProducto()) ;
+            using (var modal = new mdProducto())
             {
                 var result = modal.ShowDialog();
                 if (result == DialogResult.OK)
