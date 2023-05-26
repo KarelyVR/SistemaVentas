@@ -58,14 +58,14 @@ namespace CapaPresentacion.Modales
             int iColum = e.ColumnIndex;
             if (iRow >= 0 && iColum > 0)
             {
-                _Producto = new Producto();
+                _Producto = new Producto()
                 {
-                    IdProducto = Convert.ToInt32(dgvdata.Rows[iRow].Cells["IdProducto"].Value.ToString());
-                    Codigo = dgvdata.Rows[iRow].Cells["Codigo"].Value.ToString();
-                    Nombre = dgvdata.Rows[iRow].Cells["Nombre"].Value.ToString();
-                    Stock = Convert.ToInt32(dgvdata.Rows[iRow].Cells["Stock"].Value.ToString());
-                    PrecioCompra = Convert.ToDecimal(dgvdata.Rows[iRow].Cells["PrecioCompra"].Value.ToString());
-                    PrecioVenta = Convert.ToDecimal(dgvdata.Rows[iRow].Cells["PrecioVenta"].Value.ToString());
+                    IdProducto = Convert.ToInt32(dgvdata.Rows[iRow].Cells["IdProducto"].Value.ToString()),
+                    Codigo = dgvdata.Rows[iRow].Cells["Codigo"].Value.ToString(),
+                    Nombre = dgvdata.Rows[iRow].Cells["Nombre"].Value.ToString(),
+                    Stock = Convert.ToInt32(dgvdata.Rows[iRow].Cells["Stock"].Value.ToString()),
+                    PrecioCompra = Convert.ToDecimal(dgvdata.Rows[iRow].Cells["PrecioCompra"].Value.ToString()),
+                    PrecioVenta = Convert.ToDecimal(dgvdata.Rows[iRow].Cells["PrecioVenta"].Value.ToString())
                 };
                 this.DialogResult = DialogResult.OK;
                 this.Close();
