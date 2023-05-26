@@ -109,8 +109,6 @@ namespace CapaDatos
                     cmd.Parameters.AddWithValue("IdUsuario", obj.oUsuario.IdUsuario);
                     cmd.Parameters.AddWithValue("TipoDocumento", obj.TipoDocumento);
                     cmd.Parameters.AddWithValue("NumeroDocumento", obj.NumeroDocumento);
-                    cmd.Parameters.AddWithValue("DocumentoCliente", obj.DocumentoCliente);
-                    cmd.Parameters.AddWithValue("NombreCliente", obj.NombreCliente);
                     cmd.Parameters.AddWithValue("MontoPago", obj.MontoPago);
                     cmd.Parameters.AddWithValue("MontoCambio", obj.MontoCambio);
                     cmd.Parameters.AddWithValue("MontoTotal", obj.MontoTotal);
@@ -148,7 +146,6 @@ namespace CapaDatos
                     StringBuilder query = new StringBuilder();
 
                     query.AppendLine("select v.IdVenta,u.NombreCompleto,");
-                    query.AppendLine("v.DocumentoCliente,v.NombreCliente,");
                     query.AppendLine("v.TipoDocumento,v.NumeroDocumento,");
                     query.AppendLine("v.MontoPago,v.MontoCambio,v.MontoTotal,");
                     query.AppendLine("convert(char(10),v.FechaRegistro,103)[FechaRegistro]");
@@ -167,8 +164,6 @@ namespace CapaDatos
                             {
                                 IdVenta = int.Parse(dr["IdVenta"].ToString()),
                                 oUsuario = new Usuario() { NombreCompleto = dr["NombreCompleto"].ToString() },
-                                DocumentoCliente = dr["DocumentoCliente"].ToString(),
-                                NombreCliente = dr["NombreCliente"].ToString(),
                                 TipoDocumento = dr["TipoDocumento"].ToString(),
                                 NumeroDocumento = dr["NumeroDocumento"].ToString(),
                                 MontoPago = Convert.ToDecimal(dr["MontoPago"].ToString()),

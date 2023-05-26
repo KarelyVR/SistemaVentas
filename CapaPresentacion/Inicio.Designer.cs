@@ -34,13 +34,13 @@ namespace CapaPresentacion
             this.menumantenedor = new FontAwesome.Sharp.IconMenuItem();
             this.submenucategoria = new FontAwesome.Sharp.IconMenuItem();
             this.submenuproducto = new FontAwesome.Sharp.IconMenuItem();
+            this.submenunegocio = new System.Windows.Forms.ToolStripMenuItem();
             this.menuventas = new FontAwesome.Sharp.IconMenuItem();
             this.submenuregistrarventa = new FontAwesome.Sharp.IconMenuItem();
             this.submenudetalleventa = new FontAwesome.Sharp.IconMenuItem();
             this.menucompras = new FontAwesome.Sharp.IconMenuItem();
             this.submenuregistrarcompra = new FontAwesome.Sharp.IconMenuItem();
             this.submenudetallecompra = new FontAwesome.Sharp.IconMenuItem();
-            this.menuclientes = new FontAwesome.Sharp.IconMenuItem();
             this.menuproveedores = new FontAwesome.Sharp.IconMenuItem();
             this.menureportes = new FontAwesome.Sharp.IconMenuItem();
             this.menuacercade = new FontAwesome.Sharp.IconMenuItem();
@@ -60,7 +60,6 @@ namespace CapaPresentacion
             this.menumantenedor,
             this.menuventas,
             this.menucompras,
-            this.menuclientes,
             this.menuproveedores,
             this.menureportes,
             this.menuacercade});
@@ -89,7 +88,8 @@ namespace CapaPresentacion
             this.menumantenedor.AutoSize = false;
             this.menumantenedor.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.submenucategoria,
-            this.submenuproducto});
+            this.submenuproducto,
+            this.submenunegocio});
             this.menumantenedor.IconChar = FontAwesome.Sharp.IconChar.Tools;
             this.menumantenedor.IconColor = System.Drawing.Color.Black;
             this.menumantenedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -119,6 +119,13 @@ namespace CapaPresentacion
             this.submenuproducto.Size = new System.Drawing.Size(125, 22);
             this.submenuproducto.Text = "Producto";
             this.submenuproducto.Click += new System.EventHandler(this.submenuproducto_Click);
+            // 
+            // submenunegocio
+            // 
+            this.submenunegocio.Name = "submenunegocio";
+            this.submenunegocio.Size = new System.Drawing.Size(125, 22);
+            this.submenunegocio.Text = "Negocio";
+            this.submenunegocio.Click += new System.EventHandler(this.submenunegocio_Click);
             // 
             // menuventas
             // 
@@ -191,20 +198,6 @@ namespace CapaPresentacion
             this.submenudetallecompra.Size = new System.Drawing.Size(129, 22);
             this.submenudetallecompra.Text = "Ver Detalle";
             this.submenudetallecompra.Click += new System.EventHandler(this.submenudetallecompra_Click);
-            // 
-            // menuclientes
-            // 
-            this.menuclientes.AutoSize = false;
-            this.menuclientes.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
-            this.menuclientes.IconColor = System.Drawing.Color.Black;
-            this.menuclientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuclientes.IconSize = 50;
-            this.menuclientes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuclientes.Name = "menuclientes";
-            this.menuclientes.Size = new System.Drawing.Size(80, 69);
-            this.menuclientes.Text = "Clientes";
-            this.menuclientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuclientes.Click += new System.EventHandler(this.menuclientes_Click);
             // 
             // menuproveedores
             // 
@@ -335,7 +328,6 @@ namespace CapaPresentacion
         private FontAwesome.Sharp.IconMenuItem menumantenedor;
         private FontAwesome.Sharp.IconMenuItem menuventas;
         private FontAwesome.Sharp.IconMenuItem menucompras;
-        private FontAwesome.Sharp.IconMenuItem menuclientes;
         private FontAwesome.Sharp.IconMenuItem menuproveedores;
         private FontAwesome.Sharp.IconMenuItem menureportes;
         private FontAwesome.Sharp.IconMenuItem menuacercade;
@@ -348,6 +340,7 @@ namespace CapaPresentacion
         private FontAwesome.Sharp.IconMenuItem submenudetalleventa;
         private FontAwesome.Sharp.IconMenuItem submenuregistrarcompra;
         private FontAwesome.Sharp.IconMenuItem submenudetallecompra;
+        private System.Windows.Forms.ToolStripMenuItem submenunegocio;
     }
 }
 

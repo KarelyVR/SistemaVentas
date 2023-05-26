@@ -39,25 +39,6 @@ namespace CapaPresentacion
             txttotalpagar.Text = "0";
         }
 
-        private void btnbuscar_Click(object sender, EventArgs e)
-        {
-            using (var modal = new mdCliente())
-            {
-                var result = modal.ShowDialog();
-
-                if (result == DialogResult.OK)
-                {
-                    txtdocumentocliente.Text = modal._Cliente.Documento;
-                    txtnombrecliente.Text = modal._Cliente.NombreCompleto;
-                    txtcodproducto.Select();
-                }
-                else
-                {
-                    txtdocumentocliente.Select();
-                }
-            }
-        }
-
         private void btnbuscarproducto_Click(object sender, EventArgs e)
         {
             using (var modal = new mdProducto()) ;
@@ -315,18 +296,6 @@ namespace CapaPresentacion
 
         private void btnregistrar_Click(object sender, EventArgs e)
         {
-            if(txtdocumentocliente.Text == "")
-            {
-                MessageBox.Show("Debe ingresar documento del cliente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
-
-            if (txtnombrecliente.Text == "")
-            {
-                MessageBox.Show("Debe ingresar nombre del cliente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
-
             if (dgvdata.Rows.Count < 1)
             {
                 MessageBox.Show("Debe ingresar productos en la venta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -360,8 +329,6 @@ namespace CapaPresentacion
                 oUsuario = new Usuario() { IdUsuario = _Usuario.IdUsuario },
                 TipoDocumento = ((OpcionCombo)cbotipodocumento.SelectedItem).Texto,
                 NumeroDocumento = numeroDocumento,
-                DocumentoCliente = txtdocumentocliente.Text,
-                NombreCliente = txtnombrecliente.Text,
                 MontoPago = Convert.ToDecimal(txtpagocon.Text),
                 MontoCambio = Convert.ToDecimal(txtcambio.Text),
                 MontoTotal = Convert.ToDecimal(txttotalpagar.Text),
@@ -376,8 +343,6 @@ namespace CapaPresentacion
 
                 if (result == DialogResult.Yes)
                     Clipboard.SetText(numeroDocumento);
-                txtdocumentocliente.Text = "";
-                txtnombrecliente.Text = "";
                 dgvdata.Rows.Clear();
                 calcularTotal();
                 txtpagocon.Text = "";
@@ -385,6 +350,11 @@ namespace CapaPresentacion
             }
             else
                 MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
 
         }
     }

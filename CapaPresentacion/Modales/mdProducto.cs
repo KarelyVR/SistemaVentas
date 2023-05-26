@@ -1,4 +1,5 @@
 ﻿using CapaEntidad;
+using CapaNegocio;
 using CapaPresentacion.Utilidades;
 using System;
 using System.Collections.Generic;
@@ -34,7 +35,7 @@ namespace CapaPresentacion.Modales
             cbobusqueda.ValueMember = "Valor";
             cbobusqueda.SelectedIndex = 0;
 
-            List<Producto> lista = new CN__Producto().Listar();
+            List<Producto> lista = new CN_Producto().Listar();
 
             foreach (Producto item in lista)
             {

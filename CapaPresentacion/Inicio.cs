@@ -108,11 +108,6 @@ namespace CapaPresentacion
             AbrirFormulario(menucompras, new frmDetalleCompra());
         }
 
-        private void menuclientes_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario((IconMenuItem)sender, new frmClientes());
-        }
-
         private void menuproveedores_Click(object sender, EventArgs e)
         {
             AbrirFormulario((IconMenuItem)sender, new frmProveedores());
@@ -127,6 +122,11 @@ namespace CapaPresentacion
         {
             mdAcercade md = new mdAcercade();
             md.ShowDialog();
+        }
+
+        private void submenunegocio_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menumantenedor, new frmNegocio());
         }
     }
 }

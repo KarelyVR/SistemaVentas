@@ -53,12 +53,6 @@ namespace CapaPresentacion
             this.txtcodproducto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnbuscar = new FontAwesome.Sharp.IconButton();
-            this.txtnombrecliente = new System.Windows.Forms.TextBox();
-            this.txtdocumentocliente = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbotipodocumento = new System.Windows.Forms.ComboBox();
             this.txtfecha = new System.Windows.Forms.TextBox();
@@ -75,7 +69,6 @@ namespace CapaPresentacion
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtcantidad)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -353,82 +346,6 @@ namespace CapaPresentacion
             this.label6.TabIndex = 24;
             this.label6.Text = "Cod. Producto:";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.Controls.Add(this.btnbuscar);
-            this.groupBox2.Controls.Add(this.txtnombrecliente);
-            this.groupBox2.Controls.Add(this.txtdocumentocliente);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(525, 74);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(364, 83);
-            this.groupBox2.TabIndex = 43;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Información Cliente";
-            // 
-            // btnbuscar
-            // 
-            this.btnbuscar.BackColor = System.Drawing.Color.White;
-            this.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnbuscar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnbuscar.ForeColor = System.Drawing.Color.Black;
-            this.btnbuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnbuscar.IconColor = System.Drawing.Color.Black;
-            this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnbuscar.IconSize = 16;
-            this.btnbuscar.Location = new System.Drawing.Point(115, 47);
-            this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(28, 18);
-            this.btnbuscar.TabIndex = 29;
-            this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnbuscar.UseVisualStyleBackColor = false;
-            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
-            // 
-            // txtnombrecliente
-            // 
-            this.txtnombrecliente.BackColor = System.Drawing.SystemColors.Control;
-            this.txtnombrecliente.Location = new System.Drawing.Point(154, 48);
-            this.txtnombrecliente.Margin = new System.Windows.Forms.Padding(2);
-            this.txtnombrecliente.Name = "txtnombrecliente";
-            this.txtnombrecliente.Size = new System.Drawing.Size(195, 20);
-            this.txtnombrecliente.TabIndex = 27;
-            // 
-            // txtdocumentocliente
-            // 
-            this.txtdocumentocliente.BackColor = System.Drawing.SystemColors.Control;
-            this.txtdocumentocliente.Location = new System.Drawing.Point(8, 47);
-            this.txtdocumentocliente.Margin = new System.Windows.Forms.Padding(2);
-            this.txtdocumentocliente.Name = "txtdocumentocliente";
-            this.txtdocumentocliente.Size = new System.Drawing.Size(103, 20);
-            this.txtdocumentocliente.TabIndex = 26;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(152, 23);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 17);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "Nombre Completo:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(5, 21);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 17);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Número Documento: ";
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
@@ -506,6 +423,7 @@ namespace CapaPresentacion
             this.label10.Size = new System.Drawing.Size(759, 575);
             this.label10.TabIndex = 40;
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // txtpagocon
             // 
@@ -598,7 +516,6 @@ namespace CapaPresentacion
             this.Controls.Add(this.btnagregarproducto);
             this.Controls.Add(this.dgvdata);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
@@ -609,8 +526,6 @@ namespace CapaPresentacion
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtcantidad)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -638,12 +553,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.TextBox txtcodproducto;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private FontAwesome.Sharp.IconButton btnbuscar;
-        private System.Windows.Forms.TextBox txtnombrecliente;
-        private System.Windows.Forms.TextBox txtdocumentocliente;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cbotipodocumento;
         private System.Windows.Forms.TextBox txtfecha;

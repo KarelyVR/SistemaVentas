@@ -6,9 +6,6 @@ using CapaNegocio;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.tool.xml;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
@@ -127,6 +124,11 @@ namespace CapaPresentacion
         }
 
         private void frmDetalleCompra_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btndescargar_Click_1(object sender, EventArgs e)
         {
 
         }

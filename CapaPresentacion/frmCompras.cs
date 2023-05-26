@@ -40,7 +40,7 @@ namespace CapaPresentacion
 
         private void btnbuscarproveedor_Click(object sender, EventArgs e)
         {
-            using (var modal = new mdProveedor()) ;
+            using (var modal = new mdProveedor());
             {
                 var result = modal.ShowDialog();
                 if (result == DialogResult.OK)
