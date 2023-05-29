@@ -256,9 +256,9 @@ namespace CapaPresentacion
             }
         }
 
-        private void btnbuscar_Click(object sender, EventArgs e)
+        private void btnregistrar_Click(object sender, EventArgs e)
         {
-
+            //aqui falta agregar el registro de los datos
         }
     }
 }

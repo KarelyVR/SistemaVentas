@@ -107,9 +107,5 @@ namespace CapaPresentacion
             }
         }
 
-        private void btndescargar_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -80,7 +80,7 @@ namespace CapaPresentacion
             this.btndescargar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndescargar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btndescargar.UseVisualStyleBackColor = true;
-            this.btndescargar.Click += new System.EventHandler(this.btndescargar_Click_1);
+            this.btndescargar.Click += new System.EventHandler(this.btndescargar_Click);
             // 
             // txtmontototal
             // 
@@ -324,6 +324,7 @@ namespace CapaPresentacion
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnbuscar.UseVisualStyleBackColor = true;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
             // label26
             // 
@@ -357,6 +358,7 @@ namespace CapaPresentacion
             this.btnborrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnborrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnborrar.UseVisualStyleBackColor = true;
+            this.btnborrar.Click += new System.EventHandler(this.btnborrar_Click);
             // 
             // label10
             // 
