@@ -103,7 +103,7 @@ namespace CapaDatos
             {
                 using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
                 {
-                    SqlCommand cmd = new SqlCommand("sp_ModificarProveedor", oconexion);
+                    SqlCommand cmd = new SqlCommand("sp_EditarProveedor", oconexion);
                     cmd.Parameters.AddWithValue("IdProveedor", obj.IdProveedor);
                     cmd.Parameters.AddWithValue("Documento", obj.Documento);
                     cmd.Parameters.AddWithValue("RazonSocial", obj.RazonSocial);
