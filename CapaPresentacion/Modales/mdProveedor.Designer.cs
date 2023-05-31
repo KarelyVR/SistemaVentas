@@ -55,10 +55,9 @@
             this.btnlimpiar.IconColor = System.Drawing.Color.Black;
             this.btnlimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnlimpiar.IconSize = 16;
-            this.btnlimpiar.Location = new System.Drawing.Point(819, 65);
-            this.btnlimpiar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnlimpiar.Location = new System.Drawing.Point(546, 42);
             this.btnlimpiar.Name = "btnlimpiar";
-            this.btnlimpiar.Size = new System.Drawing.Size(42, 35);
+            this.btnlimpiar.Size = new System.Drawing.Size(28, 23);
             this.btnlimpiar.TabIndex = 33;
             this.btnlimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnlimpiar.UseVisualStyleBackColor = false;
@@ -71,13 +70,13 @@
             this.btnbuscar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnbuscar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnbuscar.IconColor = System.Drawing.Color.Black;
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscar.IconSize = 16;
-            this.btnbuscar.Location = new System.Drawing.Point(767, 66);
-            this.btnbuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnbuscar.Location = new System.Drawing.Point(511, 43);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(42, 35);
+            this.btnbuscar.Size = new System.Drawing.Size(28, 23);
             this.btnbuscar.TabIndex = 32;
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbuscar.UseVisualStyleBackColor = false;
@@ -85,31 +84,27 @@
             // 
             // txtbusqueda
             // 
-            this.txtbusqueda.Location = new System.Drawing.Point(478, 68);
-            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtbusqueda.Location = new System.Drawing.Point(319, 44);
             this.txtbusqueda.Name = "txtbusqueda";
-            this.txtbusqueda.Size = new System.Drawing.Size(278, 26);
+            this.txtbusqueda.Size = new System.Drawing.Size(187, 20);
             this.txtbusqueda.TabIndex = 31;
             // 
             // cbobusqueda
             // 
             this.cbobusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbobusqueda.FormattingEnabled = true;
-            this.cbobusqueda.Location = new System.Drawing.Point(291, 68);
-            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbobusqueda.Location = new System.Drawing.Point(194, 44);
             this.cbobusqueda.Name = "cbobusqueda";
-            this.cbobusqueda.Size = new System.Drawing.Size(176, 28);
+            this.cbobusqueda.Size = new System.Drawing.Size(119, 21);
             this.cbobusqueda.TabIndex = 30;
-            this.cbobusqueda.SelectedIndexChanged += new System.EventHandler(this.cbobusqueda_SelectedIndexChanged);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(195, 74);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(130, 48);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(90, 20);
+            this.label11.Size = new System.Drawing.Size(61, 13);
             this.label11.TabIndex = 29;
             this.label11.Text = "Buscar por:";
             // 
@@ -117,10 +112,9 @@
             // 
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(13, 18);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(9, 12);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(857, 102);
+            this.label10.Size = new System.Drawing.Size(571, 66);
             this.label10.TabIndex = 28;
             this.label10.Text = "Lista de Proveedores";
             // 
@@ -149,8 +143,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdata.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvdata.Location = new System.Drawing.Point(13, 143);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvdata.Location = new System.Drawing.Point(10, 93);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -163,9 +156,11 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvdata.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvdata.RowHeadersWidth = 62;
+            this.dgvdata.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvdata.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdata.RowTemplate.Height = 28;
             this.dgvdata.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdata.Size = new System.Drawing.Size(857, 606);
+            this.dgvdata.Size = new System.Drawing.Size(571, 394);
             this.dgvdata.TabIndex = 27;
             this.dgvdata.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellDoubleClick);
             // 
@@ -196,9 +191,9 @@
             // 
             // mdProveedor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 763);
+            this.ClientSize = new System.Drawing.Size(587, 496);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.txtbusqueda);
@@ -206,6 +201,7 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dgvdata);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "mdProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "mdProveedor";

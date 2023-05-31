@@ -178,11 +178,6 @@ namespace CapaPresentacion
             }
         }
 
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dgvdata.Columns[e.ColumnIndex].Name == "btnseleccionar")

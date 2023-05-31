@@ -171,7 +171,6 @@ namespace CapaPresentacion
             this.label10.TabIndex = 72;
             this.label10.Text = "Lista de Proveedores";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // btneliminar
             // 

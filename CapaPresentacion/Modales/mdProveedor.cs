@@ -31,12 +31,12 @@ namespace CapaPresentacion.Modales
                 }
                 cbobusqueda.DisplayMember = "Texto";
                 cbobusqueda.ValueMember = "Valor";
-
+                
                 List<Proveedor> lista = new CN_Proveedor().Listar();
 
                 foreach (Proveedor item in lista)
                 {
-                    dgvdata.Rows.Add(new object[] {"",item.IdProveedor,item.Documento,item.RazonSocial});
+                    dgvdata.Rows.Add(new object[] {item.IdProveedor,item.Documento,item.RazonSocial});
                 }
             }
         }
@@ -82,11 +82,6 @@ namespace CapaPresentacion.Modales
             {
                 row.Visible = true;
             }
-        }
-
-        private void cbobusqueda_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
