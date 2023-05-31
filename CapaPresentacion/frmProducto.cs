@@ -42,7 +42,6 @@ namespace CapaPresentacion
             //valores que despliega el combobox
             cbocategoria.DisplayMember = "Texto";
             cbocategoria.ValueMember = "Valor";
-            cbocategoria.SelectedIndex = 0;
 
             //recorre los encabezados del datagrid para almacenarlos en el combobox busqueda
             foreach (DataGridViewColumn columna in dgvdata.Columns)
@@ -145,8 +144,6 @@ namespace CapaPresentacion
             txtcodigo.Text = "";
             txtnombre.Text = "";
             txtdescripcion.Text = "";
-            cbocategoria.SelectedIndex = 0;
-            cboestado.SelectedIndex = 0;
 
             txtcodigo.Select();
         }

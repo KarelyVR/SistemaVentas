@@ -31,7 +31,6 @@ namespace CapaPresentacion.Modales
                 }
                 cbobusqueda.DisplayMember = "Texto";
                 cbobusqueda.ValueMember = "Valor";
-                cbobusqueda.SelectedIndex = 0;
 
                 List<Proveedor> lista = new CN_Proveedor().Listar();
 
