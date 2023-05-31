@@ -293,13 +293,13 @@ namespace CapaPresentacion
             int idcorrelativo = new CN_Compra().ObtenerCorrelativo();
             string numerodocumento = string.Format("{0:00000}", idcorrelativo);
 
-            Compra oCompra = new Compra();
+            Compra oCompra = new Compra()
             {
                 oUsuario = new Usuario() { IdUsuario = _Usuario.IdUsuario },
                 oProveedor = new Proveedor() { IdProveedor = Convert.ToInt32(txtidproveedor.Text) },
                 TipoDocumento = ((OpcionCombo)cbotipodocumento.SelectedItem).Texto,
                 NumeroDocumento = numerodocumento,
-                MontoTotal = Convert.ToDecimal(txttotalpagar.Text),
+                MontoTotal = Convert.ToDecimal(txttotalpagar.Text)
             };
             string mensaje = string.Empty;
             bool respuesta = new CN_Compra().Registrar(oCompra, detalle_compra, out mensaje);
