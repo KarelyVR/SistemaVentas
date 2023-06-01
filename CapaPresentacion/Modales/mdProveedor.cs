@@ -25,20 +25,22 @@ namespace CapaPresentacion.Modales
         {
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {
-                if(columna.Visible == true) 
+                if (columna.Visible == true)
                 {
-                    cbobusqueda.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText});
+                    cbobusqueda.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText });
                 }
+            }
                 cbobusqueda.DisplayMember = "Texto";
                 cbobusqueda.ValueMember = "Valor";
-                
+                cbobusqueda.SelectedIndex = 1;
+            
                 List<Proveedor> lista = new CN_Proveedor().Listar();
 
                 foreach (Proveedor item in lista)
                 {
                     dgvdata.Rows.Add(new object[] {item.IdProveedor,item.Documento,item.RazonSocial});
                 }
-            }
+            
         }
 
         private void dgvdata_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
