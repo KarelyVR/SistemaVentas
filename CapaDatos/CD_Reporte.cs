@@ -54,6 +54,7 @@ namespace CapaDatos
                 }
                 catch(Exception ex)
                 {
+                    Console.WriteLine(ex.Message);
                     lista = new List<ReporteCompra>();
                 }
             }
@@ -99,6 +100,7 @@ namespace CapaDatos
                 }
                 catch (Exception ex)
                 {
+                    Console.WriteLine(ex.Message);
                     lista = new List<ReporteVenta>();
                 }
             }

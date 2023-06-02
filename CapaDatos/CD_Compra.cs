@@ -32,6 +32,7 @@ namespace CapaDatos
                 }
                 catch (Exception ex)
                 {
+                    Console.WriteLine(ex.Message);
                     idcorrelativo = 0;
                 }
             }
@@ -118,6 +119,7 @@ namespace CapaDatos
                 }
                 catch (Exception ex)
                 {
+                    Console.WriteLine(ex.Message);
                     obj = new Compra();
                 }
             }
@@ -158,6 +160,7 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 oLista = new List<Detalle_Compra>();
             }
             return oLista;

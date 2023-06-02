@@ -33,6 +33,7 @@ namespace CapaDatos
                 }
                 catch (Exception ex)
                 {
+                    Console.WriteLine(ex.Message);
                     idcorrelativo = 0;
                 }
             }
@@ -60,6 +61,7 @@ namespace CapaDatos
                 }
                 catch (Exception ex)
                 {
+                    Console.WriteLine(ex.Message);
                     respuesta = false;
                 }
             }
@@ -88,6 +90,7 @@ namespace CapaDatos
                 }
                 catch (Exception ex)
                 {
+                    Console.WriteLine(ex.Message);
                     respuesta = false;
                 }
             }
