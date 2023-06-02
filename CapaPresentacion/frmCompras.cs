@@ -263,7 +263,7 @@ namespace CapaPresentacion
                 MessageBox.Show("Debe seleccionar un proveedor", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            if (dgvdata.Rows.Count > 1)
+            if (dgvdata.Rows.Count < 1)
             {
                 MessageBox.Show("Debe ingresar productos en la compra", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
@@ -275,7 +275,7 @@ namespace CapaPresentacion
             detalle_compra.Columns.Add("PrecioCompra", typeof(decimal));
             detalle_compra.Columns.Add("PrecioVenta", typeof(decimal));
             detalle_compra.Columns.Add("Cantidad", typeof(int));
-            detalle_compra.Columns.Add("MontoTotal", typeof(decimal));
+            detalle_compra.Columns.Add("SubTotal", typeof(decimal));
 
             foreach (DataGridViewRow row in dgvdata.Rows) 
             {
