@@ -275,5 +275,11 @@
   <ItemGroup>
     <None Include="Resources\PlantillaCompra.html" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-tienda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

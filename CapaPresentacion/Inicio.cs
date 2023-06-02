@@ -75,41 +75,49 @@ namespace CapaPresentacion
         }
         private void menuusuario_Click(object sender, EventArgs e)
         {
+            panel1.Hide();
             AbrirFormulario((IconMenuItem)sender, new frmUsuarios());
         }
 
         private void submenucategoria_Click(object sender, EventArgs e)
         {
+            panel1.Hide();
             AbrirFormulario(menumantenedor, new frmCategoria());
         }
 
         private void submenuproducto_Click(object sender, EventArgs e)
         {
+            panel1.Hide();
             AbrirFormulario(menumantenedor, new frmProducto());
         }
 
         private void submenuregistrarventa_Click(object sender, EventArgs e)
         {
+            panel1.Hide();
             AbrirFormulario(menuventas, new frmVentas(usuarioActual));
         }
 
         private void submenudetalleventa_Click(object sender, EventArgs e)
         {
+            panel1.Hide();
             AbrirFormulario(menuventas, new frmDetalleVenta());
         }
 
         private void submenuregistrarcompra_Click(object sender, EventArgs e)
         {
+            panel1.Hide();
             AbrirFormulario(menucompras, new frmCompras());
         }
 
         private void submenudetallecompra_Click(object sender, EventArgs e)
         {
+            panel1.Hide();
             AbrirFormulario(menucompras, new frmDetalleCompra());
         }
 
         private void menuproveedores_Click(object sender, EventArgs e)
         {
+            panel1.Hide();
             AbrirFormulario((IconMenuItem)sender, new frmProveedores());
         }
 
@@ -123,17 +131,19 @@ namespace CapaPresentacion
 
         private void submenureportecompras_Click(object sender, EventArgs e)
         {
+            panel1.Hide();
             AbrirFormulario(menureportes, new frmReporteCompras());
         }
 
         private void submenureporteventas_Click(object sender, EventArgs e)
         {
+            panel1.Hide();
             AbrirFormulario(menureportes, new frmReporteVentas());
         }
 
         private void btnsalir_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("¿Desea salir?","Mensaje",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+            if(MessageBox.Show("¿Cerrar Sesión?","Salir",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
         }
     }
