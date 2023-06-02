@@ -196,7 +196,7 @@ namespace CapaPresentacion
                     //combobox estado
                     foreach (OpcionCombo oc in cboestado.Items)
                     {
-                        if (Convert.ToInt32(oc.Valor) == Convert.ToInt32(dgvdata.Rows[indice].Cells["Estado"].Value))
+                        if (Convert.ToInt32(oc.Valor) == Convert.ToInt32(dgvdata.Rows[indice].Cells["EstadoValor"].Value))
                         {
                             //obtener el indice del combobox
                             int indice_combo = cboestado.Items.IndexOf(oc);
