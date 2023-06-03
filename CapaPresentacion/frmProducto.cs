@@ -165,6 +165,7 @@ namespace CapaPresentacion
                     if (respuesta)
                     {
                         dgvdata.Rows.RemoveAt(Convert.ToInt32(txtindice.Text));
+                        Limpiar();                    
                     }
                     else
                     {
