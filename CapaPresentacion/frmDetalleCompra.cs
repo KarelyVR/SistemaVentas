@@ -78,7 +78,7 @@ namespace CapaPresentacion
                 filas += "<td>" + row.Cells["Producto"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["PrecioCompra"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Cantidad"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["SubTotal"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["MontoTotal"].Value.ToString() + "</td>";
                 filas += "</tr>";
             }
             Texto_Html = Texto_Html.Replace("@filas", filas);
