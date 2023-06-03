@@ -37,6 +37,9 @@ namespace CapaPresentacion
             txtpagocon.Text = "";
             txtcambio.Text = "";
             txttotalpagar.Text = "0";
+
+            
+
         }
 
         private void btnbuscarproducto_Click(object sender, EventArgs e)
@@ -352,8 +355,6 @@ namespace CapaPresentacion
                 MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
         }
-
-        
 
     }
 }
