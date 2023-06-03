@@ -152,7 +152,7 @@ namespace CapaDatos
                                 oProducto = new Producto() { Nombre = dr["Nombre"].ToString() },
                                 PrecioCompra = Convert.ToDecimal(dr["PrecioCompra"].ToString()),
                                 Cantidad = Convert.ToInt32(dr["Cantidad"].ToString()),
-                                Total = Convert.ToDecimal(dr["SubTotal"].ToString()),
+                                Total = Convert.ToDecimal(dr["MontoTotal"].ToString())
                             });
                         }
                     }

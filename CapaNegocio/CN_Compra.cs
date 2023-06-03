@@ -29,7 +29,7 @@ namespace CapaNegocio
             if (oCompra.IdCompra != 0)
             {
                 List<Detalle_Compra> oDetalleCompra = objcd_compra.ObtenerDetalleCompra(oCompra.IdCompra);
-                oCompra.oDetalleCompra = oDetalleCompra;
+                oCompra.oDetalle_Compra = oDetalleCompra;
             }
             return oCompra;
         }

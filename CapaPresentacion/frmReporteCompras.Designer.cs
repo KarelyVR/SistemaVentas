@@ -196,6 +196,7 @@ namespace CapaPresentacion
             this.SubTotal});
             this.dgvdata.Location = new System.Drawing.Point(17, 175);
             this.dgvdata.Name = "dgvdata";
+            this.dgvdata.ReadOnly = true;
             this.dgvdata.Size = new System.Drawing.Size(1105, 381);
             this.dgvdata.TabIndex = 50;
             // 
@@ -203,71 +204,85 @@ namespace CapaPresentacion
             // 
             this.FechaRegistro.HeaderText = "Fecha Registro";
             this.FechaRegistro.Name = "FechaRegistro";
+            this.FechaRegistro.ReadOnly = true;
             // 
             // TipoDocumento
             // 
             this.TipoDocumento.HeaderText = "Tipo Documento";
             this.TipoDocumento.Name = "TipoDocumento";
+            this.TipoDocumento.ReadOnly = true;
             // 
             // NumeroDocumento
             // 
             this.NumeroDocumento.HeaderText = "Numero Documento";
             this.NumeroDocumento.Name = "NumeroDocumento";
+            this.NumeroDocumento.ReadOnly = true;
             // 
             // MontoTotal
             // 
             this.MontoTotal.HeaderText = "Monto Total";
             this.MontoTotal.Name = "MontoTotal";
+            this.MontoTotal.ReadOnly = true;
             // 
             // UsuarioRegistro
             // 
             this.UsuarioRegistro.HeaderText = "Usuario Registro";
             this.UsuarioRegistro.Name = "UsuarioRegistro";
+            this.UsuarioRegistro.ReadOnly = true;
             // 
             // DocumentoProveedor
             // 
             this.DocumentoProveedor.HeaderText = "Documento Proveedor";
             this.DocumentoProveedor.Name = "DocumentoProveedor";
+            this.DocumentoProveedor.ReadOnly = true;
             // 
             // RazonSocial
             // 
             this.RazonSocial.HeaderText = "Razon Social";
             this.RazonSocial.Name = "RazonSocial";
+            this.RazonSocial.ReadOnly = true;
             // 
             // CodigoProducto
             // 
             this.CodigoProducto.HeaderText = "Codigo Producto";
             this.CodigoProducto.Name = "CodigoProducto";
+            this.CodigoProducto.ReadOnly = true;
             // 
             // NombreProducto
             // 
             this.NombreProducto.HeaderText = "Nombre Producto";
             this.NombreProducto.Name = "NombreProducto";
+            this.NombreProducto.ReadOnly = true;
             // 
             // Categoria
             // 
             this.Categoria.HeaderText = "Categoria";
             this.Categoria.Name = "Categoria";
+            this.Categoria.ReadOnly = true;
             // 
             // PrecioCompra
             // 
             this.PrecioCompra.HeaderText = "Precio Compra";
             this.PrecioCompra.Name = "PrecioCompra";
+            this.PrecioCompra.ReadOnly = true;
             // 
             // PrecioVenta
             // 
             this.PrecioVenta.HeaderText = "Precio Venta";
             this.PrecioVenta.Name = "PrecioVenta";
+            this.PrecioVenta.ReadOnly = true;
             // 
             // Cantidad
             // 
             this.Cantidad.HeaderText = "Cantidad";
             this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
             // 
             // SubTotal
             // 
             this.SubTotal.HeaderText = "Sub Total";
             this.SubTotal.Name = "SubTotal";
+            this.SubTotal.ReadOnly = true;
             // 
             // btnlimpiar
             // 

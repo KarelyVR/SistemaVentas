@@ -35,7 +35,7 @@ namespace CapaPresentacion
                 txtnombreproveedor.Text = oCompra.oProveedor.RazonSocial;
 
                 dgvdata.Rows.Clear();
-                foreach (Detalle_Compra dc in oCompra.oDetalleCompra)
+                foreach (Detalle_Compra dc in oCompra.oDetalle_Compra)
                 {
                     dgvdata.Rows.Add(new object[] { dc.oProducto.Nombre, dc.PrecioCompra, dc.Cantidad, dc.Total });
                 }
