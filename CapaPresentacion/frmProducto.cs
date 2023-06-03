@@ -174,12 +174,12 @@ namespace CapaPresentacion
             }
         }
 
-        private void btnlimpiarcampos_Click(object sender, EventArgs e)
+        private void Btnlimpiarcampos_Click(object sender, EventArgs e)
         {
             Limpiar();
         }
 
-        private void btnlimpiar_Click(object sender, EventArgs e)
+        private void Btnlimpiar_Click(object sender, EventArgs e)
         {
             txtbusqueda.Text = "";
             foreach (DataGridViewRow row in dgvdata.Rows)

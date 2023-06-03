@@ -91,7 +91,7 @@ namespace CapaPresentacion
             this.btnlimpiarcampos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnlimpiarcampos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnlimpiarcampos.UseVisualStyleBackColor = false;
-            this.btnlimpiarcampos.Click += new System.EventHandler(this.btnlimpiarcampos_Click);
+            this.btnlimpiarcampos.Click += new System.EventHandler(this.Btnlimpiarcampos_Click);
             // 
             // btnlimpiar
             // 
@@ -110,7 +110,7 @@ namespace CapaPresentacion
             this.btnlimpiar.TabIndex = 54;
             this.btnlimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnlimpiar.UseVisualStyleBackColor = false;
-            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
+            this.btnlimpiar.Click += new System.EventHandler(this.Btnlimpiar_Click);
             // 
             // btnbuscar
             // 
