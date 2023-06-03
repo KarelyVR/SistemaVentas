@@ -46,7 +46,7 @@ namespace CapaPresentacion
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtdoproveedor = new System.Windows.Forms.TextBox();
+            this.txtdocproveedor = new System.Windows.Forms.TextBox();
             this.txttipodocumento = new System.Windows.Forms.TextBox();
             this.txtfecha = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -216,7 +216,7 @@ namespace CapaPresentacion
             this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.txtnumerodocumento);
             this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.txtdoproveedor);
+            this.groupBox2.Controls.Add(this.txtdocproveedor);
             this.groupBox2.Controls.Add(this.txtnombreproveedor);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -238,15 +238,15 @@ namespace CapaPresentacion
             this.label14.TabIndex = 84;
             this.label14.Text = "Número Documento:";
             // 
-            // txtdoproveedor
+            // txtdocproveedor
             // 
-            this.txtdoproveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtdoproveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdoproveedor.Location = new System.Drawing.Point(9, 39);
-            this.txtdoproveedor.Name = "txtdoproveedor";
-            this.txtdoproveedor.ReadOnly = true;
-            this.txtdoproveedor.Size = new System.Drawing.Size(134, 21);
-            this.txtdoproveedor.TabIndex = 85;
+            this.txtdocproveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txtdocproveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdocproveedor.Location = new System.Drawing.Point(9, 39);
+            this.txtdocproveedor.Name = "txtdocproveedor";
+            this.txtdocproveedor.ReadOnly = true;
+            this.txtdocproveedor.Size = new System.Drawing.Size(134, 21);
+            this.txtdocproveedor.TabIndex = 85;
             // 
             // txttipodocumento
             // 
@@ -458,7 +458,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txtdoproveedor;
+        private System.Windows.Forms.TextBox txtdocproveedor;
         private System.Windows.Forms.TextBox txttipodocumento;
         private System.Windows.Forms.TextBox txtfecha;
         private System.Windows.Forms.Label label5;

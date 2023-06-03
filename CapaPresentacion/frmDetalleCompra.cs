@@ -31,7 +31,8 @@ namespace CapaPresentacion
                 txtfecha.Text = oCompra.FechaRegistro;
                 txttipodocumento.Text = oCompra.TipoDocumento;
                 txtusuario.Text = oCompra.oUsuario.NombreCompleto;
-                txtdoproveedor.Text = oCompra.oProveedor.RazonSocial;
+                txtdocproveedor.Text = oCompra.oProveedor.Documento;
+                txtnombreproveedor.Text = oCompra.oProveedor.RazonSocial;
 
                 dgvdata.Rows.Clear();
                 foreach (Detalle_Compra dc in oCompra.oDetalleCompra)
@@ -47,7 +48,7 @@ namespace CapaPresentacion
             txtfecha.Text = "";
             txttipodocumento.Text = "";
             txtusuario.Text = "";
-            txtdoproveedor.Text = "";
+            txtdocproveedor.Text = "";
 
             dgvdata.Rows.Clear();
             txtmontototal.Text = "0.00";
@@ -65,7 +66,7 @@ namespace CapaPresentacion
             Texto_Html = Texto_Html.Replace("@tipodocumento", txttipodocumento.Text.ToUpper());
             Texto_Html = Texto_Html.Replace("@numerodocumento", txtnumerodocumento.Text);
 
-            Texto_Html = Texto_Html.Replace("@docproveedor", txtdoproveedor.Text);
+            Texto_Html = Texto_Html.Replace("@docproveedor", txtdocproveedor.Text);
             Texto_Html = Texto_Html.Replace("@nombreproveedor", txtnombreproveedor.Text);
             Texto_Html = Texto_Html.Replace("@fecharegistro", txtfecha.Text);
             Texto_Html = Texto_Html.Replace("@usuarioregistro", txtusuario.Text);
