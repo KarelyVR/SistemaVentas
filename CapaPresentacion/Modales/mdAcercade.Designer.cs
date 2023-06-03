@@ -43,17 +43,18 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.btndescargar = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Unispace", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(199, 45);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 15);
+            this.label1.Size = new System.Drawing.Size(79, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Acerca de";
             // 
@@ -86,11 +87,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Unispace", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(178, 175);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 15);
+            this.label4.Size = new System.Drawing.Size(130, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Desarrollado por:";
             // 
@@ -160,7 +161,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(36, 35);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(425, 466);
+            this.label10.Size = new System.Drawing.Size(425, 513);
             this.label10.TabIndex = 59;
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -180,11 +181,11 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Font = new System.Drawing.Font("Unispace", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(199, 379);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(71, 15);
+            this.label12.Size = new System.Drawing.Size(69, 16);
             this.label12.TabIndex = 60;
             this.label12.Text = "Contacto";
             // 
@@ -212,12 +213,35 @@
             this.label14.Text = "+52 8123791687";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btndescargar
+            // 
+            this.btndescargar.AutoSize = true;
+            this.btndescargar.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.btndescargar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndescargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndescargar.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.btndescargar.IconColor = System.Drawing.Color.Black;
+            this.btndescargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btndescargar.IconSize = 17;
+            this.btndescargar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btndescargar.Location = new System.Drawing.Point(139, 502);
+            this.btndescargar.Name = "btndescargar";
+            this.btndescargar.Size = new System.Drawing.Size(202, 26);
+            this.btndescargar.TabIndex = 221;
+            this.btndescargar.Text = "Descargar Manual de Usuario";
+            this.btndescargar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btndescargar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btndescargar.UseVisualStyleBackColor = false;
+            this.btndescargar.Click += new System.EventHandler(this.btndescargar_Click);
+            // 
             // mdAcercade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(499, 535);
+            this.ClientSize = new System.Drawing.Size(499, 572);
+            this.Controls.Add(this.btndescargar);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label11);
@@ -261,5 +285,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private FontAwesome.Sharp.IconButton btndescargar;
     }
 }
