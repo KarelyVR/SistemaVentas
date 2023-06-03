@@ -35,10 +35,6 @@ namespace CapaPresentacion
             this.btndescargar = new FontAwesome.Sharp.IconButton();
             this.txtmontototal = new System.Windows.Forms.TextBox();
             this.dgvdata = new System.Windows.Forms.DataGridView();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrecioCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtnumerodocumento = new System.Windows.Forms.TextBox();
             this.txtnombreproveedor = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -60,6 +56,10 @@ namespace CapaPresentacion
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecioCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MontoTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -76,11 +76,11 @@ namespace CapaPresentacion
             this.btndescargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btndescargar.IconSize = 17;
             this.btndescargar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btndescargar.Location = new System.Drawing.Point(485, 482);
+            this.btndescargar.Location = new System.Drawing.Point(475, 478);
             this.btndescargar.Name = "btndescargar";
-            this.btndescargar.Size = new System.Drawing.Size(138, 23);
+            this.btndescargar.Size = new System.Drawing.Size(138, 26);
             this.btndescargar.TabIndex = 233;
-            this.btndescargar.Text = "Descargar PDF";
+            this.btndescargar.Text = "Descargar";
             this.btndescargar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndescargar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btndescargar.UseVisualStyleBackColor = false;
@@ -90,7 +90,7 @@ namespace CapaPresentacion
             // 
             this.txtmontototal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtmontototal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmontototal.Location = new System.Drawing.Point(120, 486);
+            this.txtmontototal.Location = new System.Drawing.Point(120, 480);
             this.txtmontototal.Name = "txtmontototal";
             this.txtmontototal.ReadOnly = true;
             this.txtmontototal.Size = new System.Drawing.Size(47, 21);
@@ -115,7 +115,7 @@ namespace CapaPresentacion
             this.Producto,
             this.PrecioCompra,
             this.Cantidad,
-            this.SubTotal});
+            this.MontoTotal});
             this.dgvdata.Location = new System.Drawing.Point(37, 269);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
@@ -127,38 +127,6 @@ namespace CapaPresentacion
             this.dgvdata.RowTemplate.Height = 28;
             this.dgvdata.Size = new System.Drawing.Size(582, 198);
             this.dgvdata.TabIndex = 230;
-            // 
-            // Producto
-            // 
-            this.Producto.HeaderText = "Producto";
-            this.Producto.MinimumWidth = 8;
-            this.Producto.Name = "Producto";
-            this.Producto.ReadOnly = true;
-            this.Producto.Width = 200;
-            // 
-            // PrecioCompra
-            // 
-            this.PrecioCompra.HeaderText = "Precio Compra";
-            this.PrecioCompra.MinimumWidth = 8;
-            this.PrecioCompra.Name = "PrecioCompra";
-            this.PrecioCompra.ReadOnly = true;
-            this.PrecioCompra.Width = 130;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.MinimumWidth = 8;
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            this.Cantidad.Width = 150;
-            // 
-            // SubTotal
-            // 
-            this.SubTotal.HeaderText = "Sub Total";
-            this.SubTotal.MinimumWidth = 8;
-            this.SubTotal.Name = "SubTotal";
-            this.SubTotal.ReadOnly = true;
-            this.SubTotal.Width = 150;
             // 
             // txtnumerodocumento
             // 
@@ -273,7 +241,7 @@ namespace CapaPresentacion
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(39, 489);
+            this.label5.Location = new System.Drawing.Point(39, 483);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 15);
             this.label5.TabIndex = 232;
@@ -321,7 +289,7 @@ namespace CapaPresentacion
             // btnbuscar
             // 
             this.btnbuscar.AutoSize = true;
-            this.btnbuscar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnbuscar.BackColor = System.Drawing.Color.Transparent;
             this.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
@@ -329,11 +297,10 @@ namespace CapaPresentacion
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscar.IconSize = 17;
             this.btnbuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnbuscar.Location = new System.Drawing.Point(455, 55);
+            this.btnbuscar.Location = new System.Drawing.Point(457, 52);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(78, 23);
+            this.btnbuscar.Size = new System.Drawing.Size(27, 26);
             this.btnbuscar.TabIndex = 225;
-            this.btnbuscar.Text = "Buscar";
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnbuscar.UseVisualStyleBackColor = false;
@@ -360,18 +327,17 @@ namespace CapaPresentacion
             // btnborrar
             // 
             this.btnborrar.AutoSize = true;
-            this.btnborrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnborrar.BackColor = System.Drawing.Color.Transparent;
             this.btnborrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnborrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnborrar.IconChar = FontAwesome.Sharp.IconChar.Eraser;
             this.btnborrar.IconColor = System.Drawing.Color.Black;
             this.btnborrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnborrar.IconSize = 20;
-            this.btnborrar.Location = new System.Drawing.Point(536, 55);
+            this.btnborrar.Location = new System.Drawing.Point(490, 52);
             this.btnborrar.Name = "btnborrar";
-            this.btnborrar.Size = new System.Drawing.Size(78, 26);
+            this.btnborrar.Size = new System.Drawing.Size(27, 26);
             this.btnborrar.TabIndex = 227;
-            this.btnborrar.Text = "Limpiar";
             this.btnborrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnborrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnborrar.UseVisualStyleBackColor = false;
@@ -408,6 +374,37 @@ namespace CapaPresentacion
             this.label1.Size = new System.Drawing.Size(161, 25);
             this.label1.TabIndex = 234;
             this.label1.Text = "Detalle Compra";
+            // 
+            // Producto
+            // 
+            this.Producto.HeaderText = "Producto";
+            this.Producto.MinimumWidth = 8;
+            this.Producto.Name = "Producto";
+            this.Producto.ReadOnly = true;
+            this.Producto.Width = 150;
+            // 
+            // PrecioCompra
+            // 
+            this.PrecioCompra.HeaderText = "Precio Compra";
+            this.PrecioCompra.MinimumWidth = 8;
+            this.PrecioCompra.Name = "PrecioCompra";
+            this.PrecioCompra.ReadOnly = true;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.MinimumWidth = 8;
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            this.Cantidad.Width = 80;
+            // 
+            // MontoTotal
+            // 
+            this.MontoTotal.HeaderText = "Monto Total";
+            this.MontoTotal.MinimumWidth = 8;
+            this.MontoTotal.Name = "MontoTotal";
+            this.MontoTotal.ReadOnly = true;
+            this.MontoTotal.Width = 130;
             // 
             // frmDetalleCompra
             // 
@@ -447,10 +444,6 @@ namespace CapaPresentacion
         private FontAwesome.Sharp.IconButton btndescargar;
         private System.Windows.Forms.TextBox txtmontototal;
         private System.Windows.Forms.DataGridView dgvdata;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioCompra;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
         private System.Windows.Forms.TextBox txtnumerodocumento;
         private System.Windows.Forms.TextBox txtnombreproveedor;
         private System.Windows.Forms.Label label15;
@@ -472,5 +465,9 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Producto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioCompra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MontoTotal;
     }
 }

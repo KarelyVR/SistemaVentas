@@ -85,7 +85,7 @@
             // btnbuscar
             // 
             this.btnbuscar.AutoSize = true;
-            this.btnbuscar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnbuscar.BackColor = System.Drawing.Color.Transparent;
             this.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
@@ -93,11 +93,10 @@
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscar.IconSize = 17;
             this.btnbuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnbuscar.Location = new System.Drawing.Point(455, 56);
+            this.btnbuscar.Location = new System.Drawing.Point(455, 53);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(78, 23);
+            this.btnbuscar.Size = new System.Drawing.Size(29, 26);
             this.btnbuscar.TabIndex = 208;
-            this.btnbuscar.Text = "Buscar";
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnbuscar.UseVisualStyleBackColor = false;
@@ -124,18 +123,17 @@
             // btnborrar
             // 
             this.btnborrar.AutoSize = true;
-            this.btnborrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnborrar.BackColor = System.Drawing.Color.Transparent;
             this.btnborrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnborrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnborrar.IconChar = FontAwesome.Sharp.IconChar.Eraser;
             this.btnborrar.IconColor = System.Drawing.Color.Black;
             this.btnborrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnborrar.IconSize = 20;
-            this.btnborrar.Location = new System.Drawing.Point(536, 56);
+            this.btnborrar.Location = new System.Drawing.Point(490, 53);
             this.btnborrar.Name = "btnborrar";
-            this.btnborrar.Size = new System.Drawing.Size(78, 26);
+            this.btnborrar.Size = new System.Drawing.Size(29, 26);
             this.btnborrar.TabIndex = 210;
-            this.btnborrar.Text = "Limpiar";
             this.btnborrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnborrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnborrar.UseVisualStyleBackColor = false;
@@ -354,11 +352,11 @@
             this.btndescargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btndescargar.IconSize = 17;
             this.btndescargar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btndescargar.Location = new System.Drawing.Point(480, 452);
+            this.btndescargar.Location = new System.Drawing.Point(466, 450);
             this.btndescargar.Name = "btndescargar";
-            this.btndescargar.Size = new System.Drawing.Size(134, 23);
+            this.btndescargar.Size = new System.Drawing.Size(134, 26);
             this.btndescargar.TabIndex = 220;
-            this.btndescargar.Text = "Descargar PDF";
+            this.btndescargar.Text = "Descargar";
             this.btndescargar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndescargar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btndescargar.UseVisualStyleBackColor = false;
