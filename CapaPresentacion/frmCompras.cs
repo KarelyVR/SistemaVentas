@@ -184,7 +184,7 @@ namespace CapaPresentacion
                 var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
 
                 //dibujar la imagen
-                e.Graphics.DrawImage(Properties.Resources.icheck, new Rectangle(x, y, w, h));
+                e.Graphics.DrawImage(Properties.Resources.itrash, new Rectangle(x, y, w, h));
                 //dar permiso para dar permiso de clic
                 e.Handled = true;
             }
