@@ -216,19 +216,20 @@
             // btndescargar
             // 
             this.btndescargar.AutoSize = true;
-            this.btndescargar.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.btndescargar.BackColor = System.Drawing.Color.Plum;
             this.btndescargar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btndescargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndescargar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btndescargar.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndescargar.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
             this.btndescargar.IconColor = System.Drawing.Color.Black;
             this.btndescargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btndescargar.IconSize = 17;
             this.btndescargar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btndescargar.Location = new System.Drawing.Point(174, 510);
+            this.btndescargar.Location = new System.Drawing.Point(150, 507);
             this.btndescargar.Name = "btndescargar";
-            this.btndescargar.Size = new System.Drawing.Size(134, 23);
+            this.btndescargar.Size = new System.Drawing.Size(200, 30);
             this.btndescargar.TabIndex = 221;
-            this.btndescargar.Text = "Descargar PDF";
+            this.btndescargar.Text = "Descargar Manual de usuario";
             this.btndescargar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndescargar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btndescargar.UseVisualStyleBackColor = false;

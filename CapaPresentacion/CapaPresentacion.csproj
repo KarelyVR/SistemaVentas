@@ -270,6 +270,7 @@
     <None Include="Resources\icheck.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ManualDeUsuario.pdf" />
     <None Include="Resources\PlantillaVenta.html" />
   </ItemGroup>
   <ItemGroup>
