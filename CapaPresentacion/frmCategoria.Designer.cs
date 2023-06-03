@@ -198,6 +198,7 @@ namespace CapaPresentacion
             this.btneliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btneliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btneliminar.UseVisualStyleBackColor = false;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // btnguardar
             // 
@@ -364,7 +365,6 @@ namespace CapaPresentacion
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(239, 503);
             this.label12.TabIndex = 29;
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label3
             // 
