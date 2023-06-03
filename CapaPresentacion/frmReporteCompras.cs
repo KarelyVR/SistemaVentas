@@ -116,7 +116,7 @@ namespace CapaPresentacion
                         });
                 }
                 SaveFileDialog savefile = new SaveFileDialog();
-                savefile.FileName = string.Format("ReporteCompras_{0}.xlsx", DateTime.Now.ToString("dd/MM/yyyy"));
+                savefile.FileName = string.Format("ReporteCompras_{0}.xlsx", DateTime.Now.ToString("ddMMyyyy"));
                 savefile.Filter = "Excel Files | *.xlsx";
 
                 if (savefile.ShowDialog() == DialogResult.OK){
@@ -126,7 +126,7 @@ namespace CapaPresentacion
                         var hoja = wb.Worksheets.Add(dt, "Informe");
                         hoja.ColumnsUsed().AdjustToContents();
                         wb.SaveAs(savefile.FileName);
-                        MessageBox.Show("Reporte Generado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("Reporte Generado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch
                     {

@@ -140,6 +140,7 @@ namespace CapaPresentacion
             // 
             // dgvdata
             // 
+            this.dgvdata.AllowUserToAddRows = false;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FechaRegistro,
