@@ -67,7 +67,10 @@ namespace CapaPresentacion
             // 
             // btndescargar
             // 
+            this.btndescargar.AutoSize = true;
+            this.btndescargar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btndescargar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndescargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndescargar.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
             this.btndescargar.IconColor = System.Drawing.Color.Black;
             this.btndescargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -75,17 +78,17 @@ namespace CapaPresentacion
             this.btndescargar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btndescargar.Location = new System.Drawing.Point(485, 482);
             this.btndescargar.Name = "btndescargar";
-            this.btndescargar.Size = new System.Drawing.Size(134, 21);
+            this.btndescargar.Size = new System.Drawing.Size(138, 23);
             this.btndescargar.TabIndex = 233;
-            this.btndescargar.Text = "Descargar en PDF";
+            this.btndescargar.Text = "Descargar PDF";
             this.btndescargar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndescargar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btndescargar.UseVisualStyleBackColor = true;
+            this.btndescargar.UseVisualStyleBackColor = false;
             this.btndescargar.Click += new System.EventHandler(this.btndescargar_Click);
             // 
             // txtmontototal
             // 
-            this.txtmontototal.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtmontototal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtmontototal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmontototal.Location = new System.Drawing.Point(120, 486);
             this.txtmontototal.Name = "txtmontototal";
@@ -159,6 +162,7 @@ namespace CapaPresentacion
             // 
             // txtnumerodocumento
             // 
+            this.txtnumerodocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtnumerodocumento.Location = new System.Drawing.Point(522, 39);
             this.txtnumerodocumento.Name = "txtnumerodocumento";
             this.txtnumerodocumento.Size = new System.Drawing.Size(54, 21);
@@ -167,6 +171,7 @@ namespace CapaPresentacion
             // 
             // txtnombreproveedor
             // 
+            this.txtnombreproveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtnombreproveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombreproveedor.Location = new System.Drawing.Point(160, 39);
             this.txtnombreproveedor.Name = "txtnombreproveedor";
@@ -187,6 +192,7 @@ namespace CapaPresentacion
             // 
             // txtusuario
             // 
+            this.txtusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtusuario.Location = new System.Drawing.Point(379, 39);
             this.txtusuario.Name = "txtusuario";
@@ -234,6 +240,7 @@ namespace CapaPresentacion
             // 
             // txtdoproveedor
             // 
+            this.txtdoproveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtdoproveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdoproveedor.Location = new System.Drawing.Point(9, 39);
             this.txtdoproveedor.Name = "txtdoproveedor";
@@ -243,6 +250,7 @@ namespace CapaPresentacion
             // 
             // txttipodocumento
             // 
+            this.txttipodocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txttipodocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttipodocumento.Location = new System.Drawing.Point(161, 39);
             this.txttipodocumento.Name = "txttipodocumento";
@@ -252,6 +260,7 @@ namespace CapaPresentacion
             // 
             // txtfecha
             // 
+            this.txtfecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtfecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfecha.Location = new System.Drawing.Point(9, 39);
             this.txtfecha.Name = "txtfecha";
@@ -311,7 +320,10 @@ namespace CapaPresentacion
             // 
             // btnbuscar
             // 
+            this.btnbuscar.AutoSize = true;
+            this.btnbuscar.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.btnbuscar.IconColor = System.Drawing.Color.Black;
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -319,12 +331,12 @@ namespace CapaPresentacion
             this.btnbuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnbuscar.Location = new System.Drawing.Point(455, 55);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(78, 21);
+            this.btnbuscar.Size = new System.Drawing.Size(78, 23);
             this.btnbuscar.TabIndex = 225;
             this.btnbuscar.Text = "Buscar";
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnbuscar.UseVisualStyleBackColor = true;
+            this.btnbuscar.UseVisualStyleBackColor = false;
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
             // label26
@@ -339,6 +351,7 @@ namespace CapaPresentacion
             // 
             // txtbusqueda
             // 
+            this.txtbusqueda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtbusqueda.Location = new System.Drawing.Point(320, 55);
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.Size = new System.Drawing.Size(129, 20);
@@ -346,19 +359,22 @@ namespace CapaPresentacion
             // 
             // btnborrar
             // 
+            this.btnborrar.AutoSize = true;
+            this.btnborrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnborrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnborrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnborrar.IconChar = FontAwesome.Sharp.IconChar.Eraser;
             this.btnborrar.IconColor = System.Drawing.Color.Black;
             this.btnborrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnborrar.IconSize = 20;
             this.btnborrar.Location = new System.Drawing.Point(536, 55);
             this.btnborrar.Name = "btnborrar";
-            this.btnborrar.Size = new System.Drawing.Size(78, 21);
+            this.btnborrar.Size = new System.Drawing.Size(78, 26);
             this.btnborrar.TabIndex = 227;
             this.btnborrar.Text = "Limpiar";
             this.btnborrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnborrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnborrar.UseVisualStyleBackColor = true;
+            this.btnborrar.UseVisualStyleBackColor = false;
             this.btnborrar.Click += new System.EventHandler(this.btnborrar_Click);
             // 
             // label10
@@ -386,10 +402,10 @@ namespace CapaPresentacion
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(33, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 25);
+            this.label1.Size = new System.Drawing.Size(161, 25);
             this.label1.TabIndex = 234;
             this.label1.Text = "Detalle Compra";
             // 
@@ -397,6 +413,7 @@ namespace CapaPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(646, 531);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btndescargar);

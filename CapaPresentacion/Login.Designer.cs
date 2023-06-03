@@ -119,7 +119,7 @@ namespace CapaPresentacion
             // 
             // btncancelar
             // 
-            this.btncancelar.BackColor = System.Drawing.Color.Firebrick;
+            this.btncancelar.BackColor = System.Drawing.Color.MediumVioletRed;
             this.btncancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btncancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

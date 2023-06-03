@@ -70,6 +70,7 @@ namespace CapaPresentacion
             this.btnguardar = new FontAwesome.Sharp.IconButton();
             this.txtindice = new System.Windows.Forms.TextBox();
             this.btnlimpiarcampos = new FontAwesome.Sharp.IconButton();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,6 +116,7 @@ namespace CapaPresentacion
             // 
             // txtdocumento
             // 
+            this.txtdocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtdocumento.Location = new System.Drawing.Point(34, 99);
             this.txtdocumento.Name = "txtdocumento";
             this.txtdocumento.Size = new System.Drawing.Size(182, 20);
@@ -122,6 +124,7 @@ namespace CapaPresentacion
             // 
             // txtnombre
             // 
+            this.txtnombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtnombre.Location = new System.Drawing.Point(34, 156);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(182, 20);
@@ -129,6 +132,7 @@ namespace CapaPresentacion
             // 
             // txtcorreo
             // 
+            this.txtcorreo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtcorreo.Location = new System.Drawing.Point(34, 208);
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(182, 20);
@@ -136,6 +140,7 @@ namespace CapaPresentacion
             // 
             // txtconfirmarclave
             // 
+            this.txtconfirmarclave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtconfirmarclave.Location = new System.Drawing.Point(34, 325);
             this.txtconfirmarclave.Name = "txtconfirmarclave";
             this.txtconfirmarclave.PasswordChar = '*';
@@ -144,6 +149,7 @@ namespace CapaPresentacion
             // 
             // txtclave
             // 
+            this.txtclave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtclave.Location = new System.Drawing.Point(34, 265);
             this.txtclave.Name = "txtclave";
             this.txtclave.PasswordChar = '*';
@@ -182,6 +188,7 @@ namespace CapaPresentacion
             // 
             // cborol
             // 
+            this.cborol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.cborol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cborol.FormattingEnabled = true;
             this.cborol.Location = new System.Drawing.Point(34, 380);
@@ -191,6 +198,7 @@ namespace CapaPresentacion
             // 
             // cboestado
             // 
+            this.cboestado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.cboestado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboestado.FormattingEnabled = true;
             this.cboestado.Location = new System.Drawing.Point(34, 436);
@@ -333,7 +341,7 @@ namespace CapaPresentacion
             // label10
             // 
             this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(279, 26);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(794, 36);
@@ -343,6 +351,7 @@ namespace CapaPresentacion
             // 
             // txtid
             // 
+            this.txtid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtid.Location = new System.Drawing.Point(193, 57);
             this.txtid.Name = "txtid";
             this.txtid.ReadOnly = true;
@@ -363,6 +372,7 @@ namespace CapaPresentacion
             // 
             // cbobusqueda
             // 
+            this.cbobusqueda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.cbobusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbobusqueda.FormattingEnabled = true;
             this.cbobusqueda.Location = new System.Drawing.Point(677, 35);
@@ -372,6 +382,7 @@ namespace CapaPresentacion
             // 
             // txtbusqueda
             // 
+            this.txtbusqueda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtbusqueda.Location = new System.Drawing.Point(802, 35);
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.Size = new System.Drawing.Size(187, 20);
@@ -417,7 +428,7 @@ namespace CapaPresentacion
             // 
             // btneliminar
             // 
-            this.btneliminar.BackColor = System.Drawing.Color.Firebrick;
+            this.btneliminar.BackColor = System.Drawing.Color.MediumVioletRed;
             this.btneliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btneliminar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -459,6 +470,7 @@ namespace CapaPresentacion
             // 
             // txtindice
             // 
+            this.txtindice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtindice.Location = new System.Drawing.Point(164, 57);
             this.txtindice.Name = "txtindice";
             this.txtindice.ReadOnly = true;
@@ -488,11 +500,22 @@ namespace CapaPresentacion
             this.btnlimpiarcampos.UseVisualStyleBackColor = false;
             this.btnlimpiarcampos.Click += new System.EventHandler(this.btnlimpiarcampos_Click);
             // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.Control;
+            this.label12.Location = new System.Drawing.Point(231, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(32, 599);
+            this.label12.TabIndex = 242;
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // frmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1125, 599);
             this.Controls.Add(this.btnlimpiarcampos);
             this.Controls.Add(this.txtindice);
@@ -522,6 +545,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.label12);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -573,5 +597,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.TextBox txtindice;
         private FontAwesome.Sharp.IconButton btnlimpiarcampos;
+        private System.Windows.Forms.Label label12;
     }
 }

@@ -75,16 +75,19 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(24, 21);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(129, 25);
+            this.label9.Size = new System.Drawing.Size(142, 25);
             this.label9.TabIndex = 206;
             this.label9.Text = "Detalle Venta";
             // 
             // btnbuscar
             // 
+            this.btnbuscar.AutoSize = true;
+            this.btnbuscar.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.btnbuscar.IconColor = System.Drawing.Color.Black;
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -92,12 +95,12 @@
             this.btnbuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnbuscar.Location = new System.Drawing.Point(455, 56);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(78, 21);
+            this.btnbuscar.Size = new System.Drawing.Size(78, 23);
             this.btnbuscar.TabIndex = 208;
             this.btnbuscar.Text = "Buscar";
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnbuscar.UseVisualStyleBackColor = true;
+            this.btnbuscar.UseVisualStyleBackColor = false;
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
             // label26
@@ -112,6 +115,7 @@
             // 
             // txtnumerodocumento
             // 
+            this.txtnumerodocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtnumerodocumento.Location = new System.Drawing.Point(320, 56);
             this.txtnumerodocumento.Name = "txtnumerodocumento";
             this.txtnumerodocumento.Size = new System.Drawing.Size(129, 20);
@@ -119,19 +123,22 @@
             // 
             // btnborrar
             // 
+            this.btnborrar.AutoSize = true;
+            this.btnborrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnborrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnborrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnborrar.IconChar = FontAwesome.Sharp.IconChar.Eraser;
             this.btnborrar.IconColor = System.Drawing.Color.Black;
             this.btnborrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnborrar.IconSize = 20;
             this.btnborrar.Location = new System.Drawing.Point(536, 56);
             this.btnborrar.Name = "btnborrar";
-            this.btnborrar.Size = new System.Drawing.Size(78, 21);
+            this.btnborrar.Size = new System.Drawing.Size(78, 26);
             this.btnborrar.TabIndex = 210;
             this.btnborrar.Text = "Limpiar";
             this.btnborrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnborrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnborrar.UseVisualStyleBackColor = true;
+            this.btnborrar.UseVisualStyleBackColor = false;
             this.btnborrar.Click += new System.EventHandler(this.btnborrar_Click);
             // 
             // groupBox1
@@ -153,6 +160,7 @@
             // 
             // txtusuario
             // 
+            this.txtusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtusuario.Location = new System.Drawing.Point(379, 39);
             this.txtusuario.Name = "txtusuario";
@@ -173,6 +181,7 @@
             // 
             // txttipodocumento
             // 
+            this.txttipodocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txttipodocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttipodocumento.Location = new System.Drawing.Point(161, 39);
             this.txttipodocumento.Name = "txttipodocumento";
@@ -182,6 +191,7 @@
             // 
             // txtfecha
             // 
+            this.txtfecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtfecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfecha.Location = new System.Drawing.Point(9, 39);
             this.txtfecha.Name = "txtfecha";
@@ -230,7 +240,7 @@
             this.Precio,
             this.Cantidad,
             this.SubTotal});
-            this.dgvdata.Location = new System.Drawing.Point(32, 245);
+            this.dgvdata.Location = new System.Drawing.Point(32, 187);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -238,7 +248,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvdata.RowTemplate.Height = 28;
-            this.dgvdata.Size = new System.Drawing.Size(582, 198);
+            this.dgvdata.Size = new System.Drawing.Size(582, 256);
             this.dgvdata.TabIndex = 213;
             // 
             // Producto
@@ -280,7 +290,7 @@
             // 
             // txtmontopago
             // 
-            this.txtmontopago.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtmontopago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtmontopago.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmontopago.Location = new System.Drawing.Point(251, 452);
             this.txtmontopago.Name = "txtmontopago";
@@ -302,7 +312,7 @@
             // 
             // txtmontocambio
             // 
-            this.txtmontocambio.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtmontocambio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtmontocambio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmontocambio.Location = new System.Drawing.Point(402, 452);
             this.txtmontocambio.Name = "txtmontocambio";
@@ -324,7 +334,7 @@
             // 
             // txtmontototal
             // 
-            this.txtmontototal.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtmontototal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtmontototal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmontototal.Location = new System.Drawing.Point(117, 452);
             this.txtmontototal.Name = "txtmontototal";
@@ -335,7 +345,10 @@
             // 
             // btndescargar
             // 
+            this.btndescargar.AutoSize = true;
+            this.btndescargar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btndescargar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndescargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndescargar.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
             this.btndescargar.IconColor = System.Drawing.Color.Black;
             this.btndescargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -343,18 +356,19 @@
             this.btndescargar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btndescargar.Location = new System.Drawing.Point(480, 452);
             this.btndescargar.Name = "btndescargar";
-            this.btndescargar.Size = new System.Drawing.Size(134, 21);
+            this.btndescargar.Size = new System.Drawing.Size(134, 23);
             this.btndescargar.TabIndex = 220;
-            this.btndescargar.Text = "Descargar en PDF";
+            this.btndescargar.Text = "Descargar PDF";
             this.btndescargar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndescargar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btndescargar.UseVisualStyleBackColor = true;
+            this.btndescargar.UseVisualStyleBackColor = false;
             this.btndescargar.Click += new System.EventHandler(this.btndescargar_Click);
             // 
             // frmDetalleVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(638, 502);
             this.Controls.Add(this.btndescargar);
             this.Controls.Add(this.label6);

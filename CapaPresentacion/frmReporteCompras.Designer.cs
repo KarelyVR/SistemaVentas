@@ -61,6 +61,7 @@ namespace CapaPresentacion
             this.label11 = new System.Windows.Forms.Label();
             this.btnbuscar = new FontAwesome.Sharp.IconButton();
             this.btndescargarexcel = new FontAwesome.Sharp.IconButton();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,10 +88,10 @@ namespace CapaPresentacion
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(28, 21);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(135, 20);
+            this.label9.Size = new System.Drawing.Size(150, 20);
             this.label9.TabIndex = 42;
             this.label9.Text = "Reporte Compras";
             // 
@@ -138,6 +139,7 @@ namespace CapaPresentacion
             // 
             // cboproveedor
             // 
+            this.cboproveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.cboproveedor.FormattingEnabled = true;
             this.cboproveedor.Location = new System.Drawing.Point(513, 48);
             this.cboproveedor.Name = "cboproveedor";
@@ -146,17 +148,20 @@ namespace CapaPresentacion
             // 
             // btnbuscarproveedor
             // 
+            this.btnbuscarproveedor.AutoSize = true;
+            this.btnbuscarproveedor.BackColor = System.Drawing.Color.Cyan;
+            this.btnbuscarproveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbuscarproveedor.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.btnbuscarproveedor.IconColor = System.Drawing.Color.Black;
             this.btnbuscarproveedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscarproveedor.IconSize = 18;
             this.btnbuscarproveedor.Location = new System.Drawing.Point(709, 47);
             this.btnbuscarproveedor.Name = "btnbuscarproveedor";
-            this.btnbuscarproveedor.Size = new System.Drawing.Size(75, 23);
+            this.btnbuscarproveedor.Size = new System.Drawing.Size(75, 24);
             this.btnbuscarproveedor.TabIndex = 48;
             this.btnbuscarproveedor.Text = "Buscar";
             this.btnbuscarproveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnbuscarproveedor.UseVisualStyleBackColor = true;
+            this.btnbuscarproveedor.UseVisualStyleBackColor = false;
             this.btnbuscarproveedor.Click += new System.EventHandler(this.btnbuscarproveedor_Click);
             // 
             // label4
@@ -329,24 +334,40 @@ namespace CapaPresentacion
             // 
             // btndescargarexcel
             // 
+            this.btndescargarexcel.AutoSize = true;
+            this.btndescargarexcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btndescargarexcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndescargarexcel.IconChar = FontAwesome.Sharp.IconChar.FileExcel;
             this.btndescargarexcel.IconColor = System.Drawing.Color.Black;
             this.btndescargarexcel.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btndescargarexcel.IconSize = 18;
             this.btndescargarexcel.Location = new System.Drawing.Point(31, 133);
             this.btndescargarexcel.Name = "btndescargarexcel";
-            this.btndescargarexcel.Size = new System.Drawing.Size(112, 24);
+            this.btndescargarexcel.Size = new System.Drawing.Size(128, 24);
             this.btndescargarexcel.TabIndex = 56;
             this.btndescargarexcel.Text = "Descargar Excel";
             this.btndescargarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btndescargarexcel.UseVisualStyleBackColor = true;
+            this.btndescargarexcel.UseVisualStyleBackColor = false;
             this.btndescargarexcel.Click += new System.EventHandler(this.btndescargarexcel_Click);
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(175, 28);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(958, 10);
+            this.label5.TabIndex = 243;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // frmReporteCompras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1144, 581);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btndescargarexcel);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.btnlimpiar);
@@ -408,5 +429,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label11;
         private FontAwesome.Sharp.IconButton btnbuscar;
         private FontAwesome.Sharp.IconButton btndescargarexcel;
+        private System.Windows.Forms.Label label5;
     }
 }

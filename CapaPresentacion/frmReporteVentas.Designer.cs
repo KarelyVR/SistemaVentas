@@ -56,22 +56,26 @@ namespace CapaPresentacion
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.SuspendLayout();
             // 
             // btndescargarexcel
             // 
+            this.btndescargarexcel.AutoSize = true;
+            this.btndescargarexcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btndescargarexcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndescargarexcel.IconChar = FontAwesome.Sharp.IconChar.FileExcel;
             this.btndescargarexcel.IconColor = System.Drawing.Color.Black;
             this.btndescargarexcel.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btndescargarexcel.IconSize = 18;
             this.btndescargarexcel.Location = new System.Drawing.Point(31, 134);
             this.btndescargarexcel.Name = "btndescargarexcel";
-            this.btndescargarexcel.Size = new System.Drawing.Size(112, 24);
+            this.btndescargarexcel.Size = new System.Drawing.Size(128, 24);
             this.btndescargarexcel.TabIndex = 73;
             this.btndescargarexcel.Text = "Descargar Excel";
             this.btndescargarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btndescargarexcel.UseVisualStyleBackColor = true;
+            this.btndescargarexcel.UseVisualStyleBackColor = false;
             this.btndescargarexcel.Click += new System.EventHandler(this.btndescargarexcel_Click);
             // 
             // btnbuscar
@@ -227,17 +231,20 @@ namespace CapaPresentacion
             // 
             // btnbuscarreporte
             // 
+            this.btnbuscarreporte.AutoSize = true;
+            this.btnbuscarreporte.BackColor = System.Drawing.Color.Cyan;
+            this.btnbuscarreporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbuscarreporte.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.btnbuscarreporte.IconColor = System.Drawing.Color.Black;
             this.btnbuscarreporte.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscarreporte.IconSize = 18;
             this.btnbuscarreporte.Location = new System.Drawing.Point(426, 47);
             this.btnbuscarreporte.Name = "btnbuscarreporte";
-            this.btnbuscarreporte.Size = new System.Drawing.Size(75, 23);
+            this.btnbuscarreporte.Size = new System.Drawing.Size(75, 24);
             this.btnbuscarreporte.TabIndex = 65;
             this.btnbuscarreporte.Text = "Buscar";
             this.btnbuscarreporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnbuscarreporte.UseVisualStyleBackColor = true;
+            this.btnbuscarreporte.UseVisualStyleBackColor = false;
             this.btnbuscarreporte.Click += new System.EventHandler(this.btnbuscarreporte_Click);
             // 
             // txtfechafin
@@ -284,10 +291,10 @@ namespace CapaPresentacion
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(28, 22);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(122, 20);
+            this.label9.Size = new System.Drawing.Size(136, 20);
             this.label9.TabIndex = 59;
             this.label9.Text = "Reporte Ventas";
             // 
@@ -301,11 +308,24 @@ namespace CapaPresentacion
             this.label10.TabIndex = 58;
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(163, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(970, 10);
+            this.label3.TabIndex = 242;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // frmReporteVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1144, 581);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btndescargarexcel);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.btnlimpiar);
@@ -360,5 +380,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label3;
     }
 }

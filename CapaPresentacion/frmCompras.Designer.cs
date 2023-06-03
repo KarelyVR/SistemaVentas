@@ -92,10 +92,10 @@ namespace CapaPresentacion
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(35, 32);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(164, 25);
+            this.label9.Size = new System.Drawing.Size(180, 25);
             this.label9.TabIndex = 22;
             this.label9.Text = "Registrar Compra";
             // 
@@ -117,7 +117,7 @@ namespace CapaPresentacion
             // 
             // cbotipodocumento
             // 
-            this.cbotipodocumento.BackColor = System.Drawing.SystemColors.Control;
+            this.cbotipodocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.cbotipodocumento.FormattingEnabled = true;
             this.cbotipodocumento.Location = new System.Drawing.Point(141, 47);
             this.cbotipodocumento.Margin = new System.Windows.Forms.Padding(2);
@@ -127,7 +127,7 @@ namespace CapaPresentacion
             // 
             // txtfecha
             // 
-            this.txtfecha.BackColor = System.Drawing.SystemColors.Control;
+            this.txtfecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtfecha.Location = new System.Drawing.Point(8, 47);
             this.txtfecha.Margin = new System.Windows.Forms.Padding(2);
             this.txtfecha.Name = "txtfecha";
@@ -176,7 +176,7 @@ namespace CapaPresentacion
             // 
             // txtidproveedor
             // 
-            this.txtidproveedor.BackColor = System.Drawing.Color.White;
+            this.txtidproveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtidproveedor.Location = new System.Drawing.Point(326, 16);
             this.txtidproveedor.Margin = new System.Windows.Forms.Padding(2);
             this.txtidproveedor.Name = "txtidproveedor";
@@ -205,7 +205,7 @@ namespace CapaPresentacion
             // 
             // txtnombreproveedor
             // 
-            this.txtnombreproveedor.BackColor = System.Drawing.SystemColors.Control;
+            this.txtnombreproveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtnombreproveedor.Location = new System.Drawing.Point(154, 48);
             this.txtnombreproveedor.Margin = new System.Windows.Forms.Padding(2);
             this.txtnombreproveedor.Name = "txtnombreproveedor";
@@ -214,7 +214,7 @@ namespace CapaPresentacion
             // 
             // txtcodproveedor
             // 
-            this.txtcodproveedor.BackColor = System.Drawing.SystemColors.Control;
+            this.txtcodproveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtcodproveedor.Location = new System.Drawing.Point(8, 47);
             this.txtcodproveedor.Margin = new System.Windows.Forms.Padding(2);
             this.txtcodproveedor.Name = "txtcodproveedor";
@@ -269,6 +269,7 @@ namespace CapaPresentacion
             // 
             // txtcantidad
             // 
+            this.txtcantidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtcantidad.Location = new System.Drawing.Point(527, 43);
             this.txtcantidad.Margin = new System.Windows.Forms.Padding(2);
             this.txtcantidad.Maximum = new decimal(new int[] {
@@ -298,7 +299,7 @@ namespace CapaPresentacion
             // 
             // txtprecioventa
             // 
-            this.txtprecioventa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtprecioventa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtprecioventa.Location = new System.Drawing.Point(415, 43);
             this.txtprecioventa.Margin = new System.Windows.Forms.Padding(2);
             this.txtprecioventa.Name = "txtprecioventa";
@@ -319,7 +320,7 @@ namespace CapaPresentacion
             // 
             // txtpreciocompra
             // 
-            this.txtpreciocompra.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtpreciocompra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtpreciocompra.Location = new System.Drawing.Point(303, 45);
             this.txtpreciocompra.Margin = new System.Windows.Forms.Padding(2);
             this.txtpreciocompra.Name = "txtpreciocompra";
@@ -340,7 +341,7 @@ namespace CapaPresentacion
             // 
             // txtidproducto
             // 
-            this.txtidproducto.BackColor = System.Drawing.Color.White;
+            this.txtidproducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtidproducto.Location = new System.Drawing.Point(105, 21);
             this.txtidproducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtidproducto.Name = "txtidproducto";
@@ -369,7 +370,7 @@ namespace CapaPresentacion
             // 
             // txtproducto
             // 
-            this.txtproducto.BackColor = System.Drawing.SystemColors.Control;
+            this.txtproducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtproducto.Location = new System.Drawing.Point(169, 45);
             this.txtproducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtproducto.Name = "txtproducto";
@@ -378,7 +379,7 @@ namespace CapaPresentacion
             // 
             // txtcodproducto
             // 
-            this.txtcodproducto.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtcodproducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtcodproducto.Location = new System.Drawing.Point(8, 47);
             this.txtcodproducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtcodproducto.Name = "txtcodproducto";
@@ -566,7 +567,7 @@ namespace CapaPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(800, 615);
             this.Controls.Add(this.btnregistrar);
             this.Controls.Add(this.txttotalpagar);
