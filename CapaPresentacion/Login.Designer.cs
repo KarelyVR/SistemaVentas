@@ -57,7 +57,7 @@ namespace CapaPresentacion
             this.label2.BackColor = System.Drawing.Color.Pink;
             this.label2.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(12, 148);
+            this.label2.Location = new System.Drawing.Point(8, 148);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(217, 37);
             this.label2.TabIndex = 1;
@@ -132,7 +132,7 @@ namespace CapaPresentacion
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(94, 35);
             this.btncancelar.TabIndex = 8;
-            this.btncancelar.Text = "Cancelar";
+            this.btncancelar.Text = "Salir";
             this.btncancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btncancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btncancelar.UseVisualStyleBackColor = false;
