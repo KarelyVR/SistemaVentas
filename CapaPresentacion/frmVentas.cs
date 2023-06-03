@@ -299,6 +299,11 @@ namespace CapaPresentacion
 
         private void btnregistrar_Click(object sender, EventArgs e)
         {
+            if(txtpagocon.Text.Trim() == "")
+            {
+                MessageBox.Show("Debe ingresar un pago para la venta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
             if (dgvdata.Rows.Count < 1)
             {
                 MessageBox.Show("Debe ingresar productos en la venta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
