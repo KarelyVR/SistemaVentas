@@ -285,7 +285,7 @@ namespace CapaPresentacion
             // 
             // contenedor
             // 
-            this.contenedor.BackColor = System.Drawing.SystemColors.Control;
+            this.contenedor.BackColor = System.Drawing.Color.LavenderBlush;
             this.contenedor.Controls.Add(this.panel1);
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.Location = new System.Drawing.Point(0, 120);
