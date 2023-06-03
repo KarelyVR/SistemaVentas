@@ -148,7 +148,7 @@ namespace CapaPresentacion
             txtcodigo.Select();
         }
 
-        private void btneliminar_Click(object sender, EventArgs e)
+        private void Btneliminar_Click(object sender, EventArgs e)
         {
             if (Convert.ToInt32(txtid.Text) != 0)
             {
