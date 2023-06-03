@@ -25,7 +25,7 @@ namespace CapaPresentacion.Modales
         private void btndescargar_Click(object sender, EventArgs e)
         {
             // Ruta del archivo PDF en tu computadora
-            string rutaArchivo = @"C:\Users\fersa\OneDrive\Escritorio\SistemaVentas\SistemaVentas\CapaPresentacion\Resources\Manual de usuario.pdf";
+            string rutaArchivo = @"..\CapaPresentacion\Resources\ManualDeUsuario.pdf";
 
             // Verificar si el archivo existe
             if (System.IO.File.Exists(rutaArchivo))
