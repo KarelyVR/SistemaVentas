@@ -77,10 +77,10 @@ namespace CapaPresentacion
             // txttotalpagar
             // 
             this.txttotalpagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txttotalpagar.Location = new System.Drawing.Point(804, 310);
-            this.txttotalpagar.Margin = new System.Windows.Forms.Padding(2);
+            this.txttotalpagar.Location = new System.Drawing.Point(1072, 382);
+            this.txttotalpagar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttotalpagar.Name = "txttotalpagar";
-            this.txttotalpagar.Size = new System.Drawing.Size(97, 20);
+            this.txttotalpagar.Size = new System.Drawing.Size(128, 22);
             this.txttotalpagar.TabIndex = 48;
             this.txttotalpagar.Text = "0";
             // 
@@ -89,9 +89,10 @@ namespace CapaPresentacion
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(800, 289);
+            this.label12.Location = new System.Drawing.Point(1067, 356);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(98, 17);
+            this.label12.Size = new System.Drawing.Size(114, 20);
             this.label12.TabIndex = 47;
             this.label12.Text = "Total a Pagar:";
             // 
@@ -116,7 +117,8 @@ namespace CapaPresentacion
             this.Cantidad,
             this.SubTotal,
             this.btneliminar});
-            this.dgvdata.Location = new System.Drawing.Point(172, 269);
+            this.dgvdata.Location = new System.Drawing.Point(229, 331);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -130,7 +132,7 @@ namespace CapaPresentacion
             this.dgvdata.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvdata.RowHeadersWidth = 62;
             this.dgvdata.RowTemplate.Height = 28;
-            this.dgvdata.Size = new System.Drawing.Size(625, 289);
+            this.dgvdata.Size = new System.Drawing.Size(833, 356);
             this.dgvdata.TabIndex = 45;
             this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
             this.dgvdata.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvdata_CellPainting);
@@ -158,6 +160,7 @@ namespace CapaPresentacion
             this.Precio.MinimumWidth = 8;
             this.Precio.Name = "Precio";
             this.Precio.ReadOnly = true;
+            this.Precio.Width = 125;
             // 
             // Cantidad
             // 
@@ -165,6 +168,7 @@ namespace CapaPresentacion
             this.Cantidad.MinimumWidth = 8;
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.ReadOnly = true;
+            this.Cantidad.Width = 125;
             // 
             // SubTotal
             // 
@@ -172,6 +176,7 @@ namespace CapaPresentacion
             this.SubTotal.MinimumWidth = 8;
             this.SubTotal.Name = "SubTotal";
             this.SubTotal.ReadOnly = true;
+            this.SubTotal.Width = 125;
             // 
             // btneliminar
             // 
@@ -196,11 +201,11 @@ namespace CapaPresentacion
             this.groupBox3.Controls.Add(this.txtcodproducto);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Location = new System.Drawing.Point(172, 175);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Location = new System.Drawing.Point(229, 215);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(625, 83);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Size = new System.Drawing.Size(833, 102);
             this.groupBox3.TabIndex = 44;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Información Producto";
@@ -208,15 +213,15 @@ namespace CapaPresentacion
             // txtcantidad
             // 
             this.txtcantidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtcantidad.Location = new System.Drawing.Point(527, 43);
-            this.txtcantidad.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcantidad.Location = new System.Drawing.Point(703, 53);
+            this.txtcantidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcantidad.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.txtcantidad.Name = "txtcantidad";
-            this.txtcantidad.Size = new System.Drawing.Size(80, 20);
+            this.txtcantidad.Size = new System.Drawing.Size(107, 22);
             this.txtcantidad.TabIndex = 36;
             this.txtcantidad.Value = new decimal(new int[] {
             1,
@@ -229,19 +234,20 @@ namespace CapaPresentacion
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(524, 18);
+            this.label11.Location = new System.Drawing.Point(699, 22);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(68, 17);
+            this.label11.Size = new System.Drawing.Size(80, 20);
             this.label11.TabIndex = 35;
             this.label11.Text = "Cantidad:";
             // 
             // txtstock
             // 
             this.txtstock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtstock.Location = new System.Drawing.Point(415, 43);
-            this.txtstock.Margin = new System.Windows.Forms.Padding(2);
+            this.txtstock.Location = new System.Drawing.Point(553, 53);
+            this.txtstock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtstock.Name = "txtstock";
-            this.txtstock.Size = new System.Drawing.Size(100, 20);
+            this.txtstock.Size = new System.Drawing.Size(132, 22);
             this.txtstock.TabIndex = 34;
             // 
             // label8
@@ -249,19 +255,20 @@ namespace CapaPresentacion
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(411, 18);
+            this.label8.Location = new System.Drawing.Point(548, 22);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 17);
+            this.label8.Size = new System.Drawing.Size(56, 20);
             this.label8.TabIndex = 33;
             this.label8.Text = "Stock:";
             // 
             // txtprecio
             // 
             this.txtprecio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtprecio.Location = new System.Drawing.Point(303, 45);
-            this.txtprecio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtprecio.Location = new System.Drawing.Point(404, 55);
+            this.txtprecio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtprecio.Name = "txtprecio";
-            this.txtprecio.Size = new System.Drawing.Size(100, 20);
+            this.txtprecio.Size = new System.Drawing.Size(132, 22);
             this.txtprecio.TabIndex = 32;
             this.txtprecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtprecio_KeyPress);
             // 
@@ -270,19 +277,20 @@ namespace CapaPresentacion
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(300, 19);
+            this.label7.Location = new System.Drawing.Point(400, 23);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 17);
+            this.label7.Size = new System.Drawing.Size(62, 20);
             this.label7.TabIndex = 31;
             this.label7.Text = "Precio:";
             // 
             // txtidproducto
             // 
             this.txtidproducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtidproducto.Location = new System.Drawing.Point(105, 21);
-            this.txtidproducto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtidproducto.Location = new System.Drawing.Point(140, 26);
+            this.txtidproducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtidproducto.Name = "txtidproducto";
-            this.txtidproducto.Size = new System.Drawing.Size(22, 20);
+            this.txtidproducto.Size = new System.Drawing.Size(28, 22);
             this.txtidproducto.TabIndex = 30;
             this.txtidproducto.Visible = false;
             // 
@@ -297,9 +305,10 @@ namespace CapaPresentacion
             this.btnbuscarproducto.IconColor = System.Drawing.Color.Black;
             this.btnbuscarproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscarproducto.IconSize = 16;
-            this.btnbuscarproducto.Location = new System.Drawing.Point(130, 45);
+            this.btnbuscarproducto.Location = new System.Drawing.Point(173, 55);
+            this.btnbuscarproducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnbuscarproducto.Name = "btnbuscarproducto";
-            this.btnbuscarproducto.Size = new System.Drawing.Size(28, 18);
+            this.btnbuscarproducto.Size = new System.Drawing.Size(37, 22);
             this.btnbuscarproducto.TabIndex = 29;
             this.btnbuscarproducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbuscarproducto.UseVisualStyleBackColor = false;
@@ -308,19 +317,19 @@ namespace CapaPresentacion
             // txtproducto
             // 
             this.txtproducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtproducto.Location = new System.Drawing.Point(169, 45);
-            this.txtproducto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtproducto.Location = new System.Drawing.Point(225, 55);
+            this.txtproducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtproducto.Name = "txtproducto";
-            this.txtproducto.Size = new System.Drawing.Size(121, 20);
+            this.txtproducto.Size = new System.Drawing.Size(160, 22);
             this.txtproducto.TabIndex = 27;
             // 
             // txtcodproducto
             // 
             this.txtcodproducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtcodproducto.Location = new System.Drawing.Point(8, 47);
-            this.txtcodproducto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcodproducto.Location = new System.Drawing.Point(11, 58);
+            this.txtcodproducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcodproducto.Name = "txtcodproducto";
-            this.txtcodproducto.Size = new System.Drawing.Size(119, 20);
+            this.txtcodproducto.Size = new System.Drawing.Size(157, 22);
             this.txtcodproducto.TabIndex = 26;
             this.txtcodproducto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtcodproducto_KeyDown);
             // 
@@ -329,9 +338,10 @@ namespace CapaPresentacion
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(165, 23);
+            this.label5.Location = new System.Drawing.Point(220, 28);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 17);
+            this.label5.Size = new System.Drawing.Size(81, 20);
             this.label5.TabIndex = 25;
             this.label5.Text = "Producto:";
             // 
@@ -340,9 +350,10 @@ namespace CapaPresentacion
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(5, 21);
+            this.label6.Location = new System.Drawing.Point(7, 26);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 17);
+            this.label6.Size = new System.Drawing.Size(120, 20);
             this.label6.TabIndex = 24;
             this.label6.Text = "Cod. Producto:";
             // 
@@ -353,11 +364,11 @@ namespace CapaPresentacion
             this.groupBox1.Controls.Add(this.txtfecha);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(172, 74);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(229, 91);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(326, 83);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(435, 102);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información Venta";
@@ -366,19 +377,19 @@ namespace CapaPresentacion
             // 
             this.cbotipodocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.cbotipodocumento.FormattingEnabled = true;
-            this.cbotipodocumento.Location = new System.Drawing.Point(141, 47);
-            this.cbotipodocumento.Margin = new System.Windows.Forms.Padding(2);
+            this.cbotipodocumento.Location = new System.Drawing.Point(188, 58);
+            this.cbotipodocumento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbotipodocumento.Name = "cbotipodocumento";
-            this.cbotipodocumento.Size = new System.Drawing.Size(176, 21);
+            this.cbotipodocumento.Size = new System.Drawing.Size(233, 24);
             this.cbotipodocumento.TabIndex = 27;
             // 
             // txtfecha
             // 
             this.txtfecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtfecha.Location = new System.Drawing.Point(8, 47);
-            this.txtfecha.Margin = new System.Windows.Forms.Padding(2);
+            this.txtfecha.Location = new System.Drawing.Point(11, 58);
+            this.txtfecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtfecha.Name = "txtfecha";
-            this.txtfecha.Size = new System.Drawing.Size(119, 20);
+            this.txtfecha.Size = new System.Drawing.Size(157, 22);
             this.txtfecha.TabIndex = 26;
             // 
             // label2
@@ -386,9 +397,10 @@ namespace CapaPresentacion
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(137, 25);
+            this.label2.Location = new System.Drawing.Point(183, 31);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 17);
+            this.label2.Size = new System.Drawing.Size(137, 20);
             this.label2.TabIndex = 25;
             this.label2.Text = "Tipo Documento:";
             // 
@@ -397,9 +409,10 @@ namespace CapaPresentacion
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(5, 21);
+            this.label1.Location = new System.Drawing.Point(7, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 17);
+            this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 24;
             this.label1.Text = "Fecha: ";
             // 
@@ -408,9 +421,10 @@ namespace CapaPresentacion
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(168, 35);
+            this.label9.Location = new System.Drawing.Point(224, 43);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(161, 25);
+            this.label9.Size = new System.Drawing.Size(203, 29);
             this.label9.TabIndex = 41;
             this.label9.Text = "Registrar Venta";
             // 
@@ -418,19 +432,20 @@ namespace CapaPresentacion
             // 
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(155, 20);
+            this.label10.Location = new System.Drawing.Point(207, 25);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(759, 562);
+            this.label10.Size = new System.Drawing.Size(1012, 692);
             this.label10.TabIndex = 40;
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtpagocon
             // 
             this.txtpagocon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtpagocon.Location = new System.Drawing.Point(804, 373);
-            this.txtpagocon.Margin = new System.Windows.Forms.Padding(2);
+            this.txtpagocon.Location = new System.Drawing.Point(1072, 459);
+            this.txtpagocon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpagocon.Name = "txtpagocon";
-            this.txtpagocon.Size = new System.Drawing.Size(97, 20);
+            this.txtpagocon.Size = new System.Drawing.Size(128, 22);
             this.txtpagocon.TabIndex = 51;
             this.txtpagocon.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtpagocon_KeyDown);
             this.txtpagocon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpagocon_KeyPress);
@@ -440,19 +455,20 @@ namespace CapaPresentacion
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.White;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(800, 352);
+            this.label13.Location = new System.Drawing.Point(1067, 433);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(72, 17);
+            this.label13.Size = new System.Drawing.Size(84, 20);
             this.label13.TabIndex = 50;
             this.label13.Text = "Paga con:";
             // 
             // txtcambio
             // 
             this.txtcambio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtcambio.Location = new System.Drawing.Point(804, 438);
-            this.txtcambio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcambio.Location = new System.Drawing.Point(1072, 539);
+            this.txtcambio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcambio.Name = "txtcambio";
-            this.txtcambio.Size = new System.Drawing.Size(97, 20);
+            this.txtcambio.Size = new System.Drawing.Size(128, 22);
             this.txtcambio.TabIndex = 53;
             // 
             // label14
@@ -460,9 +476,10 @@ namespace CapaPresentacion
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.White;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(800, 417);
+            this.label14.Location = new System.Drawing.Point(1067, 513);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(59, 17);
+            this.label14.Size = new System.Drawing.Size(71, 20);
             this.label14.TabIndex = 52;
             this.label14.Text = "Cambio:";
             // 
@@ -472,10 +489,10 @@ namespace CapaPresentacion
             this.btnregistrar.IconChar = FontAwesome.Sharp.IconChar.Tag;
             this.btnregistrar.IconColor = System.Drawing.Color.Blue;
             this.btnregistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnregistrar.Location = new System.Drawing.Point(805, 485);
-            this.btnregistrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnregistrar.Location = new System.Drawing.Point(1073, 597);
+            this.btnregistrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnregistrar.Name = "btnregistrar";
-            this.btnregistrar.Size = new System.Drawing.Size(96, 62);
+            this.btnregistrar.Size = new System.Drawing.Size(128, 76);
             this.btnregistrar.TabIndex = 49;
             this.btnregistrar.Text = "Crear Venta";
             this.btnregistrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -489,10 +506,10 @@ namespace CapaPresentacion
             this.btnagregarproducto.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.btnagregarproducto.IconColor = System.Drawing.Color.ForestGreen;
             this.btnagregarproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnagregarproducto.Location = new System.Drawing.Point(812, 183);
-            this.btnagregarproducto.Margin = new System.Windows.Forms.Padding(2);
+            this.btnagregarproducto.Location = new System.Drawing.Point(1083, 225);
+            this.btnagregarproducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnagregarproducto.Name = "btnagregarproducto";
-            this.btnagregarproducto.Size = new System.Drawing.Size(84, 72);
+            this.btnagregarproducto.Size = new System.Drawing.Size(112, 89);
             this.btnagregarproducto.TabIndex = 46;
             this.btnagregarproducto.Text = "Agregar";
             this.btnagregarproducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -505,18 +522,19 @@ namespace CapaPresentacion
             this.label3.BackColor = System.Drawing.Color.MediumVioletRed;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(325, 44);
+            this.label3.Location = new System.Drawing.Point(433, 54);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(590, 10);
+            this.label3.Size = new System.Drawing.Size(787, 12);
             this.label3.TabIndex = 241;
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // frmVentas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1044, 701);
+            this.BackColor = System.Drawing.Color.Pink;
+            this.ClientSize = new System.Drawing.Size(1392, 863);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtcambio);
             this.Controls.Add(this.label14);
@@ -532,6 +550,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventas";

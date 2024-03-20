@@ -289,7 +289,5 @@ namespace CapaPresentacion
                 row.Visible = true;
             }
         }
-
-     
     }
 }

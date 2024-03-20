@@ -69,9 +69,10 @@ namespace CapaPresentacion
             this.btndescargarexcel.IconColor = System.Drawing.Color.Black;
             this.btndescargarexcel.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btndescargarexcel.IconSize = 18;
-            this.btndescargarexcel.Location = new System.Drawing.Point(31, 134);
+            this.btndescargarexcel.Location = new System.Drawing.Point(41, 165);
+            this.btndescargarexcel.Margin = new System.Windows.Forms.Padding(4);
             this.btndescargarexcel.Name = "btndescargarexcel";
-            this.btndescargarexcel.Size = new System.Drawing.Size(128, 24);
+            this.btndescargarexcel.Size = new System.Drawing.Size(171, 30);
             this.btndescargarexcel.TabIndex = 73;
             this.btndescargarexcel.Text = "Descargar Excel";
             this.btndescargarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -89,9 +90,10 @@ namespace CapaPresentacion
             this.btnbuscar.IconColor = System.Drawing.Color.Black;
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscar.IconSize = 16;
-            this.btnbuscar.Location = new System.Drawing.Point(923, 134);
+            this.btnbuscar.Location = new System.Drawing.Point(1231, 165);
+            this.btnbuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(28, 23);
+            this.btnbuscar.Size = new System.Drawing.Size(37, 28);
             this.btnbuscar.TabIndex = 72;
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbuscar.UseVisualStyleBackColor = false;
@@ -108,9 +110,10 @@ namespace CapaPresentacion
             this.btnlimpiar.IconColor = System.Drawing.Color.Black;
             this.btnlimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnlimpiar.IconSize = 16;
-            this.btnlimpiar.Location = new System.Drawing.Point(957, 135);
+            this.btnlimpiar.Location = new System.Drawing.Point(1276, 166);
+            this.btnlimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnlimpiar.Name = "btnlimpiar";
-            this.btnlimpiar.Size = new System.Drawing.Size(28, 23);
+            this.btnlimpiar.Size = new System.Drawing.Size(37, 28);
             this.btnlimpiar.TabIndex = 71;
             this.btnlimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnlimpiar.UseVisualStyleBackColor = false;
@@ -118,27 +121,30 @@ namespace CapaPresentacion
             // 
             // txtbusqueda
             // 
-            this.txtbusqueda.Location = new System.Drawing.Point(730, 137);
+            this.txtbusqueda.Location = new System.Drawing.Point(973, 169);
+            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.txtbusqueda.Name = "txtbusqueda";
-            this.txtbusqueda.Size = new System.Drawing.Size(187, 20);
+            this.txtbusqueda.Size = new System.Drawing.Size(248, 22);
             this.txtbusqueda.TabIndex = 70;
             // 
             // cbobusqueda
             // 
             this.cbobusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbobusqueda.FormattingEnabled = true;
-            this.cbobusqueda.Location = new System.Drawing.Point(605, 137);
+            this.cbobusqueda.Location = new System.Drawing.Point(807, 169);
+            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.cbobusqueda.Name = "cbobusqueda";
-            this.cbobusqueda.Size = new System.Drawing.Size(119, 21);
+            this.cbobusqueda.Size = new System.Drawing.Size(157, 24);
             this.cbobusqueda.TabIndex = 69;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(541, 141);
+            this.label11.Location = new System.Drawing.Point(721, 174);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(61, 13);
+            this.label11.Size = new System.Drawing.Size(75, 16);
             this.label11.TabIndex = 68;
             this.label11.Text = "Buscar por:";
             // 
@@ -159,85 +165,110 @@ namespace CapaPresentacion
             this.PrecioVenta,
             this.Cantidad,
             this.SubTotal});
-            this.dgvdata.Location = new System.Drawing.Point(17, 176);
+            this.dgvdata.Location = new System.Drawing.Point(23, 217);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
-            this.dgvdata.Size = new System.Drawing.Size(1105, 381);
+            this.dgvdata.RowHeadersWidth = 51;
+            this.dgvdata.Size = new System.Drawing.Size(1473, 469);
             this.dgvdata.TabIndex = 67;
             // 
             // FechaRegistro
             // 
             this.FechaRegistro.HeaderText = "Fecha Registro";
+            this.FechaRegistro.MinimumWidth = 6;
             this.FechaRegistro.Name = "FechaRegistro";
             this.FechaRegistro.ReadOnly = true;
+            this.FechaRegistro.Width = 125;
             // 
             // TipoDocumento
             // 
             this.TipoDocumento.HeaderText = "Tipo Documento";
+            this.TipoDocumento.MinimumWidth = 6;
             this.TipoDocumento.Name = "TipoDocumento";
             this.TipoDocumento.ReadOnly = true;
+            this.TipoDocumento.Width = 125;
             // 
             // NumeroDocumento
             // 
             this.NumeroDocumento.HeaderText = "Numero Documento";
+            this.NumeroDocumento.MinimumWidth = 6;
             this.NumeroDocumento.Name = "NumeroDocumento";
             this.NumeroDocumento.ReadOnly = true;
+            this.NumeroDocumento.Width = 125;
             // 
             // MontoTotal
             // 
             this.MontoTotal.HeaderText = "Monto Total";
+            this.MontoTotal.MinimumWidth = 6;
             this.MontoTotal.Name = "MontoTotal";
             this.MontoTotal.ReadOnly = true;
+            this.MontoTotal.Width = 125;
             // 
             // UsuarioRegistro
             // 
             this.UsuarioRegistro.HeaderText = "Usuario Registro";
+            this.UsuarioRegistro.MinimumWidth = 6;
             this.UsuarioRegistro.Name = "UsuarioRegistro";
             this.UsuarioRegistro.ReadOnly = true;
+            this.UsuarioRegistro.Width = 125;
             // 
             // CodigoProducto
             // 
             this.CodigoProducto.HeaderText = "Codigo Producto";
+            this.CodigoProducto.MinimumWidth = 6;
             this.CodigoProducto.Name = "CodigoProducto";
             this.CodigoProducto.ReadOnly = true;
+            this.CodigoProducto.Width = 125;
             // 
             // NombreProducto
             // 
             this.NombreProducto.HeaderText = "Nombre Producto";
+            this.NombreProducto.MinimumWidth = 6;
             this.NombreProducto.Name = "NombreProducto";
             this.NombreProducto.ReadOnly = true;
+            this.NombreProducto.Width = 125;
             // 
             // Categoria
             // 
             this.Categoria.HeaderText = "Categoria";
+            this.Categoria.MinimumWidth = 6;
             this.Categoria.Name = "Categoria";
             this.Categoria.ReadOnly = true;
+            this.Categoria.Width = 125;
             // 
             // PrecioVenta
             // 
             this.PrecioVenta.HeaderText = "Precio Venta";
+            this.PrecioVenta.MinimumWidth = 6;
             this.PrecioVenta.Name = "PrecioVenta";
             this.PrecioVenta.ReadOnly = true;
+            this.PrecioVenta.Width = 125;
             // 
             // Cantidad
             // 
             this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.MinimumWidth = 6;
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.ReadOnly = true;
+            this.Cantidad.Width = 125;
             // 
             // SubTotal
             // 
             this.SubTotal.HeaderText = "Sub Total";
+            this.SubTotal.MinimumWidth = 6;
             this.SubTotal.Name = "SubTotal";
             this.SubTotal.ReadOnly = true;
+            this.SubTotal.Width = 125;
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 119);
+            this.label4.Location = new System.Drawing.Point(16, 146);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(1120, 451);
+            this.label4.Size = new System.Drawing.Size(1493, 555);
             this.label4.TabIndex = 66;
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -250,9 +281,10 @@ namespace CapaPresentacion
             this.btnbuscarreporte.IconColor = System.Drawing.Color.Black;
             this.btnbuscarreporte.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscarreporte.IconSize = 18;
-            this.btnbuscarreporte.Location = new System.Drawing.Point(426, 47);
+            this.btnbuscarreporte.Location = new System.Drawing.Point(568, 74);
+            this.btnbuscarreporte.Margin = new System.Windows.Forms.Padding(4);
             this.btnbuscarreporte.Name = "btnbuscarreporte";
-            this.btnbuscarreporte.Size = new System.Drawing.Size(75, 24);
+            this.btnbuscarreporte.Size = new System.Drawing.Size(100, 30);
             this.btnbuscarreporte.TabIndex = 65;
             this.btnbuscarreporte.Text = "Buscar";
             this.btnbuscarreporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -263,9 +295,10 @@ namespace CapaPresentacion
             // 
             this.txtfechafin.CustomFormat = "dd/MM/yyyy";
             this.txtfechafin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtfechafin.Location = new System.Drawing.Point(313, 50);
+            this.txtfechafin.Location = new System.Drawing.Point(417, 78);
+            this.txtfechafin.Margin = new System.Windows.Forms.Padding(4);
             this.txtfechafin.Name = "txtfechafin";
-            this.txtfechafin.Size = new System.Drawing.Size(89, 20);
+            this.txtfechafin.Size = new System.Drawing.Size(117, 22);
             this.txtfechafin.TabIndex = 61;
             // 
             // label2
@@ -273,9 +306,10 @@ namespace CapaPresentacion
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(224, 51);
+            this.label2.Location = new System.Drawing.Point(299, 79);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 16);
+            this.label2.Size = new System.Drawing.Size(88, 20);
             this.label2.TabIndex = 62;
             this.label2.Text = "Fecha Fin:";
             // 
@@ -283,9 +317,10 @@ namespace CapaPresentacion
             // 
             this.txtfechainicio.CustomFormat = "dd/MM/yyyy";
             this.txtfechainicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtfechainicio.Location = new System.Drawing.Point(117, 50);
+            this.txtfechainicio.Location = new System.Drawing.Point(156, 78);
+            this.txtfechainicio.Margin = new System.Windows.Forms.Padding(4);
             this.txtfechainicio.Name = "txtfechainicio";
-            this.txtfechainicio.Size = new System.Drawing.Size(89, 20);
+            this.txtfechainicio.Size = new System.Drawing.Size(117, 22);
             this.txtfechainicio.TabIndex = 57;
             // 
             // label1
@@ -293,9 +328,10 @@ namespace CapaPresentacion
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 51);
+            this.label1.Location = new System.Drawing.Point(37, 79);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 16);
+            this.label1.Size = new System.Drawing.Size(104, 20);
             this.label1.TabIndex = 60;
             this.label1.Text = "Fecha Inicio:";
             // 
@@ -304,9 +340,10 @@ namespace CapaPresentacion
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(28, 22);
+            this.label9.Location = new System.Drawing.Point(37, 43);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(136, 20);
+            this.label9.Size = new System.Drawing.Size(161, 25);
             this.label9.TabIndex = 59;
             this.label9.Text = "Reporte Ventas";
             // 
@@ -314,9 +351,10 @@ namespace CapaPresentacion
             // 
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(12, 10);
+            this.label10.Location = new System.Drawing.Point(16, 12);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(1120, 98);
+            this.label10.Size = new System.Drawing.Size(1493, 121);
             this.label10.TabIndex = 58;
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -325,18 +363,19 @@ namespace CapaPresentacion
             this.label3.BackColor = System.Drawing.Color.MediumVioletRed;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(163, 28);
+            this.label3.Location = new System.Drawing.Point(217, 50);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(970, 10);
+            this.label3.Size = new System.Drawing.Size(1293, 12);
             this.label3.TabIndex = 242;
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // frmReporteVentas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1144, 581);
+            this.BackColor = System.Drawing.Color.Pink;
+            this.ClientSize = new System.Drawing.Size(1525, 715);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btndescargarexcel);
             this.Controls.Add(this.btnbuscar);
@@ -354,6 +393,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmReporteVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReporteVentas";
