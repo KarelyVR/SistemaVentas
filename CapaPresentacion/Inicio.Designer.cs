@@ -57,6 +57,7 @@ namespace CapaPresentacion
             this.label2 = new System.Windows.Forms.Label();
             this.lblusuario = new System.Windows.Forms.Label();
             this.btnsalir = new FontAwesome.Sharp.IconButton();
+            this.reembolsoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu.SuspendLayout();
             this.contenedor.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -119,7 +120,7 @@ namespace CapaPresentacion
             this.submenucategoria.IconColor = System.Drawing.Color.Black;
             this.submenucategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenucategoria.Name = "submenucategoria";
-            this.submenucategoria.Size = new System.Drawing.Size(157, 26);
+            this.submenucategoria.Size = new System.Drawing.Size(224, 26);
             this.submenucategoria.Text = "Categoria";
             this.submenucategoria.Click += new System.EventHandler(this.submenucategoria_Click);
             // 
@@ -129,7 +130,7 @@ namespace CapaPresentacion
             this.submenuproducto.IconColor = System.Drawing.Color.Black;
             this.submenuproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuproducto.Name = "submenuproducto";
-            this.submenuproducto.Size = new System.Drawing.Size(157, 26);
+            this.submenuproducto.Size = new System.Drawing.Size(224, 26);
             this.submenuproducto.Text = "Producto";
             this.submenuproducto.Click += new System.EventHandler(this.submenuproducto_Click);
             // 
@@ -138,7 +139,8 @@ namespace CapaPresentacion
             this.menuventas.AutoSize = false;
             this.menuventas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.submenuregistrarventa,
-            this.submenudetalleventa});
+            this.submenudetalleventa,
+            this.reembolsoToolStripMenuItem});
             this.menuventas.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.menuventas.IconChar = FontAwesome.Sharp.IconChar.Tags;
             this.menuventas.IconColor = System.Drawing.Color.MediumVioletRed;
@@ -156,7 +158,7 @@ namespace CapaPresentacion
             this.submenuregistrarventa.IconColor = System.Drawing.Color.Black;
             this.submenuregistrarventa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuregistrarventa.Name = "submenuregistrarventa";
-            this.submenuregistrarventa.Size = new System.Drawing.Size(165, 26);
+            this.submenuregistrarventa.Size = new System.Drawing.Size(224, 26);
             this.submenuregistrarventa.Text = "Registrar";
             this.submenuregistrarventa.Click += new System.EventHandler(this.submenuregistrarventa_Click);
             // 
@@ -166,7 +168,7 @@ namespace CapaPresentacion
             this.submenudetalleventa.IconColor = System.Drawing.Color.Black;
             this.submenudetalleventa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenudetalleventa.Name = "submenudetalleventa";
-            this.submenudetalleventa.Size = new System.Drawing.Size(165, 26);
+            this.submenudetalleventa.Size = new System.Drawing.Size(224, 26);
             this.submenudetalleventa.Text = "Ver Detalle";
             this.submenudetalleventa.Click += new System.EventHandler(this.submenudetalleventa_Click);
             // 
@@ -193,7 +195,7 @@ namespace CapaPresentacion
             this.submenuregistrarcompra.IconColor = System.Drawing.Color.Black;
             this.submenuregistrarcompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuregistrarcompra.Name = "submenuregistrarcompra";
-            this.submenuregistrarcompra.Size = new System.Drawing.Size(165, 26);
+            this.submenuregistrarcompra.Size = new System.Drawing.Size(224, 26);
             this.submenuregistrarcompra.Text = "Registrar";
             this.submenuregistrarcompra.Click += new System.EventHandler(this.submenuregistrarcompra_Click);
             // 
@@ -203,7 +205,7 @@ namespace CapaPresentacion
             this.submenudetallecompra.IconColor = System.Drawing.Color.Black;
             this.submenudetallecompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenudetallecompra.Name = "submenudetallecompra";
-            this.submenudetallecompra.Size = new System.Drawing.Size(165, 26);
+            this.submenudetallecompra.Size = new System.Drawing.Size(224, 26);
             this.submenudetallecompra.Text = "Ver Detalle";
             this.submenudetallecompra.Click += new System.EventHandler(this.submenudetallecompra_Click);
             // 
@@ -242,14 +244,14 @@ namespace CapaPresentacion
             // submenureportecompras
             // 
             this.submenureportecompras.Name = "submenureportecompras";
-            this.submenureportecompras.Size = new System.Drawing.Size(208, 26);
+            this.submenureportecompras.Size = new System.Drawing.Size(224, 26);
             this.submenureportecompras.Text = "Reporte Compras";
             this.submenureportecompras.Click += new System.EventHandler(this.submenureportecompras_Click);
             // 
             // submenureporteventas
             // 
             this.submenureporteventas.Name = "submenureporteventas";
-            this.submenureporteventas.Size = new System.Drawing.Size(208, 26);
+            this.submenureporteventas.Size = new System.Drawing.Size(224, 26);
             this.submenureporteventas.Text = "Reporte Ventas";
             this.submenureporteventas.Click += new System.EventHandler(this.submenureporteventas_Click);
             // 
@@ -299,7 +301,7 @@ namespace CapaPresentacion
             this.contenedor.Controls.Add(this.panel1);
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.Location = new System.Drawing.Point(0, 131);
-            this.contenedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.contenedor.Margin = new System.Windows.Forms.Padding(4);
             this.contenedor.Name = "contenedor";
             this.contenedor.Size = new System.Drawing.Size(1528, 761);
             this.contenedor.TabIndex = 3;
@@ -311,7 +313,7 @@ namespace CapaPresentacion
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.Instrucciones);
             this.panel1.Location = new System.Drawing.Point(225, 119);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1080, 485);
             this.panel1.TabIndex = 1;
@@ -342,7 +344,7 @@ namespace CapaPresentacion
             // 
             this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.logo_tienda;
             this.pictureBox1.Location = new System.Drawing.Point(624, 41);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(367, 310);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -396,13 +398,19 @@ namespace CapaPresentacion
             this.btnsalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnsalir.IconSize = 40;
             this.btnsalir.Location = new System.Drawing.Point(1432, 0);
-            this.btnsalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnsalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.btnsalir.Size = new System.Drawing.Size(80, 58);
             this.btnsalir.TabIndex = 6;
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
+            // reembolsoToolStripMenuItem
+            // 
+            this.reembolsoToolStripMenuItem.Name = "reembolsoToolStripMenuItem";
+            this.reembolsoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.reembolsoToolStripMenuItem.Text = "Reembolso";
             // 
             // Inicio
             // 
@@ -419,7 +427,7 @@ namespace CapaPresentacion
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menu;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -464,6 +472,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Instrucciones;
+        private System.Windows.Forms.ToolStripMenuItem reembolsoToolStripMenuItem;
     }
 }
 

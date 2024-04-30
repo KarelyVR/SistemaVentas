@@ -200,7 +200,7 @@ namespace CapaPresentacion
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscar.IconSize = 16;
             this.btnbuscar.Location = new System.Drawing.Point(153, 58);
-            this.btnbuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnbuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(37, 22);
             this.btnbuscar.TabIndex = 29;
@@ -371,7 +371,7 @@ namespace CapaPresentacion
             this.btnbuscarproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscarproducto.IconSize = 16;
             this.btnbuscarproducto.Location = new System.Drawing.Point(173, 55);
-            this.btnbuscarproducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnbuscarproducto.Margin = new System.Windows.Forms.Padding(4);
             this.btnbuscarproducto.Name = "btnbuscarproducto";
             this.btnbuscarproducto.Size = new System.Drawing.Size(37, 22);
             this.btnbuscarproducto.TabIndex = 29;
@@ -445,7 +445,7 @@ namespace CapaPresentacion
             this.SubTotal,
             this.btneliminar});
             this.dgvdata.Location = new System.Drawing.Point(52, 327);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -582,7 +582,7 @@ namespace CapaPresentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(1253, 757);
+            this.ClientSize = new System.Drawing.Size(1102, 757);
             this.Controls.Add(this.btnregistrar);
             this.Controls.Add(this.txttotalpagar);
             this.Controls.Add(this.label12);
@@ -594,7 +594,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCompras";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Compras";

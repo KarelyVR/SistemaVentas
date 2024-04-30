@@ -54,7 +54,7 @@
             this.label1.Location = new System.Drawing.Point(199, 45);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 16);
+            this.label1.Size = new System.Drawing.Size(94, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Acerca de";
             // 
@@ -91,7 +91,7 @@
             this.label4.Location = new System.Drawing.Point(178, 175);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 16);
+            this.label4.Size = new System.Drawing.Size(156, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Desarrollado por:";
             // 
@@ -185,7 +185,7 @@
             this.label12.Location = new System.Drawing.Point(199, 379);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(69, 16);
+            this.label12.Size = new System.Drawing.Size(84, 20);
             this.label12.TabIndex = 60;
             this.label12.Text = "Contacto";
             // 
@@ -225,9 +225,9 @@
             this.btndescargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btndescargar.IconSize = 17;
             this.btndescargar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btndescargar.Location = new System.Drawing.Point(150, 507);
+            this.btndescargar.Location = new System.Drawing.Point(131, 501);
             this.btndescargar.Name = "btndescargar";
-            this.btndescargar.Size = new System.Drawing.Size(200, 30);
+            this.btndescargar.Size = new System.Drawing.Size(242, 34);
             this.btndescargar.TabIndex = 221;
             this.btndescargar.Text = "Descargar Manual de usuario";
             this.btndescargar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -237,9 +237,9 @@
             // 
             // mdAcercade
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PowderBlue;
+            this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(499, 584);
             this.Controls.Add(this.btndescargar);
             this.Controls.Add(this.label14);

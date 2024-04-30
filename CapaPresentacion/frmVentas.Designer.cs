@@ -77,7 +77,7 @@ namespace CapaPresentacion
             // txttotalpagar
             // 
             this.txttotalpagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txttotalpagar.Location = new System.Drawing.Point(1072, 382);
+            this.txttotalpagar.Location = new System.Drawing.Point(891, 377);
             this.txttotalpagar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttotalpagar.Name = "txttotalpagar";
             this.txttotalpagar.Size = new System.Drawing.Size(128, 22);
@@ -89,7 +89,7 @@ namespace CapaPresentacion
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(1067, 356);
+            this.label12.Location = new System.Drawing.Point(886, 351);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(114, 20);
@@ -117,8 +117,8 @@ namespace CapaPresentacion
             this.Cantidad,
             this.SubTotal,
             this.btneliminar});
-            this.dgvdata.Location = new System.Drawing.Point(229, 331);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdata.Location = new System.Drawing.Point(48, 326);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -201,7 +201,7 @@ namespace CapaPresentacion
             this.groupBox3.Controls.Add(this.txtcodproducto);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Location = new System.Drawing.Point(229, 215);
+            this.groupBox3.Location = new System.Drawing.Point(48, 210);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -306,7 +306,7 @@ namespace CapaPresentacion
             this.btnbuscarproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscarproducto.IconSize = 16;
             this.btnbuscarproducto.Location = new System.Drawing.Point(173, 55);
-            this.btnbuscarproducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnbuscarproducto.Margin = new System.Windows.Forms.Padding(4);
             this.btnbuscarproducto.Name = "btnbuscarproducto";
             this.btnbuscarproducto.Size = new System.Drawing.Size(37, 22);
             this.btnbuscarproducto.TabIndex = 29;
@@ -364,7 +364,7 @@ namespace CapaPresentacion
             this.groupBox1.Controls.Add(this.txtfecha);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(229, 91);
+            this.groupBox1.Location = new System.Drawing.Point(48, 86);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -421,7 +421,7 @@ namespace CapaPresentacion
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(224, 43);
+            this.label9.Location = new System.Drawing.Point(43, 38);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(203, 29);
@@ -432,7 +432,7 @@ namespace CapaPresentacion
             // 
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(207, 25);
+            this.label10.Location = new System.Drawing.Point(26, 20);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(1012, 692);
@@ -442,7 +442,7 @@ namespace CapaPresentacion
             // txtpagocon
             // 
             this.txtpagocon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtpagocon.Location = new System.Drawing.Point(1072, 459);
+            this.txtpagocon.Location = new System.Drawing.Point(891, 454);
             this.txtpagocon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpagocon.Name = "txtpagocon";
             this.txtpagocon.Size = new System.Drawing.Size(128, 22);
@@ -455,7 +455,7 @@ namespace CapaPresentacion
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.White;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(1067, 433);
+            this.label13.Location = new System.Drawing.Point(886, 428);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(84, 20);
@@ -465,7 +465,7 @@ namespace CapaPresentacion
             // txtcambio
             // 
             this.txtcambio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtcambio.Location = new System.Drawing.Point(1072, 539);
+            this.txtcambio.Location = new System.Drawing.Point(891, 534);
             this.txtcambio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcambio.Name = "txtcambio";
             this.txtcambio.Size = new System.Drawing.Size(128, 22);
@@ -476,7 +476,7 @@ namespace CapaPresentacion
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.White;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(1067, 513);
+            this.label14.Location = new System.Drawing.Point(886, 508);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(71, 20);
@@ -489,7 +489,7 @@ namespace CapaPresentacion
             this.btnregistrar.IconChar = FontAwesome.Sharp.IconChar.Tag;
             this.btnregistrar.IconColor = System.Drawing.Color.Blue;
             this.btnregistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnregistrar.Location = new System.Drawing.Point(1073, 597);
+            this.btnregistrar.Location = new System.Drawing.Point(892, 592);
             this.btnregistrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnregistrar.Name = "btnregistrar";
             this.btnregistrar.Size = new System.Drawing.Size(128, 76);
@@ -506,7 +506,7 @@ namespace CapaPresentacion
             this.btnagregarproducto.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.btnagregarproducto.IconColor = System.Drawing.Color.ForestGreen;
             this.btnagregarproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnagregarproducto.Location = new System.Drawing.Point(1083, 225);
+            this.btnagregarproducto.Location = new System.Drawing.Point(902, 220);
             this.btnagregarproducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnagregarproducto.Name = "btnagregarproducto";
             this.btnagregarproducto.Size = new System.Drawing.Size(112, 89);
@@ -522,7 +522,7 @@ namespace CapaPresentacion
             this.label3.BackColor = System.Drawing.Color.MediumVioletRed;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(433, 54);
+            this.label3.Location = new System.Drawing.Point(252, 49);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(787, 12);
@@ -534,7 +534,7 @@ namespace CapaPresentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(1392, 863);
+            this.ClientSize = new System.Drawing.Size(1061, 737);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtcambio);
             this.Controls.Add(this.label14);
@@ -550,7 +550,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventas";
