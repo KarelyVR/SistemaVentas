@@ -88,5 +88,33 @@ namespace CapaNegocio
         {
             return objcd_usuario.Eliminar(obj, out Mensaje);
         }
+
+        //metodo de capa de datos que retorna el procedimiento de editar contraseña
+        public bool EditarClave(Usuario obj, out string Mensaje)
+        {
+            Mensaje = string.Empty;
+
+            if (obj.Documento == "")
+            {
+                Mensaje += "Es necesario el documento del usuario\n";
+            }
+
+
+            if (obj.Clave == "")
+            {
+                Mensaje += "Es necesaria la clave del usuario\n";
+            }
+
+            if (Mensaje != string.Empty)
+            {
+                return false;
+            }
+
+            else
+            {
+                return objcd_usuario.EditarClave(obj, out Mensaje);
+            }
+
+        }
     }
 }

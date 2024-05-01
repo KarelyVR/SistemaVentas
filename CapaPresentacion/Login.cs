@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 using CapaNegocio;
 using CapaEntidad;
+using System.Windows.Controls;
+using System.Reflection.Emit;
 
 /*
 using System.Data.Sql;
@@ -65,6 +67,84 @@ namespace CapaPresentacion
             this.Show();
         }
 
-        
+        private void lblRecuperarContra_Click(object sender, EventArgs e)
+        {
+            //muestra los botones y etiquetas para ingresar nueva contraseña 
+
+            lblRecuperarContra.Visible = false;
+            this.BackColor = Color.LightCyan;
+            label5.Visible = true;
+
+            btningresar.Visible = false;
+            btncancelar.Visible = false;
+
+            btnAceptar.Visible = true;
+            btnCancelar2.Visible = true;
+
+            label4.Text = "Nueva contraseña";
+
+        }
+
+        private void btnCancelar2_Click(object sender, EventArgs e)
+        {
+            // oculta los botones y etiquetas para ingresar nueva contraseña
+
+            lblRecuperarContra.Visible = true;
+            this.BackColor = Color.AliceBlue;
+            label5.Visible = false;
+
+            btningresar.Visible = true;
+            btncancelar.Visible = true;
+
+            btnAceptar.Visible = false;
+            btnCancelar2.Visible = false;
+
+            label4.Text = "Contraseña";
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+
+            // Listar los usuarios
+            List<Usuario> usuarios = new CN_Usuario().Listar();
+
+            // Buscar al usuario dentro de la lista
+            Usuario usuario = usuarios.FirstOrDefault(u => u.Documento == txtdocumento.Text);
+
+            // VALIDACIÓN para saber si encontró o no al usuario
+            if (usuario != null)
+            {
+                // Modificas la contraseña del usuario según lo que se haya ingresado en el txtNuevaContraseña
+                usuario.Clave = txtclave.Text;
+
+                // Aquí debes llamar a tu método de editar usuario para guardar los cambios
+                string mensaje;
+                bool resultado = new CN_Usuario().EditarClave(usuario, out mensaje);
+
+                if (resultado)
+                {
+                    MessageBox.Show("Se ha cambiado la contraseña correctamente", "ÉXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
+                    //los botones y etiquetas vuelven a su lugar
+                    lblRecuperarContra.Visible = true;
+                    this.BackColor = Color.AliceBlue;
+                    label5.Visible = false;
+
+                    btningresar.Visible = true;
+                    btncancelar.Visible = true;
+
+                    btnAceptar.Visible = false;
+                    btnCancelar2.Visible = false;
+
+                    label4.Text = "Contraseña";
+                    txtdocumento.Text = "";
+                    txtclave.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show(mensaje, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+        }
     }
 }
