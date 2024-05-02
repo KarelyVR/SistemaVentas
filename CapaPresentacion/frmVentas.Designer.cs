@@ -68,10 +68,12 @@ namespace CapaPresentacion
             this.btnregistrar = new FontAwesome.Sharp.IconButton();
             this.btnagregarproducto = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
+            this.PLogo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtcantidad)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // txttotalpagar
@@ -529,6 +531,18 @@ namespace CapaPresentacion
             this.label3.TabIndex = 241;
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // PLogo
+            // 
+            this.PLogo.BackColor = System.Drawing.Color.White;
+            this.PLogo.Image = global::CapaPresentacion.Properties.Resources.logo_tienda;
+            this.PLogo.Location = new System.Drawing.Point(4, 84);
+            this.PLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.PLogo.Name = "PLogo";
+            this.PLogo.Size = new System.Drawing.Size(184, 146);
+            this.PLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PLogo.TabIndex = 242;
+            this.PLogo.TabStop = false;
+            // 
             // frmVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -549,6 +563,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
+            this.Controls.Add(this.PLogo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmVentas";
@@ -561,6 +576,7 @@ namespace CapaPresentacion
             ((System.ComponentModel.ISupportInitialize)(this.txtcantidad)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -604,5 +620,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
         private System.Windows.Forms.DataGridViewButtonColumn btneliminar;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox PLogo;
     }
 }

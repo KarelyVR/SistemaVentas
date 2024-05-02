@@ -2,6 +2,7 @@
 using CapaNegocio;
 using CapaPresentacion.Modales;
 using CapaPresentacion.Utilidades;
+using DocumentFormat.OpenXml.Bibliography;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -285,6 +286,8 @@ namespace CapaPresentacion
                 {
                     decimal cambio = pagacon - total;
                     txtcambio.Text = cambio.ToString("0.00");
+                    decimal pagocon = Convert.ToDecimal(txtpagocon.Text);
+                    txtpagocon.Text = pagocon.ToString("0.00");
                 }
             }
         }
@@ -299,7 +302,7 @@ namespace CapaPresentacion
 
         private void btnregistrar_Click(object sender, EventArgs e)
         {
-            if(txtpagocon.Text.Trim() == "")
+            if (txtpagocon.Text.Trim() == "")
             {
                 MessageBox.Show("Debe ingresar un pago para la venta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
@@ -342,6 +345,29 @@ namespace CapaPresentacion
                 MontoTotal = Convert.ToDecimal(txttotalpagar.Text),
             };
 
+            CrearTicket ticket = new CrearTicket();
+            ProductosVenta productos = new ProductosVenta();
+            ticket.empresa = "Abarrotes Dani";
+            ticket.direccion = "Del Limon 223, col. Los Cipreses, San Nicolás de los Garza";
+            ticket.telefono = "8119920181";
+            ticket.MontoTotal = txttotalpagar.Text;
+            decimal montopagocon = Convert.ToDecimal(txtpagocon.Text);
+            txtpagocon.Text = montopagocon.ToString("0.00");
+            ticket.MontoPagoCon = txtpagocon.Text;
+            ticket.MontoCambio = txtcambio.Text;
+            ticket.logo = PLogo.Image;
+            ticket.imprimir(ticket);
+
+            for (int i = 0; i < dgvdata.Rows.Count; i++)
+            {
+                productos = new ProductosVenta();
+                productos.producto = Convert.ToString(dgvdata.Rows[i].Cells[1].Value);
+                productos.precio = Convert.ToDecimal(dgvdata.Rows[i].Cells[2].Value);
+                productos.cantidad = Convert.ToInt32(dgvdata.Rows[i].Cells[3].Value);
+                productos.subtotal = Convert.ToDecimal(dgvdata.Rows[i].Cells[4].Value);
+                ticket.listaProductos.Add(productos);
+            }
+
             string mensaje = string.Empty;
             bool respuesta = new CN_Venta().Registrar(oVenta,detalle_venta, out mensaje);
 
@@ -351,6 +377,9 @@ namespace CapaPresentacion
 
                 if (result == DialogResult.Yes)
                     Clipboard.SetText(numeroDocumento);
+                
+
+                
                 dgvdata.Rows.Clear();
                 calcularTotal();
                 txtpagocon.Text = "";
@@ -360,6 +389,5 @@ namespace CapaPresentacion
                 MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
         }
-
     }
 }
