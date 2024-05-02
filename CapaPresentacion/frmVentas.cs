@@ -26,10 +26,6 @@ namespace CapaPresentacion
 
         private void frmVentas_Load(object sender, EventArgs e)
         {
-            cbotipodocumento.Items.Add(new OpcionCombo() { Valor = "Boleta", Texto = "Boleta" });
-            cbotipodocumento.Items.Add(new OpcionCombo() { Valor = "Factura", Texto = "Factura" });
-            cbotipodocumento.DisplayMember = "Texto";
-            cbotipodocumento.ValueMember = "Valor";
             cbotipodocumento.SelectedIndex = 0;
 
             txtfecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
@@ -338,35 +334,48 @@ namespace CapaPresentacion
             Venta oVenta = new Venta()
             {
                 oUsuario = new Usuario() { IdUsuario = _Usuario.IdUsuario },
-                TipoDocumento = ((OpcionCombo)cbotipodocumento.SelectedItem).Texto,
+                TipoDocumento = (cbotipodocumento.SelectedItem).ToString(),
                 NumeroDocumento = numeroDocumento,
                 MontoPago = Convert.ToDecimal(txtpagocon.Text),
                 MontoCambio = Convert.ToDecimal(txtcambio.Text),
                 MontoTotal = Convert.ToDecimal(txttotalpagar.Text),
             };
 
-            CrearTicket ticket = new CrearTicket();
-            ProductosVenta productos = new ProductosVenta();
-            ticket.empresa = "Abarrotes Dani";
-            ticket.direccion = "Del Limon 223, col. Los Cipreses, San Nicolás de los Garza";
-            ticket.telefono = "8119920181";
-            ticket.MontoTotal = txttotalpagar.Text;
-            decimal montopagocon = Convert.ToDecimal(txtpagocon.Text);
-            txtpagocon.Text = montopagocon.ToString("0.00");
-            ticket.MontoPagoCon = txtpagocon.Text;
-            ticket.MontoCambio = txtcambio.Text;
-            ticket.logo = PLogo.Image;
-            ticket.imprimir(ticket);
-
-            for (int i = 0; i < dgvdata.Rows.Count; i++)
+            int tipodocumento = cbotipodocumento.SelectedIndex;
+            if (tipodocumento == 1)
             {
-                productos = new ProductosVenta();
-                productos.producto = Convert.ToString(dgvdata.Rows[i].Cells[1].Value);
-                productos.precio = Convert.ToDecimal(dgvdata.Rows[i].Cells[2].Value);
-                productos.cantidad = Convert.ToInt32(dgvdata.Rows[i].Cells[3].Value);
-                productos.subtotal = Convert.ToDecimal(dgvdata.Rows[i].Cells[4].Value);
-                ticket.listaProductos.Add(productos);
+                frmFacturacion facturacion = new frmFacturacion();
+                facturacion.Show();
             }
+            CrearTicket ticket = new CrearTicket();
+            {
+                ProductosVenta productos = new ProductosVenta();
+                ticket.empresa = "Abarrotes Dani";
+                ticket.direccion = "Del Limon 223, col. Los Cipreses, San Nicolás de los Garza";
+                ticket.telefono = "8119920181";
+                ticket.fecha = DateTime.Now.ToString("dd/MM/yyyy H:m:ss");
+                Usuario oUsuario = new Usuario() { NombreCompleto = _Usuario.NombreCompleto };
+                ticket.vendedor = oUsuario.NombreCompleto;
+                ticket.MontoTotal = txttotalpagar.Text;
+                decimal montopagocon = Convert.ToDecimal(txtpagocon.Text);
+                txtpagocon.Text = montopagocon.ToString("0.00");
+                ticket.MontoPagoCon = txtpagocon.Text;
+                ticket.MontoCambio = txtcambio.Text;
+                ticket.logo = PLogo.Image;
+                ticket.imprimir(ticket);
+
+                for (int i = 0; i < dgvdata.Rows.Count; i++)
+                {
+                    productos = new ProductosVenta();
+                    productos.producto = Convert.ToString(dgvdata.Rows[i].Cells[1].Value);
+                    productos.precio = Convert.ToDecimal(dgvdata.Rows[i].Cells[2].Value);
+                    productos.cantidad = Convert.ToInt32(dgvdata.Rows[i].Cells[3].Value);
+                    productos.subtotal = Convert.ToDecimal(dgvdata.Rows[i].Cells[4].Value);
+                    ticket.listaProductos.Add(productos);
+                }
+            }
+
+            
 
             string mensaje = string.Empty;
             bool respuesta = new CN_Venta().Registrar(oVenta,detalle_venta, out mensaje);

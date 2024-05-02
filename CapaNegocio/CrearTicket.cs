@@ -17,6 +17,8 @@ namespace CapaNegocio
         public string empresa {  get; set; }
         public string direccion { get; set;}
         public string telefono { get; set;}
+        public string fecha { get; set; }
+        public string vendedor { get; set; }
         public Image logo { get; set;}
 
         public string MontoTotal { get; set; }
@@ -49,6 +51,7 @@ namespace CapaNegocio
                 posX = 10;
                 posY = 10;
                 e.Graphics.DrawImage(logo, 15, 20, 100, 100);
+                e.Graphics.DrawString(fecha, fuente, Brushes.Black, 115, posY);
                 posY += 110;
                 e.Graphics.DrawString(empresa, fuente, Brushes.Black, posX, posY);
                 posY += 30;
@@ -57,7 +60,8 @@ namespace CapaNegocio
                 posY += 30;
                 e.Graphics.DrawString(telefono, fuente, Brushes.Black, posX, posY);
                 posY += 30;
-
+                e.Graphics.DrawString("Vendedor: " + vendedor, fuente, Brushes.Black, posX, posY);
+                posY += 30;
                 fuente = new Font("consola", 9, FontStyle.Bold);
                 e.Graphics.DrawString("-------------------------------------------------------------------------", fuente, Brushes.Black, posX, posY);
                 posY += 30;
