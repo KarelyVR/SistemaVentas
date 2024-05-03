@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="CapaNegocio.CN_Categoria">
+    <Position X="1.5" Y="1.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEQAAAAAAAAAAAAAAACAAAAAAAAAAAAQAAQ=</HashCode>
+      <FileName>CN_Categoria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaNegocio.CN_Compra">
+    <Position X="1" Y="7" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAEAAAAAAAAAAAAAAAAAAAAgAAAAAAQ=</HashCode>
+      <FileName>CN_Compra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaNegocio.CN_Permiso">
+    <Position X="2.5" Y="4.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CN_Permiso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaNegocio.CN_Producto">
+    <Position X="6.75" Y="1.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAQ=</HashCode>
+      <FileName>CN_Producto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaNegocio.CN_Proveedor">
+    <Position X="14.25" Y="8.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAQ=</HashCode>
+      <FileName>CN_Proveedor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaNegocio.CN_Reporte">
+    <Position X="1.75" Y="10.75" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAgAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>CN_Reporte.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaNegocio.CN_Rol">
+    <Position X="12.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>CN_Rol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaNegocio.CN_Usuario">
+    <Position X="15" Y="1.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAFQAAAAAAAAAAAAAAAAAAAAAAEAAAAAQAAQ=</HashCode>
+      <FileName>CN_Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaNegocio.CN_Venta">
+    <Position X="14.5" Y="5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAIAAAAAAAAAAAAAAAEQAAAAgAAAAAAQ=</HashCode>
+      <FileName>CN_Venta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaNegocio.CrearTicket">
+    <Position X="9.25" Y="8.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAQAaEAIBAAAAAIAAAAAEAAAAAAAIYAAAAAIAI=</HashCode>
+      <FileName>CrearTicket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object">
+    <Position X="9.75" Y="4.75" Width="3.25" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

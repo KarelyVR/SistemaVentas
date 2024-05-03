@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="CapaPresentacion.Program">
+    <Position X="34" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.frmCategoria">
+    <Position X="4.5" Y="9.25" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>cAQCAA4ACCQAAJAAAEigABAbAAIBMACAAIAIQCBAAIg=</HashCode>
+      <FileName>frmCategoria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.frmCompras">
+    <Position X="24.25" Y="1" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>cBAAECcAACCAAhAAQQHEBIgGEAAJNAAAICEJECSSEAA=</HashCode>
+      <FileName>frmCompras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.frmDetalleCompra">
+    <Position X="7.25" Y="52.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>FwIgFAMAACAAApAAQECAAAAKQAAAIAAAACEAkAAAFAA=</HashCode>
+      <FileName>frmDetalleCompra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.frmDetalleVenta">
+    <Position X="38" Y="33.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>FAAgFAcAACgAAJAAQACAAAAaYAAAIAAAACEAkAAABAA=</HashCode>
+      <FileName>frmDetalleVenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.frmFacturacion">
+    <Position X="7" Y="36.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>/yIgJAAAASAAAhAAUACAQABCYAAAAAAAECAAEAAAALA=</HashCode>
+      <FileName>frmFacturacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.frmProducto">
+    <Position X="44" Y="8.25" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>MAACAAoAASAAAJAgQEyggDAfgAARMACgAJAKQCBAEIg=</HashCode>
+      <FileName>frmProducto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.frmProveedores">
+    <Position X="49" Y="27.75" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>MIACAAoAKCAAAJAAKEigABAKAIABMACCAIAIYiBgAIg=</HashCode>
+      <FileName>frmProveedores.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.frmReembolso">
+    <Position X="15.5" Y="29.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>/wAABQIAACAAABAAAACAAAACQAAIAAgCACEAkAUABDA=</HashCode>
+      <FileName>frmReembolso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.frmReporteCompras">
+    <Position X="0.5" Y="23.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>MIIAAAeIACACAJAiAGiAAABGAAEIJEACAIBQQAAAEgA=</HashCode>
+      <FileName>frmReporteCompras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.frmReportes">
+    <Position X="14.5" Y="46" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>frmReportes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.frmReporteVentas">
+    <Position X="14" Y="63" Width="4" />
+    <TypeIdentifier>
+      <HashCode>MAIAAAcAACAAAJAiAGigAABGAAEAJAACAIBQQAAAAgE=</HashCode>
+      <FileName>frmReporteVentas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.frmUsuarios">
+    <Position X="34.5" Y="61" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>MAACAA4ACCAAAJAQIEigABBKAIABMgCiAIEIUCBAEog=</HashCode>
+      <FileName>frmUsuarios.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.frmVentas">
+    <Position X="37.25" Y="43" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>8ZAAECUAASCAABEGQQHEBKgSEAABOAACACAJECASAAA=</HashCode>
+      <FileName>frmVentas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.Inicio">
+    <Position X="24.75" Y="61.25" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>BAQEAAAIADAAMFAEACSBAUiSIoISAQCAgAmAIYREACQ=</HashCode>
+      <FileName>Inicio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaPresentacion.Login">
+    <Position X="37.75" Y="26" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACBAAJgAJACAIAgCAAAAAAIAAAEAACBBCAA=</HashCode>
+      <FileName>Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Form">
+    <Position X="24" Y="22.25" Width="5.75" />
+    <NestedTypes>
+      <Class Name="System.Windows.Forms.Form.ControlCollection" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

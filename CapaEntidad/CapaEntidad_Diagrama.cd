@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="CapaEntidad.Categoria">
+    <Position X="1" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAAAQAAAAAAg=</HashCode>
+      <FileName>Categoria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaEntidad.Compra">
+    <Position X="4.25" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAABAAAAgAAAAIAAAABAAAABAQAgAAAAA=</HashCode>
+      <FileName>Compra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaEntidad.Detalle_Compra">
+    <Position X="12" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAEAAAAQAAAAgQQAAAAEAA=</HashCode>
+      <FileName>Detalle_Compra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaEntidad.Detalle_Venta">
+    <Position X="15.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAUAAAEAAAAAAAAAAAAEAAAAAAAAAgAQAAAAAAA=</HashCode>
+      <FileName>Detalle_Venta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaEntidad.Permiso">
+    <Position X="8.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAABAAAAAAAAAAAAAAAAQAQAAAAAAA=</HashCode>
+      <FileName>Permiso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaEntidad.Producto">
+    <Position X="19" Y="4.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAACAAAQAAAAAAAAAAgAAFgAAAAAAAAAAQAAAAEAg=</HashCode>
+      <FileName>Producto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaEntidad.ProductosVenta">
+    <Position X="22.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAQAAABAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductosVenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaEntidad.Proveedor">
+    <Position X="8.5" Y="4.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAgAAAAAAAAAAAAIAAAAACAAAQAgAAAAg=</HashCode>
+      <FileName>Proveedor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaEntidad.ReporteCompra">
+    <Position X="15" Y="4.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAWAAAAAABAgAAgAAABEAAEABAACAAAQAAAAEAA=</HashCode>
+      <FileName>ReporteCompra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaEntidad.ReporteVenta">
+    <Position X="5" Y="4.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAUAAAAAABAgAAgAAABEAAEABAACAAAQAAAAAAA=</HashCode>
+      <FileName>ReporteVenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaEntidad.Rol">
+    <Position X="11.75" Y="4.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAABAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Rol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaEntidad.Usuario">
+    <Position X="19.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIQAAAAAAAAAAAAAAABAAIAAAAACAAAQAAAAEAg=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CapaEntidad.Venta">
+    <Position X="1" Y="4.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAACBAAAAgAAAAAAAAABAgAABIQAAAAAAA=</HashCode>
+      <FileName>Venta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object">
+    <Position X="23" Y="0.5" Width="3.25" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

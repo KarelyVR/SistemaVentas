@@ -91,6 +91,7 @@
     <Compile Include="Venta.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CapaEntidad_Diagrama.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
