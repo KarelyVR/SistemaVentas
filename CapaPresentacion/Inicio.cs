@@ -150,7 +150,7 @@ namespace CapaPresentacion
         private void iconMenuItem1_Click(object sender, EventArgs e)
         {
             panel1.Hide();
-            //AbrirFormulario((IconMenuItem)sender, new frmNombre());
+            AbrirFormulario((IconMenuItem)sender, new Ayuda());
         }
     }
 }

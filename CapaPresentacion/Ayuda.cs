@@ -30,7 +30,7 @@ namespace CapaPresentacion
         {
             if (isCollapsedPanel1)
             {
-                button1.Image = Resources.Collapse_Arrow_20px;
+                button1.Image = Properties.Resources.Collapse_Arrow_20px;
                 panel1.Height += 10;
                 if (panel1.Height >= panel1.MaximumSize.Height)
                 {
@@ -40,7 +40,7 @@ namespace CapaPresentacion
             }
             else
             {
-                button1.Image = Resources.Expand_Arrow_20px;
+                button1.Image = Properties.Resources.Expand_Arrow_20px;
                 panel1.Height -= 10;
                 if (panel1.Height <= panel1.MinimumSize.Height)
                 {
@@ -75,7 +75,7 @@ namespace CapaPresentacion
         {
             if (isCollapsedPanel3)
             {
-                button4.Image = Resources.Collapse_Arrow_20px;
+                button4.Image = Properties.Resources.Collapse_Arrow_20px;
                 panel3.Height += 10;
                 if (panel3.Height >= panel3.MaximumSize.Height)
                 {
@@ -85,7 +85,7 @@ namespace CapaPresentacion
             }
             else
             {
-                button4.Image = Resources.Expand_Arrow_20px;
+                button4.Image = Properties.Resources.Expand_Arrow_20px;
                 panel3.Height -= 10;
                 if (panel3.Height <= panel3.MinimumSize.Height)
                 {
@@ -104,7 +104,7 @@ namespace CapaPresentacion
         {
             if (isCollapsedPanel4)
             {
-                button6.Image = Resources.Collapse_Arrow_20px;
+                button6.Image = Properties.Resources.Collapse_Arrow_20px;
                 panel4.Height += 10;
                 if (panel4.Height >= panel4.MaximumSize.Height)
                 {
@@ -114,7 +114,7 @@ namespace CapaPresentacion
             }
             else
             {
-                button6.Image = Resources.Expand_Arrow_20px;
+                button6.Image = Properties.Resources.Expand_Arrow_20px;
                 panel4.Height -= 10;
                 if (panel4.Height <= panel4.MinimumSize.Height)
                 {
@@ -133,7 +133,7 @@ namespace CapaPresentacion
         {
             if (isCollapsedPanel5)
             {
-                button8.Image = Resources.Collapse_Arrow_20px;
+                button8.Image = Properties.Resources.Collapse_Arrow_20px;
                 panel5.Height += 10;
                 if (panel5.Height >= panel5.MaximumSize.Height)
                 {
@@ -143,7 +143,7 @@ namespace CapaPresentacion
             }
             else
             {
-                button8.Image = Resources.Expand_Arrow_20px;
+                button8.Image = Properties.Resources.Expand_Arrow_20px;
                 panel5.Height -= 10;
                 if (panel5.Height <= panel5.MinimumSize.Height)
                 {
@@ -162,7 +162,7 @@ namespace CapaPresentacion
         {
             if (isCollapsedPanel6)
             {
-                button10.Image = Resources.Collapse_Arrow_20px;
+                button10.Image = Properties.Resources.Collapse_Arrow_20px;
                 panel6.Height += 10;
                 if (panel6.Height >= panel6.MaximumSize.Height)
                 {
@@ -172,7 +172,7 @@ namespace CapaPresentacion
             }
             else
             {
-                button10.Image = Resources.Expand_Arrow_20px;
+                button10.Image = Properties.Resources.Expand_Arrow_20px;
                 panel6.Height -= 10;
                 if (panel6.Height <= panel6.MinimumSize.Height)
                 {
@@ -191,7 +191,7 @@ namespace CapaPresentacion
         {
             if (isCollapsedPanel7)
             {
-                button12.Image = Resources.Collapse_Arrow_20px;
+                button12.Image = Properties.Resources.Collapse_Arrow_20px;
                 panel7.Height += 10;
                 if (panel7.Height >= panel7.MaximumSize.Height)
                 {
@@ -201,7 +201,7 @@ namespace CapaPresentacion
             }
             else
             {
-                button12.Image = Resources.Expand_Arrow_20px;
+                button12.Image = Properties.Resources.Expand_Arrow_20px;
                 panel7.Height -= 10;
                 if (panel7.Height <= panel7.MinimumSize.Height)
                 {
