@@ -146,5 +146,11 @@ namespace CapaPresentacion
             if(MessageBox.Show("¿Cerrar Sesión?","Salir",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
         }
+
+        private void iconMenuItem1_Click(object sender, EventArgs e)
+        {
+            panel1.Hide();
+            //AbrirFormulario((IconMenuItem)sender, new frmNombre());
+        }
     }
 }
