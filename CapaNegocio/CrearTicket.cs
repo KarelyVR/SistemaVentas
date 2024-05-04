@@ -34,12 +34,20 @@ namespace CapaNegocio
 
         public void imprimir(CrearTicket p)
         {
+            // Configura el documento de impresión
             doc.PrinterSettings.PrinterName = doc.DefaultPageSettings.PrinterSettings.PrinterName;
             doc.PrintPage += new PrintPageEventHandler(imprimeticket);
+
+            // Asigna el documento de impresión a la vista previa antes de mostrarla
             vista.Document = doc;
-            vista.Show();
-            //doc.Print();
+
+            // Muestra la vista previa de impresión
+            if (Form.ActiveForm != null)
+                vista.ShowDialog(Form.ActiveForm);
+            else
+                vista.ShowDialog();
         }
+
 
         public void imprimeticket(object sender, PrintPageEventArgs e)
         {
