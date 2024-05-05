@@ -13,12 +13,13 @@ using CapaNegocio;
 using CapaPresentacion.Modales;
 using FontAwesome.Sharp;
 
+
 namespace CapaPresentacion
 {
     //el constructor siempre se ejecuta primero
     public partial class Inicio : Form
     {
-        private static Usuario usuarioActual;
+        public static Usuario usuarioActual;
         private static IconMenuItem MenuActivo = null;
         private static Form FormularioActivo = null;
 
@@ -46,6 +47,7 @@ namespace CapaPresentacion
 
             //al momento de cargar el formulario el lblusuario tendra el nombre del usuario que se logeo
             lblusuario.Text = usuarioActual.NombreCompleto;
+            idUser.Text = usuarioActual.IdUsuario.ToString();
         }
 
         //evento al dar clic a cada menu
@@ -150,7 +152,13 @@ namespace CapaPresentacion
         private void iconMenuItem1_Click(object sender, EventArgs e)
         {
             panel1.Hide();
-            AbrirFormulario((IconMenuItem)sender, new Ayuda());
+            AbrirFormulario(Ayuda, new Ayuda());
+        }
+
+        private void sunmenureembolso_Click(object sender, EventArgs e)
+        {
+            panel1.Hide();
+            AbrirFormulario(submenureembolso, new frmReembolso());
         }
     }
 }

@@ -382,13 +382,15 @@ namespace CapaPresentacion
 
             if (respuesta)
             {
-                var result = MessageBox.Show("Numero de venta generada:\n" + numeroDocumento + "\n\n¿Desea copiar al portapapeles?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                var result = MessageBox.Show("Numero de venta generada:\n" + numeroDocumento + "\n\n¿Desea generar una factura?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
                 if (result == DialogResult.Yes)
                     Clipboard.SetText(numeroDocumento);
-                
 
-                
+                    frmFacturacion facturacion = new frmFacturacion();
+                    facturacion.Show();
+
+
                 dgvdata.Rows.Clear();
                 calcularTotal();
                 txtpagocon.Text = "";

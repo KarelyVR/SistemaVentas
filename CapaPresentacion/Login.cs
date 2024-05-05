@@ -81,6 +81,9 @@ namespace CapaPresentacion
             btnAceptar.Visible = true;
             btnCancelar2.Visible = true;
 
+            txtdocumento.Text = "";
+            txtclave.Text = "";
+
             label4.Text = "Nueva contraseña";
 
         }
@@ -98,6 +101,9 @@ namespace CapaPresentacion
 
             btnAceptar.Visible = false;
             btnCancelar2.Visible = false;
+
+            txtdocumento.Text = "";
+            txtclave.Text = "";
 
             label4.Text = "Contraseña";
         }

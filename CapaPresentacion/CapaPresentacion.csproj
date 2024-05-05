@@ -82,6 +82,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ayuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda.Designer.cs">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReembolso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Utilidades\OpcionCombo.cs" />
+    <EmbeddedResource Include="Ayuda.resx">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmReembolso.resx">
       <DependentUpon>frmReembolso.cs</DependentUpon>
     </EmbeddedResource>
@@ -258,6 +267,11 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="CapaPresentacion_Diagrama.cd" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -302,7 +316,16 @@
     <None Include="Resources\shop.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Collapse_Arrow_20px.png" />
+    <Content Include="Resources\expand.png" />
+    <Content Include="Resources\Expand_Arrow_20px.png" />
+    <Content Include="Resources\expand_more.png" />
     <Content Include="Resources\PlantillaVentaReporte.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
