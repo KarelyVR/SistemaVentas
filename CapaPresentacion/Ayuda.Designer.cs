@@ -49,12 +49,13 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.timer6 = new System.Windows.Forms.Timer(this.components);
+            this.label10 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -73,9 +74,9 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.Image = global::CapaPresentacion.Properties.Resources.expand;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Location = new System.Drawing.Point(3, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(705, 36);
+            this.button1.Size = new System.Drawing.Size(1494, 39);
             this.button1.TabIndex = 0;
             this.button1.Text = "¿Cómo registrar una venta?";
             this.button1.UseVisualStyleBackColor = false;
@@ -102,9 +103,9 @@
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(53, 50);
+            this.panel2.Location = new System.Drawing.Point(200, 138);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(723, 287);
+            this.panel2.Size = new System.Drawing.Size(1508, 836);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -114,10 +115,10 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.MaximumSize = new System.Drawing.Size(705, 148);
+            this.panel1.MaximumSize = new System.Drawing.Size(1500, 148);
             this.panel1.MinimumSize = new System.Drawing.Size(705, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(705, 39);
+            this.panel1.Size = new System.Drawing.Size(1500, 39);
             this.panel1.TabIndex = 3;
             // 
             // panel7
@@ -138,7 +139,7 @@
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button11.Location = new System.Drawing.Point(0, 36);
+            this.button11.Location = new System.Drawing.Point(0, 39);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(705, 108);
             this.button11.TabIndex = 1;
@@ -157,7 +158,7 @@
             this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button12.Location = new System.Drawing.Point(0, 0);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(705, 36);
+            this.button12.Size = new System.Drawing.Size(705, 39);
             this.button12.TabIndex = 0;
             this.button12.Text = "¿Cómo generar una factura?";
             this.button12.UseVisualStyleBackColor = false;
@@ -183,7 +184,7 @@
             this.button9.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button9.Location = new System.Drawing.Point(0, 36);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(705, 108);
+            this.button9.Size = new System.Drawing.Size(705, 48);
             this.button9.TabIndex = 1;
             this.button9.Text = "button9";
             this.button9.UseVisualStyleBackColor = false;
@@ -339,18 +340,6 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Pink;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(76, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 19);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "Preguntas Frecuetes";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // timer2
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
@@ -371,13 +360,37 @@
             // 
             this.timer6.Tick += new System.EventHandler(this.timer6_Tick);
             // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(195, 48);
+            this.label10.Name = "label10";
+            this.label10.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.label10.Size = new System.Drawing.Size(1513, 63);
+            this.label10.TabIndex = 49;
+            this.label10.Text = "Preguntas frecuentes";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(526, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(1182, 10);
+            this.label3.TabIndex = 242;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Ayuda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1888, 858);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.panel2);
             this.Name = "Ayuda";
             this.Text = "Ayuda";
@@ -390,7 +403,6 @@
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -416,11 +428,12 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
         private System.Windows.Forms.Timer timer5;
         private System.Windows.Forms.Timer timer6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label3;
     }
 }
