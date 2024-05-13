@@ -60,8 +60,8 @@ namespace CapaPresentacion
             this.btnborrar = new FontAwesome.Sharp.IconButton();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -409,17 +409,6 @@ namespace CapaPresentacion
             this.label9.TabIndex = 223;
             this.label9.Text = "Detalle Compra";
             // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.Color.MediumVioletRed;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.Control;
-            this.label13.Location = new System.Drawing.Point(642, 69);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(835, 10);
-            this.label13.TabIndex = 245;
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -430,6 +419,17 @@ namespace CapaPresentacion
             this.label6.Size = new System.Drawing.Size(195, 29);
             this.label6.TabIndex = 244;
             this.label6.Text = "Detalle Compra";
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.Control;
+            this.label13.Location = new System.Drawing.Point(642, 69);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(835, 10);
+            this.label13.TabIndex = 245;
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // frmDetalleCompra
             // 
@@ -494,7 +494,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioCompra;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn MontoTotal;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label13;
     }
 }
