@@ -393,6 +393,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel2);
             this.Name = "Ayuda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ayuda";
             this.Load += new System.EventHandler(this.Ayuda_Load);
             this.panel2.ResumeLayout(false);

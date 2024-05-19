@@ -106,5 +106,16 @@ namespace CapaPresentacion
             txtFecha.Text = DateTime.Now.ToString();
         }
 
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+            this.Close();
+
+        }
+
+        private void btndescargar_Click(object sender, EventArgs e)
+        {
+            //Falta funcion de mostrar factura ??
+        }
     }
 }

@@ -85,15 +85,15 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(530, 743);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(236, 24);
+            this.label5.Size = new System.Drawing.Size(251, 24);
             this.label5.TabIndex = 231;
-            this.label5.Text = "Monto Total a Reembolsar:";
+            this.label5.Text = "Monto Total a Reembolsar: $";
             // 
             // txtmontototal
             // 
             this.txtmontototal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtmontototal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmontototal.Location = new System.Drawing.Point(772, 740);
+            this.txtmontototal.Location = new System.Drawing.Point(781, 740);
             this.txtmontototal.Name = "txtmontototal";
             this.txtmontototal.ReadOnly = true;
             this.txtmontototal.Size = new System.Drawing.Size(47, 29);
@@ -612,6 +612,7 @@
             this.Controls.Add(this.label10);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmReembolso";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reembolso";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

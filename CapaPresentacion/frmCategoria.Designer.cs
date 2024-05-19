@@ -357,7 +357,7 @@ namespace CapaPresentacion
             this.cboestado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboestado.FormattingEnabled = true;
-            this.cboestado.Location = new System.Drawing.Point(37, 280);
+            this.cboestado.Location = new System.Drawing.Point(36, 270);
             this.cboestado.Name = "cboestado";
             this.cboestado.Size = new System.Drawing.Size(335, 32);
             this.cboestado.TabIndex = 42;

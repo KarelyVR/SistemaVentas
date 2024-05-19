@@ -122,7 +122,7 @@ namespace CapaPresentacion
             // 
             this.cbotipodocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.cbotipodocumento.FormattingEnabled = true;
-            this.cbotipodocumento.Location = new System.Drawing.Point(180, 60);
+            this.cbotipodocumento.Location = new System.Drawing.Point(183, 60);
             this.cbotipodocumento.Margin = new System.Windows.Forms.Padding(2);
             this.cbotipodocumento.Name = "cbotipodocumento";
             this.cbotipodocumento.Size = new System.Drawing.Size(176, 32);
@@ -134,7 +134,7 @@ namespace CapaPresentacion
             this.txtfecha.Location = new System.Drawing.Point(24, 60);
             this.txtfecha.Margin = new System.Windows.Forms.Padding(2);
             this.txtfecha.Name = "txtfecha";
-            this.txtfecha.Size = new System.Drawing.Size(119, 29);
+            this.txtfecha.Size = new System.Drawing.Size(139, 29);
             this.txtfecha.TabIndex = 26;
             // 
             // label2
@@ -142,7 +142,7 @@ namespace CapaPresentacion
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(179, 36);
+            this.label2.Location = new System.Drawing.Point(183, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 20);
             this.label2.TabIndex = 25;
@@ -153,7 +153,7 @@ namespace CapaPresentacion
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 36);
+            this.label1.Location = new System.Drawing.Point(25, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 20);
             this.label1.TabIndex = 24;
@@ -347,7 +347,7 @@ namespace CapaPresentacion
             // txtidproducto
             // 
             this.txtidproducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtidproducto.Location = new System.Drawing.Point(141, 71);
+            this.txtidproducto.Location = new System.Drawing.Point(146, 71);
             this.txtidproducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtidproducto.Name = "txtidproducto";
             this.txtidproducto.Size = new System.Drawing.Size(22, 29);
@@ -365,7 +365,7 @@ namespace CapaPresentacion
             this.btnbuscarproducto.IconColor = System.Drawing.Color.Black;
             this.btnbuscarproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscarproducto.IconSize = 25;
-            this.btnbuscarproducto.Location = new System.Drawing.Point(168, 72);
+            this.btnbuscarproducto.Location = new System.Drawing.Point(170, 72);
             this.btnbuscarproducto.Name = "btnbuscarproducto";
             this.btnbuscarproducto.Size = new System.Drawing.Size(28, 28);
             this.btnbuscarproducto.TabIndex = 29;
@@ -522,7 +522,7 @@ namespace CapaPresentacion
             // 
             // txttotalpagar
             // 
-            this.txttotalpagar.BackColor = System.Drawing.SystemColors.Control;
+            this.txttotalpagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txttotalpagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttotalpagar.Location = new System.Drawing.Point(1269, 551);
             this.txttotalpagar.Margin = new System.Windows.Forms.Padding(2);
