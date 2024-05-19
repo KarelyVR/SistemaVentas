@@ -545,6 +545,7 @@ namespace CapaPresentacion
             // btnregistrar
             // 
             this.btnregistrar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnregistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnregistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnregistrar.IconChar = FontAwesome.Sharp.IconChar.Receipt;
             this.btnregistrar.IconColor = System.Drawing.Color.Blue;
@@ -564,6 +565,7 @@ namespace CapaPresentacion
             // btnagregarproducto
             // 
             this.btnagregarproducto.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnagregarproducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnagregarproducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnagregarproducto.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.btnagregarproducto.IconColor = System.Drawing.Color.ForestGreen;

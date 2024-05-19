@@ -57,11 +57,6 @@ namespace CapaPresentacion
             }
         }
 
-        private void btnbuscar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtbusqueda_TextChanged(object sender, EventArgs e)
         {
             string columnaFiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
