@@ -43,9 +43,9 @@ namespace CapaNegocio
 
             // Muestra la vista previa de impresión
             if (Form.ActiveForm != null)
-                vista.ShowDialog(Form.ActiveForm);
+                vista.Show(Form.ActiveForm);
             else
-                vista.ShowDialog();
+                vista.Show();
         }
 
 

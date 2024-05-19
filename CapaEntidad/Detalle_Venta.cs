@@ -8,6 +8,16 @@ namespace CapaEntidad
 {
     public class Detalle_Venta
     {
+        public Detalle_Venta() { }
+        public Detalle_Venta(int IdDetalleVenta, int IdProducto, decimal PrecioVenta, int Cantidad, decimal SubTotal, string FechaRegistro)
+        {
+            this.IdDetalleVenta = IdDetalleVenta;
+            this.oProducto.IdProducto = IdProducto;
+            this.PrecioVenta = PrecioVenta;
+            this.Cantidad = Cantidad;
+            this.SubTotal = SubTotal;
+            this.FechaRegistro = FechaRegistro;
+        }
         public int IdDetalleVenta { get; set; }
         //El id Venta se hace haciendo referencia desde la tabla de Venta
         public Producto oProducto { get; set; }

@@ -34,6 +34,9 @@ namespace CapaNegocio
 
         }
 
-
+        public ConsultarFactura ObtenerFactura(int idVenta)
+        {
+            return objcd_Factura.ObtenerFactura(idVenta);
+        }
     }
 }

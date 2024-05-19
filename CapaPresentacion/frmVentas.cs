@@ -344,7 +344,7 @@ namespace CapaPresentacion
             int tipodocumento = cbotipodocumento.SelectedIndex;
             if (tipodocumento == 1)
             {
-                frmFacturacion facturacion = new frmFacturacion();
+                frmFacturacion facturacion = new frmFacturacion(_Usuario, idcorrelativo);
                 facturacion.Show();
             }
             CrearTicket ticket = new CrearTicket();
@@ -382,13 +382,13 @@ namespace CapaPresentacion
 
             if (respuesta)
             {
-                var result = MessageBox.Show("Numero de venta generada:\n" + numeroDocumento + "\n\n¿Desea generar una factura?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                //var result = MessageBox.Show("Numero de venta generada:\n" + numeroDocumento + "\n\n¿Desea generar una factura?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
-                if (result == DialogResult.Yes)
-                    Clipboard.SetText(numeroDocumento);
+                //if (result == DialogResult.Yes)
+                //    Clipboard.SetText(numeroDocumento);
 
-                    frmFacturacion facturacion = new frmFacturacion();
-                    facturacion.Show();
+                //    frmFacturacion facturacion = new frmFacturacion(_Usuario, idcorrelativo);
+                //    facturacion.Show();
 
 
                 dgvdata.Rows.Clear();

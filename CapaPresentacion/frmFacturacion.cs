@@ -16,10 +16,13 @@ namespace CapaPresentacion
 {
     public partial class frmFacturacion : Form
     {
-        public frmFacturacion()
+        private Usuario _Usuario;
+        private int idVenta;
+        public frmFacturacion(Usuario oUsuario, int idcorrelativo)
         {
+            _Usuario = oUsuario;
+            idVenta = idcorrelativo;
             InitializeComponent();
-            
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -28,15 +31,14 @@ namespace CapaPresentacion
 
             Factura obj = new Factura()
             {
-                IdFactura = Convert.ToInt32(txtid.Text),
-                oDetalleVenta = new Detalle_Venta() { IdDetalleVenta = Convert.ToInt32(txtVenta.Text) }, //id detalle venta (obtener con una busqueda o traer directo de venta)
-                oUsuario = new Usuario() { IdUsuario = Convert.ToInt32(txtUser.Text) }, //id usuario (obtener con una busqueda o traer directo de lbluser)
+                IdUsuario = _Usuario.IdUsuario, //id usuario (obtener con una busqueda o traer directo de lbluser)
+                IdVenta = idVenta, //id detalle venta (obtener con una busqueda o traer directo de venta)
                 NombreCliente = txtNombre.Text,
                 PrimerApellido = txtApellidoP.Text,
                 SegundoApellido = txtApellidoM.Text,
                 Calle = txtCalle.Text,
                 NumExt = Convert.ToInt32(txtNoExt.Text),
-                NumInt = Convert.ToInt32(txtNoInt.Text),
+                NumInt = 0,
                 Colonia = txtColonia.Text,
                 Municipio = txtMunicipio.Text,
                 Pais = txtPais.Text,
@@ -46,32 +48,40 @@ namespace CapaPresentacion
                 Telefono = txtTel.Text,
                 RazonSocial = txtRS.Text,
                 UsoCFDI = txtCDFI.Text, 
-                Fecha = txtFecha.Text,
-
+                Fecha = DateTime.Parse(txtFecha.Text)
             };
 
+            if (txtNoInt.Text != string.Empty)
+                obj.NumInt = Convert.ToInt32(txtNoInt.Text);
+
             // registro de la factura 
-            if (obj.IdFactura == 0)
-            {
+            
                 //Insersion del usuario mediante procedimiento almacenado
                 int idgenerado = new CN_Factura().Registrar(obj, out mensaje);
 
                 if (idgenerado != 0)
                 {
-                    Limpiar();
+                    var factura = new CN_Factura().ObtenerFactura(idVenta);
+                    {
+                        factura.empresa = "Abarrotes Dani";
+                        factura.direccion = "Del Limon 223, col. Los Cipreses, San Nicolás de los Garza";
+                        factura.telefono = "8119920181";
+                        factura.logo = PLogo.Image;
+                        Usuario oUsuario = new Usuario() { NombreCompleto = _Usuario.NombreCompleto };
+                        factura.vendedor = oUsuario.NombreCompleto;
+                        factura.imprimir(factura);
+                    }
+                    this.Hide();
                 }
                 else
                 {
                     MessageBox.Show(mensaje);
                 }
-            }
+            
             
         }
         private void Limpiar()
         {
-            txtid.Text = "0";
-            txtVenta.Text = "0";
-            txtUser.Text = "0";
             txtNombre.Text = "";
             txtApellidoM.Text = "";
             txtApellidoP.Text = "";
@@ -93,12 +103,7 @@ namespace CapaPresentacion
 
         private void frmFacturacion_Load(object sender, EventArgs e)
         {
-
-            txtFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
-
-            txtid.Text = "0";
-            txtVenta.Text = "0";
-            txtUser.Text = "0";
+            txtFecha.Text = DateTime.Now.ToString();
         }
 
     }

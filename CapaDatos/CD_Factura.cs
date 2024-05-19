@@ -6,6 +6,10 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Navigation;
+using System.Data.Entity.Infrastructure;
+using System.Windows.Forms.VisualStyles;
+using System.Windows.Forms;
 
 namespace CapaDatos
 {
@@ -26,9 +30,8 @@ namespace CapaDatos
                 using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
                 {
                     SqlCommand cmd = new SqlCommand("sp_RegistrarFactura", oconexion);
-                    cmd.Parameters.AddWithValue("IdUsuario", obj.oUsuario.IdUsuario);
-                    cmd.Parameters.AddWithValue("IdFactura", obj.IdFactura);
-                    cmd.Parameters.AddWithValue("IdDetalleVenta", obj.oDetalleVenta.IdDetalleVenta);
+                    cmd.Parameters.AddWithValue("IdUsuario", obj.IdUsuario);
+                    cmd.Parameters.AddWithValue("IdVenta", obj.IdVenta);
                     cmd.Parameters.AddWithValue("NombreCliente", obj.NombreCliente);
                     cmd.Parameters.AddWithValue("PrimerApellido", obj.PrimerApellido);
                     cmd.Parameters.AddWithValue("SegundoApellido", obj.SegundoApellido);
@@ -55,7 +58,6 @@ namespace CapaDatos
 
                     idFacturagenerado = Convert.ToInt32(cmd.Parameters["Resultado"].Value);
                     Mensaje = cmd.Parameters["Mensaje"].Value.ToString();
-
                 }
 
             }
@@ -67,6 +69,100 @@ namespace CapaDatos
 
             return idFacturagenerado;
         }
-        
+
+        public ConsultarFactura ObtenerFactura(int IdVenta)
+        {
+            try
+            {
+                //conexion a la base de datos para comunicarse con el procedimiento
+                using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
+                {
+                    oconexion.Open();
+
+                    using (SqlCommand cmd = oconexion.CreateCommand())
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.CommandText = "sp_ConsultarFactura";
+                        cmd.Parameters.AddWithValue("@idventa", IdVenta);
+
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            Factura factura = null;
+                            Venta venta = null;
+                            List<ProductosVenta> listaProductosVenta = new List<ProductosVenta>();
+
+                            // Leer la primera result set (Factura)
+                            if (reader.Read())
+                            {
+                                factura = new Factura(
+                                    (int)reader["IdFactura"],
+                                    (int)reader["IdVenta"],
+                                    (int)reader["IdUsuario"],
+                                    (string)reader["NombreCliente"],
+                                    (string)reader["PrimerApellido"],
+                                    (string)reader["SegundoApellido"],
+                                    (string)reader["Calle"],
+                                    (int)reader["NumExt"],
+                                    (int)reader["NumInt"],
+                                    (string)reader["Colonia"],
+                                    (string)reader["Municipio"],
+                                    (string)reader["Pais"],
+                                    (string)reader["CP"],
+                                    (string)reader["RFC"],
+                                    (string)reader["Correo"],
+                                    (string)reader["Telefono"],
+                                    (string)reader["RazonSocial"],
+                                    (string)reader["UsoCFDI"],
+                                    (DateTime)reader["Fecha"],
+                                    (string)reader["NombreCompleto"]
+                                );
+                            }
+
+                            // Mover al siguiente result set (Venta)
+                            if (reader.NextResult() && reader.Read())
+                            {
+                                venta = new Venta(
+                                    (int)reader["IdVenta"],
+                                    (int)reader["IdUsuario"],
+                                    (string)reader["TipoDocumento"],
+                                    (string)reader["NumeroDocumento"],
+                                    (decimal)reader["MontoPago"],
+                                    (decimal)reader["MontoCambio"],
+                                    (decimal)reader["MontoTotal"],
+                                    (string)reader["FechaRegistro"].ToString()
+                                );
+                            }
+
+                            // Mover al siguiente result set (Detalle_Venta)
+                            if (reader.NextResult())
+                            {
+                                while (reader.Read())
+                                {
+                                    var ProductoVenta = new ProductosVenta(
+                                        (string)reader["Nombre"],
+                                        (decimal)reader["PrecioVenta"],
+                                        (int)reader["Cantidad"],
+                                        (decimal)reader["SubTotal"]
+                                    );
+
+                                    listaProductosVenta.Add(ProductoVenta);
+                                }
+                            }
+                            ConsultarFactura Resultado = new ConsultarFactura();
+
+                            Resultado.Factura = factura;
+                            Resultado.Venta = venta;
+                            Resultado.ProductosVenta = listaProductosVenta;
+
+                            return Resultado;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
     }
 }

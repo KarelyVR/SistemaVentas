@@ -8,6 +8,14 @@ namespace CapaEntidad
 {
     public class ProductosVenta
     {
+        public ProductosVenta() { }
+        public ProductosVenta(string producto, decimal precio, int cantidad, decimal subtotal) 
+        {
+            this.producto = producto;   
+            this.precio = precio;
+            this.cantidad = cantidad;
+            this.subtotal = subtotal;
+        }
         public string producto { get; set; }
         public decimal precio { get; set;}
         public int cantidad { get; set;}
