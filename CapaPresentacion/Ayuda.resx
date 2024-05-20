@@ -117,24 +117,46 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>105, 17</value>
-  </metadata>
-  <metadata name="timer3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>193, 17</value>
-  </metadata>
-  <metadata name="timer4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>281, 17</value>
-  </metadata>
-  <metadata name="timer5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>369, 17</value>
-  </metadata>
-  <metadata name="timer6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>457, 17</value>
-  </metadata>
+  <data name="button1.Text" xml:space="preserve">
+    <value>1. Elegir el N° de documento con el cual se identificara la cuenta.
+2. Agregar el nombre completo de la persona.
+3. Ingresar el correo de la persona.
+4. Ingresar la contraseña de la cuenta.
+5. Confirmar la contraseña.
+6. Elegir el rol de la persona si tendra permisos de adminsitrador en el sistema o permisos de empleado.
+7. </value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>1. Ingresa la fecha y tipo de documento para registrar la venta.
+2. En la sección de información del producto:
+    &gt;Selecciona el producto haciendo clic en el código correspondiente.
+    &gt;La información del producto (nombre, precio y stock disponible) se llenará automáticamente.
+    &gt;Elige la cantidad que deseas vender.
+3. Agrega el producto y el monto total a pagar.
+4. Indica con qué billete paga el cliente.
+5. Haz clic en "crear venta" para generar el ticket de la venta.
+</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>En la pestaña de compras llevar los apartados:
+1. Informacion de compra ya vienen predeterminados por el día.
+2. Agregar la informacion del proveedor
+    &gt;Escribimos el N° de documento
+    &gt;Al dar clic en el icono de buscar aparecen todos los provedores con su respectivo identificador de documento.
+    &gt;Elegimos al que va dedicada la compra y la razon social se llena por default.
+3. Para agregar la información del producto
+    &gt;Agregamos el codigo del producto.
+    &gt;En caso de no saber el codigo damos clic en el icono de buscar y aparece la lista de todos los productos junto a codigo, nombre y categoria.
+    &gt;Elegimos el producto deseado dando doble clic o enter.
+    &gt;Agregamos el precio unitario de compra del producto.
+    &gt;Agregamos el precio unitario de venta del producto.
+    &gt;Agregamos la cantidad de piezas adquiridas.
+    &gt;Damos clic en agregar.
+4. Agregamos los productos faltantes.
+5. Insertamo el monto con que se pagara.
+6. Finzalizamos la orden de compra
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
