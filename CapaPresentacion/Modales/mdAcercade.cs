@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace CapaPresentacion.Modales
 {
@@ -25,13 +26,13 @@ namespace CapaPresentacion.Modales
         private void btndescargar_Click(object sender, EventArgs e)
         {
             // Ruta del archivo PDF en tu computadora
-            string rutaArchivo = @"C:\Users\Karely\source\repos\SistemaVentas\CapaPresentacion\Resources\ManualDeUsuario.pdf";
-
+            //string pdfPath = @"C:\Users\maryk\Desktop\PROY_INT2\Repositorio\SistemaVentas\CapaPresentacion\Resources\ManualDeUsuario.pdf";
+            string pdfPath = Path.Combine(Directory.GetCurrentDirectory(),"Resources", "Manual_Usuario.pdf");
             // Verificar si el archivo existe
-            if (System.IO.File.Exists(rutaArchivo))
+            if (System.IO.File.Exists(pdfPath))
             {
                 // Configurar la descarga del archivo
-                string nombreArchivo = System.IO.Path.GetFileName(rutaArchivo);
+                string nombreArchivo = System.IO.Path.GetFileName(pdfPath);
 
                 // Configurar el diálogo de descarga
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -49,7 +50,7 @@ namespace CapaPresentacion.Modales
                     try
                     {
                         // Copiar el archivo al destino seleccionado
-                        System.IO.File.Copy(rutaArchivo, rutaDestino, true);
+                        System.IO.File.Copy(pdfPath, rutaDestino, true);
 
                         MessageBox.Show("Archivo descargado correctamente.", "Descarga exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
