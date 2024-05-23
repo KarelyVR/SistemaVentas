@@ -13,6 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaPresentacion.Modales;
 
 namespace CapaPresentacion
 {
@@ -24,6 +25,15 @@ namespace CapaPresentacion
         }
         private void btnbuscar_Click(object sender, EventArgs e)
         {
+            using (var modal = new mdCompra())
+            {
+                var result = modal.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    txtbusqueda.Text = modal._Compra.NumeroDocumento.ToString();
+                }
+            }
+
             Compra oCompra = new CN_Compra().ObtenerCompra(txtbusqueda.Text);
             if (oCompra.IdCompra != 0)
             {
@@ -49,6 +59,7 @@ namespace CapaPresentacion
             txttipodocumento.Text = "";
             txtusuario.Text = "";
             txtdocproveedor.Text = "";
+            txtbusqueda.Text = "";
 
             dgvdata.Rows.Clear();
             txtmontototal.Text = "0.00";

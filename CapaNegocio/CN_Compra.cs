@@ -33,6 +33,9 @@ namespace CapaNegocio
             }
             return oCompra;
         }
+        public List<Compra> Listar()
+        {
+            return objcd_compra.Listar();
+        }
     }
 }
-

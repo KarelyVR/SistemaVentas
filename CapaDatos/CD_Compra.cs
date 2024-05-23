@@ -165,5 +165,60 @@ namespace CapaDatos
             }
             return oLista;
         }
+
+        //metodo que retorna una lista de ventas
+        public List<Compra> Listar()
+        {
+            List<Compra> lista = new List<Compra>();
+            using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
+            {
+                try
+                {
+
+                    StringBuilder query = new StringBuilder();
+                    query.AppendLine("SELECT c.IdCompra, c.IdUsuario, u.NombreCompleto, c.IdProveedor, p.RazonSocial, c.TipoDocumento, c.NumeroDocumento, c.MontoTotal, c.FechaRegistro FROM COMPRA c");
+                    query.AppendLine("INNER JOIN USUARIO u ON u.IdUsuario = c.IdUsuario");
+                    query.AppendLine("INNER JOIN PROVEEDOR p ON c.IdProveedor = p.IdProveedor");
+                    query.AppendLine("ORDER BY c.FechaRegistro DESC");
+
+                    SqlCommand cmd = new SqlCommand(query.ToString(), oconexion);
+                    cmd.CommandType = CommandType.Text;
+
+                    oconexion.Open();
+
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            lista.Add(new Compra()
+                            {
+                                IdCompra = Convert.ToInt32(dr["IdCompra"]),
+                                oUsuario = new Usuario()
+                                {
+                                    IdUsuario = Convert.ToInt32(dr["IdUsuario"]),
+                                    NombreCompleto = dr["NombreCompleto"].ToString()
+                                },
+                                oProveedor = new Proveedor()
+                                {
+                                    IdProveedor = Convert.ToInt32(dr["IdProveedor"]),
+                                    RazonSocial = dr["RazonSocial"].ToString()
+                                },
+                                TipoDocumento = dr["TipoDocumento"].ToString(),
+                                NumeroDocumento = dr["NumeroDocumento"].ToString(),
+                                MontoTotal = Convert.ToDecimal(dr["MontoTotal"].ToString()),
+                                FechaRegistro = dr["FechaRegistro"].ToString()
+                            });
+                        }
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    lista = new List<Compra>();
+                }
+            }
+            return lista;
+        }
     }
 }
