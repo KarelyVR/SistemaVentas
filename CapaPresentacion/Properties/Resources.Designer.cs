@@ -133,9 +133,9 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Byte[].
         /// </summary>
-        internal static byte[] ManualDeUsuario {
+        internal static byte[] Manual_Usuario {
             get {
-                object obj = ResourceManager.GetObject("ManualDeUsuario", resourceCulture);
+                object obj = ResourceManager.GetObject("Manual_Usuario", resourceCulture);
                 return ((byte[])(obj));
             }
         }
