@@ -196,7 +196,7 @@
             this.PnlCajaPrincipal.Controls.Add(this.BtnP2);
             this.PnlCajaPrincipal.Controls.Add(this.PnlTextP1);
             this.PnlCajaPrincipal.Controls.Add(this.BtnP1);
-            this.PnlCajaPrincipal.Location = new System.Drawing.Point(34, 183);
+            this.PnlCajaPrincipal.Location = new System.Drawing.Point(301, 146);
             this.PnlCajaPrincipal.Name = "PnlCajaPrincipal";
             this.PnlCajaPrincipal.Size = new System.Drawing.Size(1293, 477);
             this.PnlCajaPrincipal.TabIndex = 243;
@@ -811,7 +811,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1888, 858);
             this.Controls.Add(this.PnlCajaPrincipal);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label10);

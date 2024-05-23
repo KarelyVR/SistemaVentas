@@ -113,9 +113,6 @@ namespace CapaPresentacion
 
         }
 
-        private void btndescargar_Click(object sender, EventArgs e)
-        {
-            //Falta funcion de mostrar factura ??
-        }
+
     }
 }

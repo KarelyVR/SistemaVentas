@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label5 = new System.Windows.Forms.Label();
             this.txtmontototal = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -70,6 +71,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnguardar = new FontAwesome.Sharp.IconButton();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -96,9 +98,10 @@
             this.txtmontototal.Location = new System.Drawing.Point(781, 740);
             this.txtmontototal.Name = "txtmontototal";
             this.txtmontototal.ReadOnly = true;
-            this.txtmontototal.Size = new System.Drawing.Size(47, 29);
+            this.txtmontototal.Size = new System.Drawing.Size(91, 29);
             this.txtmontototal.TabIndex = 230;
             this.txtmontototal.Text = "0";
+            this.toolTip1.SetToolTip(this.txtmontototal, "Total que se reembolsará");
             // 
             // groupBox1
             // 
@@ -126,6 +129,7 @@
             this.txtusuario.ReadOnly = true;
             this.txtusuario.Size = new System.Drawing.Size(189, 29);
             this.txtusuario.TabIndex = 93;
+            this.toolTip1.SetToolTip(this.txtusuario, "Usuario que hizo la venta");
             // 
             // label2
             // 
@@ -147,6 +151,7 @@
             this.txttipodocumento.ReadOnly = true;
             this.txttipodocumento.Size = new System.Drawing.Size(216, 29);
             this.txttipodocumento.TabIndex = 87;
+            this.toolTip1.SetToolTip(this.txttipodocumento, "Tipo de venta");
             // 
             // txtfecha
             // 
@@ -157,6 +162,7 @@
             this.txtfecha.ReadOnly = true;
             this.txtfecha.Size = new System.Drawing.Size(180, 29);
             this.txtfecha.TabIndex = 90;
+            this.toolTip1.SetToolTip(this.txtfecha, "Fecha de venta");
             // 
             // label3
             // 
@@ -183,7 +189,7 @@
             // btnbuscar
             // 
             this.btnbuscar.AutoSize = true;
-            this.btnbuscar.BackColor = System.Drawing.Color.LightGray;
+            this.btnbuscar.BackColor = System.Drawing.Color.White;
             this.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -198,6 +204,7 @@
             this.btnbuscar.TabIndex = 224;
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnbuscar, "Buscar folio de venta");
             this.btnbuscar.UseVisualStyleBackColor = false;
             // 
             // label26
@@ -205,11 +212,11 @@
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.White;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(1025, 136);
+            this.label26.Location = new System.Drawing.Point(1071, 137);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(100, 24);
+            this.label26.Size = new System.Drawing.Size(57, 24);
             this.label26.TabIndex = 225;
-            this.label26.Text = "No. Ticket:";
+            this.label26.Text = "Folio:";
             // 
             // txtnumerodocumento
             // 
@@ -219,11 +226,12 @@
             this.txtnumerodocumento.Name = "txtnumerodocumento";
             this.txtnumerodocumento.Size = new System.Drawing.Size(140, 29);
             this.txtnumerodocumento.TabIndex = 223;
+            this.toolTip1.SetToolTip(this.txtnumerodocumento, "Folio de venta");
             // 
             // btnborrar
             // 
             this.btnborrar.AutoSize = true;
-            this.btnborrar.BackColor = System.Drawing.Color.LightGray;
+            this.btnborrar.BackColor = System.Drawing.Color.White;
             this.btnborrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnborrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnborrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -237,6 +245,7 @@
             this.btnborrar.TabIndex = 226;
             this.btnborrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnborrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnborrar, "Borrar folio");
             this.btnborrar.UseVisualStyleBackColor = false;
             // 
             // label9
@@ -566,6 +575,7 @@
             this.btnguardar.Text = "Reembolsar";
             this.btnguardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnguardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnguardar, "Realizar el reembolso");
             this.btnguardar.UseVisualStyleBackColor = false;
             // 
             // frmReembolso
@@ -669,5 +679,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private FontAwesome.Sharp.IconButton btnguardar;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

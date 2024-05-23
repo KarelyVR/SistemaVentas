@@ -161,5 +161,10 @@ namespace CapaPresentacion
             AbrirFormulario(submenureembolso, new frmReembolso());
         }
 
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            panel1.Hide();
+            AbrirFormulario(Ayuda, new Ayuda());
+        }
     }
 }

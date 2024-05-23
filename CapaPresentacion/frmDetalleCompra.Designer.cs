@@ -29,6 +29,7 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -62,6 +63,7 @@ namespace CapaPresentacion
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -72,6 +74,7 @@ namespace CapaPresentacion
             this.btndescargar.AutoSize = true;
             this.btndescargar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btndescargar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndescargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndescargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndescargar.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
             this.btndescargar.IconColor = System.Drawing.Color.Black;
@@ -81,11 +84,12 @@ namespace CapaPresentacion
             this.btndescargar.Location = new System.Drawing.Point(1136, 733);
             this.btndescargar.Name = "btndescargar";
             this.btndescargar.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            this.btndescargar.Size = new System.Drawing.Size(138, 44);
+            this.btndescargar.Size = new System.Drawing.Size(138, 46);
             this.btndescargar.TabIndex = 233;
             this.btndescargar.Text = "Descargar";
             this.btndescargar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndescargar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btndescargar, "Descargar en pdf");
             this.btndescargar.UseVisualStyleBackColor = false;
             this.btndescargar.Click += new System.EventHandler(this.btndescargar_Click);
             // 
@@ -99,6 +103,7 @@ namespace CapaPresentacion
             this.txtmontototal.Size = new System.Drawing.Size(90, 29);
             this.txtmontototal.TabIndex = 231;
             this.txtmontototal.Text = "0";
+            this.toolTip1.SetToolTip(this.txtmontototal, "Total de la compra");
             // 
             // dgvdata
             // 
@@ -138,6 +143,7 @@ namespace CapaPresentacion
             this.dgvdata.RowTemplate.Height = 28;
             this.dgvdata.Size = new System.Drawing.Size(712, 198);
             this.dgvdata.TabIndex = 230;
+            this.toolTip1.SetToolTip(this.dgvdata, "Lista de compra");
             // 
             // Producto
             // 
@@ -189,6 +195,7 @@ namespace CapaPresentacion
             this.txtnombreproveedor.ReadOnly = true;
             this.txtnombreproveedor.Size = new System.Drawing.Size(201, 29);
             this.txtnombreproveedor.TabIndex = 86;
+            this.toolTip1.SetToolTip(this.txtnombreproveedor, "Nombre de proveedor");
             // 
             // label15
             // 
@@ -210,6 +217,7 @@ namespace CapaPresentacion
             this.txtusuario.ReadOnly = true;
             this.txtusuario.Size = new System.Drawing.Size(189, 29);
             this.txtusuario.TabIndex = 93;
+            this.toolTip1.SetToolTip(this.txtusuario, "Usuario que realizó la compra");
             // 
             // label2
             // 
@@ -258,6 +266,7 @@ namespace CapaPresentacion
             this.txtdocproveedor.ReadOnly = true;
             this.txtdocproveedor.Size = new System.Drawing.Size(134, 29);
             this.txtdocproveedor.TabIndex = 85;
+            this.toolTip1.SetToolTip(this.txtdocproveedor, "Folio de proveedor");
             // 
             // txttipodocumento
             // 
@@ -268,6 +277,7 @@ namespace CapaPresentacion
             this.txttipodocumento.ReadOnly = true;
             this.txttipodocumento.Size = new System.Drawing.Size(201, 29);
             this.txttipodocumento.TabIndex = 87;
+            this.toolTip1.SetToolTip(this.txttipodocumento, "Tipo de compra");
             // 
             // txtfecha
             // 
@@ -278,6 +288,7 @@ namespace CapaPresentacion
             this.txtfecha.ReadOnly = true;
             this.txtfecha.Size = new System.Drawing.Size(134, 29);
             this.txtfecha.TabIndex = 90;
+            this.toolTip1.SetToolTip(this.txtfecha, "Fecha de compra");
             // 
             // label5
             // 
@@ -332,8 +343,9 @@ namespace CapaPresentacion
             // btnbuscar
             // 
             this.btnbuscar.AutoSize = true;
-            this.btnbuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnbuscar.BackColor = System.Drawing.Color.White;
             this.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.btnbuscar.IconColor = System.Drawing.Color.Black;
@@ -342,10 +354,11 @@ namespace CapaPresentacion
             this.btnbuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnbuscar.Location = new System.Drawing.Point(1222, 120);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(31, 31);
+            this.btnbuscar.Size = new System.Drawing.Size(33, 33);
             this.btnbuscar.TabIndex = 225;
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnbuscar, "Buscar compra");
             this.btnbuscar.UseVisualStyleBackColor = false;
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
@@ -354,7 +367,7 @@ namespace CapaPresentacion
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.White;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(1022, 126);
+            this.label26.Location = new System.Drawing.Point(1027, 126);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(57, 24);
             this.label26.TabIndex = 226;
@@ -364,27 +377,31 @@ namespace CapaPresentacion
             // 
             this.txtbusqueda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtbusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbusqueda.Location = new System.Drawing.Point(1085, 123);
+            this.txtbusqueda.Location = new System.Drawing.Point(1087, 123);
             this.txtbusqueda.Name = "txtbusqueda";
-            this.txtbusqueda.Size = new System.Drawing.Size(129, 29);
+            this.txtbusqueda.ReadOnly = true;
+            this.txtbusqueda.Size = new System.Drawing.Size(131, 29);
             this.txtbusqueda.TabIndex = 224;
+            this.toolTip1.SetToolTip(this.txtbusqueda, "Folio de compra");
             // 
             // btnborrar
             // 
             this.btnborrar.AutoSize = true;
-            this.btnborrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnborrar.BackColor = System.Drawing.Color.White;
             this.btnborrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnborrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnborrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnborrar.IconChar = FontAwesome.Sharp.IconChar.Eraser;
             this.btnborrar.IconColor = System.Drawing.Color.Black;
             this.btnborrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnborrar.IconSize = 25;
-            this.btnborrar.Location = new System.Drawing.Point(1255, 120);
+            this.btnborrar.Location = new System.Drawing.Point(1259, 120);
             this.btnborrar.Name = "btnborrar";
-            this.btnborrar.Size = new System.Drawing.Size(31, 31);
+            this.btnborrar.Size = new System.Drawing.Size(33, 33);
             this.btnborrar.TabIndex = 227;
             this.btnborrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnborrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnborrar, "Borrar folio");
             this.btnborrar.UseVisualStyleBackColor = false;
             this.btnborrar.Click += new System.EventHandler(this.btnborrar_Click);
             // 
@@ -496,5 +513,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.DataGridViewTextBoxColumn MontoTotal;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

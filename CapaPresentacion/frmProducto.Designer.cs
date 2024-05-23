@@ -29,6 +29,7 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -70,6 +71,7 @@ namespace CapaPresentacion
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,6 +94,7 @@ namespace CapaPresentacion
             this.btnlimpiarcampos.Text = "Limpiar";
             this.btnlimpiarcampos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnlimpiarcampos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnlimpiarcampos, "Borrar texto de los campos");
             this.btnlimpiarcampos.UseVisualStyleBackColor = false;
             this.btnlimpiarcampos.Click += new System.EventHandler(this.Btnlimpiarcampos_Click);
             // 
@@ -111,6 +114,7 @@ namespace CapaPresentacion
             this.btnlimpiar.Size = new System.Drawing.Size(40, 40);
             this.btnlimpiar.TabIndex = 54;
             this.btnlimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.btnlimpiar, "Limpiar");
             this.btnlimpiar.UseVisualStyleBackColor = false;
             this.btnlimpiar.Click += new System.EventHandler(this.Btnlimpiar_Click);
             // 
@@ -130,6 +134,7 @@ namespace CapaPresentacion
             this.btnbuscar.Size = new System.Drawing.Size(40, 40);
             this.btnbuscar.TabIndex = 53;
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.btnbuscar, "Buscar");
             this.btnbuscar.UseVisualStyleBackColor = false;
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
@@ -141,6 +146,7 @@ namespace CapaPresentacion
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.Size = new System.Drawing.Size(187, 29);
             this.txtbusqueda.TabIndex = 52;
+            this.toolTip1.SetToolTip(this.txtbusqueda, "Texto que se buscará");
             // 
             // cbobusqueda
             // 
@@ -152,6 +158,7 @@ namespace CapaPresentacion
             this.cbobusqueda.Name = "cbobusqueda";
             this.cbobusqueda.Size = new System.Drawing.Size(207, 32);
             this.cbobusqueda.TabIndex = 51;
+            this.toolTip1.SetToolTip(this.cbobusqueda, "Seleccionar filtro");
             // 
             // label11
             // 
@@ -206,6 +213,7 @@ namespace CapaPresentacion
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btneliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btneliminar, "Borrar producto");
             this.btneliminar.UseVisualStyleBackColor = false;
             this.btneliminar.Click += new System.EventHandler(this.Btneliminar_Click);
             // 
@@ -228,6 +236,7 @@ namespace CapaPresentacion
             this.btnguardar.Text = "Guardar";
             this.btnguardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnguardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnguardar, "Guardar producto");
             this.btnguardar.UseVisualStyleBackColor = false;
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
@@ -292,6 +301,7 @@ namespace CapaPresentacion
             this.dgvdata.RowTemplate.Height = 28;
             this.dgvdata.Size = new System.Drawing.Size(1330, 646);
             this.dgvdata.TabIndex = 47;
+            this.toolTip1.SetToolTip(this.dgvdata, "Lista de productos");
             this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
             this.dgvdata.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvdata_CellPainting);
             // 
@@ -415,6 +425,7 @@ namespace CapaPresentacion
             this.cboestado.Name = "cboestado";
             this.cboestado.Size = new System.Drawing.Size(335, 32);
             this.cboestado.TabIndex = 42;
+            this.toolTip1.SetToolTip(this.cboestado, "Activo/Inactivo");
             // 
             // cbocategoria
             // 
@@ -426,6 +437,7 @@ namespace CapaPresentacion
             this.cbocategoria.Name = "cbocategoria";
             this.cbocategoria.Size = new System.Drawing.Size(335, 32);
             this.cbocategoria.TabIndex = 41;
+            this.toolTip1.SetToolTip(this.cbocategoria, "Categoria a la que pertenece");
             // 
             // label7
             // 
@@ -446,6 +458,7 @@ namespace CapaPresentacion
             this.txtdescripcion.Name = "txtdescripcion";
             this.txtdescripcion.Size = new System.Drawing.Size(335, 29);
             this.txtdescripcion.TabIndex = 35;
+            this.toolTip1.SetToolTip(this.txtdescripcion, "Descripcion de producto");
             // 
             // txtnombre
             // 
@@ -455,6 +468,7 @@ namespace CapaPresentacion
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(335, 29);
             this.txtnombre.TabIndex = 34;
+            this.toolTip1.SetToolTip(this.txtnombre, "Nombre de producto");
             // 
             // txtcodigo
             // 
@@ -464,6 +478,7 @@ namespace CapaPresentacion
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Size = new System.Drawing.Size(335, 29);
             this.txtcodigo.TabIndex = 33;
+            this.toolTip1.SetToolTip(this.txtcodigo, "Folio producto");
             // 
             // label4
             // 
@@ -599,5 +614,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.DataGridViewTextBoxColumn EstadoValor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

@@ -29,6 +29,7 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -66,6 +67,7 @@ namespace CapaPresentacion
             this.cboestado = new System.Windows.Forms.ComboBox();
             this.txttelefono = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,6 +90,7 @@ namespace CapaPresentacion
             this.btnlimpiarcampos.Text = "Limpiar";
             this.btnlimpiarcampos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnlimpiarcampos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnlimpiarcampos, "Limpiar campos");
             this.btnlimpiarcampos.UseVisualStyleBackColor = false;
             this.btnlimpiarcampos.Click += new System.EventHandler(this.btnlimpiarcampos_Click);
             // 
@@ -107,6 +110,7 @@ namespace CapaPresentacion
             this.btnlimpiar.Size = new System.Drawing.Size(40, 40);
             this.btnlimpiar.TabIndex = 78;
             this.btnlimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.btnlimpiar, "Limpiar filtro");
             this.btnlimpiar.UseVisualStyleBackColor = false;
             this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiarbuscador_Click);
             // 
@@ -126,6 +130,7 @@ namespace CapaPresentacion
             this.btnbuscar.Size = new System.Drawing.Size(40, 40);
             this.btnbuscar.TabIndex = 77;
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.btnbuscar, "Buscar");
             this.btnbuscar.UseVisualStyleBackColor = false;
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
@@ -137,6 +142,7 @@ namespace CapaPresentacion
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.Size = new System.Drawing.Size(187, 29);
             this.txtbusqueda.TabIndex = 76;
+            this.toolTip1.SetToolTip(this.txtbusqueda, "Texto de busqueda");
             // 
             // cbobusqueda
             // 
@@ -148,6 +154,7 @@ namespace CapaPresentacion
             this.cbobusqueda.Name = "cbobusqueda";
             this.cbobusqueda.Size = new System.Drawing.Size(207, 32);
             this.cbobusqueda.TabIndex = 75;
+            this.toolTip1.SetToolTip(this.cbobusqueda, "Filtro de busqueda");
             // 
             // label11
             // 
@@ -202,6 +209,7 @@ namespace CapaPresentacion
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btneliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btneliminar, "Eliminar proveedor");
             this.btneliminar.UseVisualStyleBackColor = false;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
@@ -224,6 +232,7 @@ namespace CapaPresentacion
             this.btnguardar.Text = "Guardar";
             this.btnguardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnguardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnguardar, "Guardar proveedor");
             this.btnguardar.UseVisualStyleBackColor = false;
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
@@ -285,6 +294,7 @@ namespace CapaPresentacion
             this.dgvdata.RowTemplate.Height = 28;
             this.dgvdata.Size = new System.Drawing.Size(1330, 646);
             this.dgvdata.TabIndex = 71;
+            this.toolTip1.SetToolTip(this.dgvdata, "Lista de proveedores");
             this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
             this.dgvdata.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvdata_CellPainting);
             // 
@@ -396,6 +406,7 @@ namespace CapaPresentacion
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(335, 29);
             this.txtcorreo.TabIndex = 63;
+            this.toolTip1.SetToolTip(this.txtcorreo, "correo de proveedor");
             // 
             // txtrazonsocial
             // 
@@ -405,6 +416,7 @@ namespace CapaPresentacion
             this.txtrazonsocial.Name = "txtrazonsocial";
             this.txtrazonsocial.Size = new System.Drawing.Size(335, 29);
             this.txtrazonsocial.TabIndex = 62;
+            this.toolTip1.SetToolTip(this.txtrazonsocial, "Nombre del proveedor");
             // 
             // txtdocumento
             // 
@@ -414,6 +426,7 @@ namespace CapaPresentacion
             this.txtdocumento.Name = "txtdocumento";
             this.txtdocumento.Size = new System.Drawing.Size(335, 29);
             this.txtdocumento.TabIndex = 61;
+            this.toolTip1.SetToolTip(this.txtdocumento, "Numero de folio de proveedor");
             // 
             // label4
             // 
@@ -433,9 +446,9 @@ namespace CapaPresentacion
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(33, 253);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 24);
+            this.label3.Size = new System.Drawing.Size(84, 24);
             this.label3.TabIndex = 59;
-            this.label3.Text = "Razon social:";
+            this.label3.Text = "Nombre:";
             // 
             // label2
             // 
@@ -444,9 +457,9 @@ namespace CapaPresentacion
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(33, 153);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 24);
+            this.label2.Size = new System.Drawing.Size(57, 24);
             this.label2.TabIndex = 58;
-            this.label2.Text = "Nro Documento:";
+            this.label2.Text = "Folio:";
             // 
             // label1
             // 
@@ -468,6 +481,7 @@ namespace CapaPresentacion
             this.cboestado.Name = "cboestado";
             this.cboestado.Size = new System.Drawing.Size(335, 32);
             this.cboestado.TabIndex = 66;
+            this.toolTip1.SetToolTip(this.cboestado, "Activo/Inactivo");
             // 
             // txttelefono
             // 
@@ -477,6 +491,7 @@ namespace CapaPresentacion
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(335, 29);
             this.txttelefono.TabIndex = 81;
+            this.toolTip1.SetToolTip(this.txttelefono, "Telefono de proveedor");
             // 
             // label13
             // 
@@ -566,5 +581,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.DataGridViewTextBoxColumn EstadoValor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

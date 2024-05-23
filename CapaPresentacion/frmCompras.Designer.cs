@@ -29,6 +29,7 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -73,6 +74,7 @@ namespace CapaPresentacion
             this.btnregistrar = new FontAwesome.Sharp.IconButton();
             this.btnagregarproducto = new FontAwesome.Sharp.IconButton();
             this.label13 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -127,6 +129,7 @@ namespace CapaPresentacion
             this.cbotipodocumento.Name = "cbotipodocumento";
             this.cbotipodocumento.Size = new System.Drawing.Size(176, 32);
             this.cbotipodocumento.TabIndex = 27;
+            this.toolTip1.SetToolTip(this.cbotipodocumento, "Boleta o Factura");
             // 
             // txtfecha
             // 
@@ -136,6 +139,7 @@ namespace CapaPresentacion
             this.txtfecha.Name = "txtfecha";
             this.txtfecha.Size = new System.Drawing.Size(139, 29);
             this.txtfecha.TabIndex = 26;
+            this.toolTip1.SetToolTip(this.txtfecha, "Fecha de compra");
             // 
             // label2
             // 
@@ -204,6 +208,7 @@ namespace CapaPresentacion
             this.btnbuscar.Size = new System.Drawing.Size(28, 28);
             this.btnbuscar.TabIndex = 29;
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.btnbuscar, "Buscar proveedor ");
             this.btnbuscar.UseVisualStyleBackColor = false;
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscarproveedor_Click);
             // 
@@ -215,6 +220,7 @@ namespace CapaPresentacion
             this.txtnombreproveedor.Name = "txtnombreproveedor";
             this.txtnombreproveedor.Size = new System.Drawing.Size(162, 29);
             this.txtnombreproveedor.TabIndex = 27;
+            this.toolTip1.SetToolTip(this.txtnombreproveedor, "Nombre del proveedor");
             // 
             // txtcodproveedor
             // 
@@ -224,28 +230,29 @@ namespace CapaPresentacion
             this.txtcodproveedor.Name = "txtcodproveedor";
             this.txtcodproveedor.Size = new System.Drawing.Size(137, 29);
             this.txtcodproveedor.TabIndex = 26;
+            this.toolTip1.SetToolTip(this.txtcodproveedor, "Folio de proveedor");
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(198, 36);
+            this.label3.Location = new System.Drawing.Point(203, 36);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 20);
+            this.label3.Size = new System.Drawing.Size(73, 20);
             this.label3.TabIndex = 25;
-            this.label3.Text = "Razón Social: ";
+            this.label3.Text = "Nombre: ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 37);
+            this.label4.Location = new System.Drawing.Point(13, 38);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 20);
+            this.label4.Size = new System.Drawing.Size(47, 20);
             this.label4.TabIndex = 24;
-            this.label4.Text = "Número Documento: ";
+            this.label4.Text = "Folio:";
             // 
             // groupBox3
             // 
@@ -285,6 +292,7 @@ namespace CapaPresentacion
             this.txtcantidad.Name = "txtcantidad";
             this.txtcantidad.Size = new System.Drawing.Size(80, 29);
             this.txtcantidad.TabIndex = 36;
+            this.toolTip1.SetToolTip(this.txtcantidad, "Cantidad a comprar");
             this.txtcantidad.Value = new decimal(new int[] {
             1,
             0,
@@ -310,6 +318,7 @@ namespace CapaPresentacion
             this.txtprecioventa.Name = "txtprecioventa";
             this.txtprecioventa.Size = new System.Drawing.Size(100, 29);
             this.txtprecioventa.TabIndex = 34;
+            this.toolTip1.SetToolTip(this.txtprecioventa, "Precio de venta");
             this.txtprecioventa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtprecioventa_KeyPress);
             // 
             // label8
@@ -331,6 +340,7 @@ namespace CapaPresentacion
             this.txtpreciocompra.Name = "txtpreciocompra";
             this.txtpreciocompra.Size = new System.Drawing.Size(100, 29);
             this.txtpreciocompra.TabIndex = 32;
+            this.toolTip1.SetToolTip(this.txtpreciocompra, "Precio de compra");
             this.txtpreciocompra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpreciocompra_KeyPress);
             // 
             // label7
@@ -381,6 +391,7 @@ namespace CapaPresentacion
             this.txtproducto.Name = "txtproducto";
             this.txtproducto.Size = new System.Drawing.Size(160, 29);
             this.txtproducto.TabIndex = 27;
+            this.toolTip1.SetToolTip(this.txtproducto, "Nombre de producto");
             // 
             // txtcodproducto
             // 
@@ -390,6 +401,7 @@ namespace CapaPresentacion
             this.txtcodproducto.Name = "txtcodproducto";
             this.txtcodproducto.Size = new System.Drawing.Size(119, 29);
             this.txtcodproducto.TabIndex = 26;
+            this.toolTip1.SetToolTip(this.txtcodproducto, "Folio de producto");
             this.txtcodproducto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtcodproducto_KeyDown);
             // 
             // label5
@@ -399,9 +411,9 @@ namespace CapaPresentacion
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(216, 48);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 20);
+            this.label5.Size = new System.Drawing.Size(136, 20);
             this.label5.TabIndex = 25;
-            this.label5.Text = "Producto:";
+            this.label5.Text = "Nombre producto:";
             // 
             // label6
             // 
@@ -410,9 +422,9 @@ namespace CapaPresentacion
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(28, 48);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 20);
+            this.label6.Size = new System.Drawing.Size(47, 20);
             this.label6.TabIndex = 24;
-            this.label6.Text = "Cod. Producto:";
+            this.label6.Text = "Folio:";
             // 
             // dgvdata
             // 
@@ -460,6 +472,7 @@ namespace CapaPresentacion
             this.dgvdata.RowTemplate.Height = 28;
             this.dgvdata.Size = new System.Drawing.Size(766, 307);
             this.dgvdata.TabIndex = 32;
+            this.toolTip1.SetToolTip(this.dgvdata, "Lista de productos a comprar");
             this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
             this.dgvdata.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvdata_CellPainting);
             // 
@@ -530,6 +543,7 @@ namespace CapaPresentacion
             this.txttotalpagar.Size = new System.Drawing.Size(95, 29);
             this.txttotalpagar.TabIndex = 38;
             this.txttotalpagar.Text = "0";
+            this.toolTip1.SetToolTip(this.txttotalpagar, "Monto total");
             // 
             // label12
             // 
@@ -559,6 +573,7 @@ namespace CapaPresentacion
             this.btnregistrar.Text = "Registrar";
             this.btnregistrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnregistrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolTip1.SetToolTip(this.btnregistrar, "Guardar compra");
             this.btnregistrar.UseVisualStyleBackColor = false;
             this.btnregistrar.Click += new System.EventHandler(this.btnregistrar_Click);
             // 
@@ -579,6 +594,7 @@ namespace CapaPresentacion
             this.btnagregarproducto.Text = "Agregar";
             this.btnagregarproducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnagregarproducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolTip1.SetToolTip(this.btnagregarproducto, "Agregar productos a la compra");
             this.btnagregarproducto.UseVisualStyleBackColor = false;
             this.btnagregarproducto.Click += new System.EventHandler(this.btnagregarproducto_Click);
             // 
@@ -670,5 +686,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
         private System.Windows.Forms.DataGridViewButtonColumn btneliminar;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

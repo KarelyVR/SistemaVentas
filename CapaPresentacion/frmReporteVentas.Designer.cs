@@ -29,6 +29,7 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -60,6 +61,7 @@ namespace CapaPresentacion
             this.label10 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnbuscar = new FontAwesome.Sharp.IconButton();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,6 +81,7 @@ namespace CapaPresentacion
             this.btndescargarexcel.TabIndex = 73;
             this.btndescargarexcel.Text = "Descargar PDF";
             this.btndescargarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btndescargarexcel, "Descargar reporte en pdf");
             this.btndescargarexcel.UseVisualStyleBackColor = false;
             this.btndescargarexcel.Click += new System.EventHandler(this.btndescargarexcel_Click);
             // 
@@ -98,6 +101,7 @@ namespace CapaPresentacion
             this.btnlimpiar.Size = new System.Drawing.Size(28, 28);
             this.btnlimpiar.TabIndex = 71;
             this.btnlimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.btnlimpiar, "Borrar filtro");
             this.btnlimpiar.UseVisualStyleBackColor = false;
             this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
@@ -109,6 +113,7 @@ namespace CapaPresentacion
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.Size = new System.Drawing.Size(186, 29);
             this.txtbusqueda.TabIndex = 70;
+            this.toolTip1.SetToolTip(this.txtbusqueda, "Texto a buscar");
             this.txtbusqueda.TextChanged += new System.EventHandler(this.txtbusqueda_TextChanged);
             // 
             // cbobusqueda
@@ -120,6 +125,7 @@ namespace CapaPresentacion
             this.cbobusqueda.Name = "cbobusqueda";
             this.cbobusqueda.Size = new System.Drawing.Size(155, 32);
             this.cbobusqueda.TabIndex = 69;
+            this.toolTip1.SetToolTip(this.cbobusqueda, "Filtro de busqueda");
             // 
             // label11
             // 
@@ -179,6 +185,7 @@ namespace CapaPresentacion
             this.dgvdata.RowHeadersWidth = 51;
             this.dgvdata.Size = new System.Drawing.Size(1809, 566);
             this.dgvdata.TabIndex = 67;
+            this.toolTip1.SetToolTip(this.dgvdata, "Lista de reporte de ventas");
             // 
             // FechaRegistro
             // 
@@ -294,6 +301,7 @@ namespace CapaPresentacion
             this.btnbuscarreporte.TabIndex = 65;
             this.btnbuscarreporte.Text = "Buscar";
             this.btnbuscarreporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnbuscarreporte, "Buscar ventas");
             this.btnbuscarreporte.UseVisualStyleBackColor = false;
             this.btnbuscarreporte.Click += new System.EventHandler(this.btnbuscarreporte_Click);
             // 
@@ -306,6 +314,7 @@ namespace CapaPresentacion
             this.txtfechafin.Name = "txtfechafin";
             this.txtfechafin.Size = new System.Drawing.Size(156, 29);
             this.txtfechafin.TabIndex = 61;
+            this.toolTip1.SetToolTip(this.txtfechafin, "Fecha fin de ventas");
             // 
             // label2
             // 
@@ -327,6 +336,7 @@ namespace CapaPresentacion
             this.txtfechainicio.Name = "txtfechainicio";
             this.txtfechainicio.Size = new System.Drawing.Size(156, 29);
             this.txtfechainicio.TabIndex = 57;
+            this.toolTip1.SetToolTip(this.txtfechainicio, "Fecha inicio de ventas");
             // 
             // label1
             // 
@@ -387,6 +397,7 @@ namespace CapaPresentacion
             this.btnbuscar.Size = new System.Drawing.Size(28, 28);
             this.btnbuscar.TabIndex = 245;
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.btnbuscar, "Buscar");
             this.btnbuscar.UseVisualStyleBackColor = false;
             // 
             // frmReporteVentas
@@ -451,5 +462,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label5;
         private FontAwesome.Sharp.IconButton btnbuscar;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
