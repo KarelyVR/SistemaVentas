@@ -227,7 +227,51 @@ namespace CapaDatos
             return oLista;
         }
 
+        //metodo que retorna una lista de ventas
+        public List<Venta> Listar()
+        {
+            List<Venta> lista = new List<Venta>();
+            using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
+            {
+                try
+                {
 
+                    StringBuilder query = new StringBuilder();
+                    query.AppendLine("SELECT v.IdVenta, u.IdUsuario, u.NombreCompleto, v.TipoDocumento, v.NumeroDocumento, v.MontoTotal, v.FechaRegistro FROM VENTA v");
+                    query.AppendLine("INNER JOIN USUARIO u ON  v.IdUsuario = u.IdUsuario");
+                    query.AppendLine("ORDER BY v.FechaRegistro DESC");
+
+                    SqlCommand cmd = new SqlCommand(query.ToString(), oconexion);
+                    cmd.CommandType = CommandType.Text;
+
+                    oconexion.Open();
+
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            lista.Add(new Venta()
+                            {
+                                IdVenta = Convert.ToInt32(dr["IdVenta"]),
+                                oUsuario = new Usuario() { IdUsuario = Convert.ToInt32(dr["IdUsuario"]),
+                                NombreCompleto = dr["NombreCompleto"].ToString() },
+                                TipoDocumento = dr["TipoDocumento"].ToString(),
+                                NumeroDocumento = dr["NumeroDocumento"].ToString(),
+                                MontoTotal = Convert.ToDecimal(dr["MontoTotal"].ToString()),
+                                FechaRegistro = dr["FechaRegistro"].ToString()
+                            });
+                        }
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    lista = new List<Venta>();
+                }
+            }
+            return lista;
+        }
 
     }
 }

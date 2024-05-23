@@ -64,6 +64,7 @@ namespace CapaEntidad
                 fuente = new Font("consola", 12, FontStyle.Bold);
                 e.Graphics.DrawString("------------------------------------------------------------------------------------------------------------------------------", fuente, Brushes.Black, posX, posY);
                 posY += 30;
+                e.Graphics.DrawString("VENTA #" + Venta.NumeroDocumento, fuente, Brushes.Black, 680, posY);
                 e.Graphics.DrawString("FACTURA #" + Factura.IdFactura, fuente, Brushes.Black, posX, posY);
                 posY += 50;
                 fuente = new Font("consola", 10, FontStyle.Bold);

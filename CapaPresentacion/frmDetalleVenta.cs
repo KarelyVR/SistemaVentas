@@ -1,5 +1,6 @@
 ﻿using CapaEntidad;
 using CapaNegocio;
+using CapaPresentacion.Modales;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.tool.xml;
@@ -25,6 +26,15 @@ namespace CapaPresentacion
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
+            using (var modal = new mdVenta())
+            {
+                var result = modal.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    txtnumerodocumento.Text = modal._Venta.NumeroDocumento.ToString();
+                }
+            }
+
             Venta oVenta = new CN_Venta().ObtenerVenta(txtnumerodocumento.Text);
 
             if (oVenta.IdVenta != 0) {
@@ -56,6 +66,7 @@ namespace CapaPresentacion
             txtfecha.Text = "";
             txttipodocumento.Text = "";
             txtusuario.Text = "";
+            txtnumerodocumento.Text = "";
 
             dgvdata.Rows.Clear();
             txtmontototal.Text = "0.00";
