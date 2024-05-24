@@ -56,6 +56,14 @@ namespace CapaPresentacion
                 txtmontopago.Text = oVenta.MontoPago.ToString("0.00");
                 txtmontocambio.Text = oVenta.MontoCambio.ToString("0.00");
 
+                if (txttipodocumento.Text == "Factura")
+                {
+                    btnconsultar.Visible = true;
+                }
+                else
+                {
+                    btnconsultar.Visible = false;
+                }
 
             }
 
@@ -76,60 +84,83 @@ namespace CapaPresentacion
 
         private void btndescargar_Click(object sender, EventArgs e)
         {
-            if (txttipodocumento.Text == "")
+            string mensaje = string.Empty;
+            Venta oVenta = new CN_Venta().ObtenerVenta(txtnumerodocumento.Text);
+            int idgenerado = oVenta.IdVenta;
+
+            if (idgenerado != 0)
             {
-                MessageBox.Show("No se encontraron resultados", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
-
-            string Texto_Html = Properties.Resources.PlantillaVenta.ToString();
-
-            Texto_Html = Texto_Html.Replace("@tipodocumento", txttipodocumento.Text.ToUpper());
-            Texto_Html = Texto_Html.Replace("@numerodocumento", txtnumerodocumento.Text);
-
-
-            Texto_Html = Texto_Html.Replace("@fecharegistro", txtfecha.Text);
-            Texto_Html = Texto_Html.Replace("@usuarioregistro", txtusuario.Text);
-
-            string filas = string.Empty;
-            foreach (DataGridViewRow row in dgvdata.Rows)
-            {
-                filas += "<tr>";
-                filas += "<td>" + row.Cells["Producto"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Precio"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Cantidad"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["SubTotal"].Value.ToString() + "</td>";
-                filas += "</tr>";
-            }
-            Texto_Html = Texto_Html.Replace("@filas", filas);
-            Texto_Html = Texto_Html.Replace("@montototal", txtmontototal.Text);
-            Texto_Html = Texto_Html.Replace("@pagocon", txtmontopago.Text);
-            Texto_Html = Texto_Html.Replace("@cambio", txtmontocambio.Text);
-
-            SaveFileDialog savefile = new SaveFileDialog();
-            savefile.FileName = string.Format("Venta_{0}.pdf", txtnumerodocumento.Text);
-            savefile.Filter = "Pdf Files|*.pdf";
-
-            if (savefile.ShowDialog() == DialogResult.OK)
-            {
-                using (FileStream stream = new FileStream(savefile.FileName, FileMode.Create))
+                var factura = new CN_Factura().ObtenerFactura(idgenerado);
                 {
-
-                    Document pdfDoc = new Document(PageSize.A4, 25, 25, 25, 25);
-
-                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
-                    pdfDoc.Open();
-
-                    using (StringReader sr = new StringReader(Texto_Html))
+                    if(factura.Factura != null)
                     {
-                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                        factura.empresa = "Abarrotes Dani";
+                        factura.direccion = "Del Limon 223, col. Los Cipreses, San Nicolás de los Garza";
+                        factura.telefono = "8119920181";
+                        factura.logo = PLogo.Image;
+                        factura.vendedor = txtusuario.Text;
+                        factura.imprimir(factura);
                     }
-
-                    pdfDoc.Close();
-                    stream.Close();
-                    MessageBox.Show("Documento Generado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                    {
+                        mensaje = "No existe una factura para esta venta";
+                        MessageBox.Show(mensaje);
+                    }
                 }
             }
+            else
+            {
+                MessageBox.Show(mensaje);
+            }
+
+            //string Texto_Html = Properties.Resources.PlantillaVenta.ToString();
+
+            //Texto_Html = Texto_Html.Replace("@tipodocumento", txttipodocumento.Text.ToUpper());
+            //Texto_Html = Texto_Html.Replace("@numerodocumento", txtnumerodocumento.Text);
+
+
+            //Texto_Html = Texto_Html.Replace("@fecharegistro", txtfecha.Text);
+            //Texto_Html = Texto_Html.Replace("@usuarioregistro", txtusuario.Text);
+
+            //string filas = string.Empty;
+            //foreach (DataGridViewRow row in dgvdata.Rows)
+            //{
+            //    filas += "<tr>";
+            //    filas += "<td>" + row.Cells["Producto"].Value.ToString() + "</td>";
+            //    filas += "<td>" + row.Cells["Precio"].Value.ToString() + "</td>";
+            //    filas += "<td>" + row.Cells["Cantidad"].Value.ToString() + "</td>";
+            //    filas += "<td>" + row.Cells["SubTotal"].Value.ToString() + "</td>";
+            //    filas += "</tr>";
+            //}
+            //Texto_Html = Texto_Html.Replace("@filas", filas);
+            //Texto_Html = Texto_Html.Replace("@montototal", txtmontototal.Text);
+            //Texto_Html = Texto_Html.Replace("@pagocon", txtmontopago.Text);
+            //Texto_Html = Texto_Html.Replace("@cambio", txtmontocambio.Text);
+
+            //SaveFileDialog savefile = new SaveFileDialog();
+            //savefile.FileName = string.Format("Venta_{0}.pdf", txtnumerodocumento.Text);
+            //savefile.Filter = "Pdf Files|*.pdf";
+
+            //if (savefile.ShowDialog() == DialogResult.OK)
+            //{
+            //    using (FileStream stream = new FileStream(savefile.FileName, FileMode.Create))
+            //    {
+
+            //        Document pdfDoc = new Document(PageSize.A4, 25, 25, 25, 25);
+
+            //        PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
+            //        pdfDoc.Open();
+
+            //        using (StringReader sr = new StringReader(Texto_Html))
+            //        {
+            //            XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+            //        }
+
+            //        pdfDoc.Close();
+            //        stream.Close();
+            //        MessageBox.Show("Documento Generado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    }
+            //}
         }
     }
 }
