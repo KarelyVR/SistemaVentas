@@ -118,23 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="button1.Text" xml:space="preserve">
-    <value>1. Elegir el N° de documento con el cual se identificara la cuenta.
+    <value>1. Elegir el N° de documento con el cual se identificará la cuenta.
 2. Agregar el nombre completo de la persona.
 3. Ingresar el correo de la persona.
 4. Ingresar la contraseña de la cuenta.
 5. Confirmar la contraseña.
-6. Elegir el rol de la persona si tendra permisos de adminsitrador en el sistema o permisos de empleado.
-7. </value>
-  </data>
-  <data name="button3.Text" xml:space="preserve">
-    <value>1. Ingresa la fecha y tipo de documento para registrar la venta.
-2. En la sección de información del producto:
-    &gt;Selecciona el producto haciendo clic en el código correspondiente.
-    &gt;La información del producto (nombre, precio y stock disponible) se llenará automáticamente.
-    &gt;Elige la cantidad que deseas vender.
-3. Agrega el producto y el monto total a pagar.
-4. Indica con qué billete paga el cliente.
-5. Haz clic en "crear venta" para generar el ticket de la venta.
+6. En el siguiente recuadro elegimos que el usuario estará activo.
+7. Elegir el rol de la persona si tendrá permisos de administrador en el sistema o permisos de empleado.
+8. Damos clic en el botón verde guardar.
 </value>
   </data>
   <data name="button2.Text" xml:space="preserve">
@@ -155,6 +146,109 @@
 4. Agregamos los productos faltantes.
 5. Insertamo el monto con que se pagara.
 6. Finzalizamos la orden de compra
+</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>1. Ingresa la fecha y tipo de documento para registrar la venta.
+2. En la sección de información del producto:
+    &gt;Selecciona el producto haciendo clic en el código correspondiente.
+    &gt;La información del producto (nombre, precio y stock disponible) se llenará automáticamente.
+    &gt;Elige la cantidad que deseas vender.
+3. Agrega el producto y el monto total a pagar.
+4. Indica con qué billete paga el cliente.
+5. Haz clic en "crear venta" para generar el ticket de la venta.
+</value>
+  </data>
+  <data name="button4.Text" xml:space="preserve">
+    <value>1 Hacemos clic en la pestaña de proveedor.
+2. Nos aparece la pantalla con información del detalle de los proveedores existentes.
+3. Seleccionamos el proveedor que deseemos y después podemos ir cambiar los detalles como n° de documento, razón social, correo, teléfono y el estado.
+4. En caso de querer agregar un nuevo proveedor solo ponemos el n° de documento, razón social, correo, teléfono y el estado activo
+5. Para guardar damos clic en el botón rosa verde guardar.
+6. Para cambiar los datos de algún proveedor ya existente nos vamos a los detalles los modificamos al igual que el estado y damos clic en el botón verde guardar.</value>
+  </data>
+  <data name="button5.Text" xml:space="preserve">
+    <value>1 Hacemos clic en la pestaña de proveedor.
+2. Nos aparece la pantalla con información del detalle de los proveedores existentes.
+3. Seleccionamos la opción que deseemos eliminar.
+4. Elegimos y damos clic en el botón rosa que dice eliminar.
+5. Nos aparece un mensaje de advertencia damos que sí y se elimina.
+</value>
+  </data>
+  <data name="button6.Text" xml:space="preserve">
+    <value>1. Ingresar el numero de ticket del cual se desea el rembolso.
+2. Lo siguiente es que aparece la información de la compra.
+3. Elegimos cuales productos son los que se hará el rembolso.
+4. Damos clic en rembolsar para ejecutarlo.</value>
+  </data>
+  <data name="button7.Text" xml:space="preserve">
+    <value>1. Entramos a la pantalla de ventas
+2. Elegimos la opción de Factura.
+3. Completamos los datos del cliente:
+     &gt; Nombre y apellidos.
+     &gt;Dirección de correo electrónico.
+     &gt;Teléfono.
+     &gt;Razón social.
+     &gt;Uso CFDI.
+4. Completamos la dirección del cliente.
+5. Guardamos y se imprime la factura.
+</value>
+  </data>
+  <data name="button10.Text" xml:space="preserve">
+    <value>1. En el icono de compras nos vamos a la segunda opción de ver detalles.
+2. Ingresamos el numero de folio de la compra que necesitemos.
+3. Damos clic en el icono de la lupa y automáticamente se llenan los espacios con la información de esa compra.
+4. Para tener un documento de los detalles damos clic en el botón descargar y elegimos la ruta de descarga dentro del equipo.
+5. Damos clic en aceptar y se nos descarga el archivo de detalles de compra solicitado.
+</value>
+  </data>
+  <data name="button11.Text" xml:space="preserve">
+    <value>1 Hacemos clic en el botón de Mantenimiento --- &gt; Categoría.
+2. Nos aparece la pantalla con información del detalle de las categorías existentes.
+3. Seleccionamos la categoría que deseemos y después podemos ir cambiar los detalles.
+4. En caso de querer agregar una nueva categoría solo ponemos la descripción, elegimos el estado activo  y damos clic en el botón rosa verde guardar.
+5. Para cambiar los datos de alguna categoría ya existente nos vamos en la descripción la modificamos al igual que el estado y damos clic en el botón verde guardar.</value>
+  </data>
+  <data name="button12.Text" xml:space="preserve">
+    <value>1 Hacemos clic en el botón de Mantenimiento --- &gt; Categoría.
+2. Nos aparece la pantalla con información del detalle de las categorías existentes.
+3. Seleccionamos la categoría que deseemos.
+4. Elegimos y damos clic en el botón rosa que dice eliminar.
+5. Nos aparece un mensaje de advertencia damos que sí y se elimina.</value>
+  </data>
+  <data name="button13.Text" xml:space="preserve">
+    <value>1 Hacemos clic en el botón de Mantenimiento --- &gt; Producto.
+2. Nos aparece la pantalla con información del detalle de los productos existentes.
+3. Seleccionamos el producto que deseemos y después podemos ir cambiar los detalles como código, nombre, descripción, categoría y estado.
+4. En caso de querer agregar un nuevo producto solo ponemos el código, nombre, descripción, categoría y elegimos el estado activo.
+5. Para guardar el producto damos clic en el botón rosa verde guardar.
+5. Para cambiar los datos de alguna categoría ya existente nos vamos a los detalles del producto los modificamos al igual que el estado y damos clic en el botón verde guardar.</value>
+  </data>
+  <data name="button14.Text" xml:space="preserve">
+    <value>1 Hacemos clic en el botón de Mantenimiento --- &gt; Producto.
+2. Nos aparece la pantalla con información del detalle de los productos existentes.
+3. Seleccionamos la opción que deseemos eliminar.
+4. Elegimos y damos clic en el botón rosa que dice eliminar.
+5. Nos aparece un mensaje de advertencia damos que sí y se elimina.</value>
+  </data>
+  <data name="button15.Text" xml:space="preserve">
+    <value>1. Vamos a la pestaña Reportes ---- &gt; Reportes de compras.
+2. Podemos filtrar dichos reportes con:
+     &gt; Fecha de inicio
+     &gt; Fecha de fin
+     &gt; Proveedor
+3. Una vez seleccionados los reportes damos clic en el botón verde para descargar el documento.
+4. Abrimos el archivo en la carpeta seleccionada.
+</value>
+  </data>
+  <data name="button16.Text" xml:space="preserve">
+    <value>1. Vamos a la pestaña Reportes ---- &gt; Reportes de ventas.
+2. Podemos filtrar dichos reportes con:
+     &gt; Fecha de inicio
+     &gt; Fecha de fin
+     &gt; Proveedor
+3. Una vez seleccionados los reportes damos clic en el botón verde para descargar el documento.
+4. Abrimos el archivo en la carpeta seleccionada.
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

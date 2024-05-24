@@ -37,6 +37,7 @@ namespace CapaPresentacion
             PnlTextP13.Visible = false;
             PnlTextP14.Visible = false;
             PnlTextP15.Visible = false;
+            PnlTextP16.Visible = false;
 
         }
 
@@ -72,6 +73,8 @@ namespace CapaPresentacion
                 PnlTextP14.Visible = false;
             if (PnlTextP15.Visible == true)
                 PnlTextP15.Visible = false;
+            if (PnlTextP16.Visible == true)
+                PnlTextP16.Visible = false;
         }
         private void showSubMenu(Panel subMenu)
         {
@@ -235,6 +238,16 @@ namespace CapaPresentacion
         }
 
         private void button15_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void BtnP16_Click(object sender, EventArgs e)
+        {
+            showSubMenu(PnlTextP16);
+        }
+
+        private void button16_Click(object sender, EventArgs e)
         {
             hideSubMenu();
         }
