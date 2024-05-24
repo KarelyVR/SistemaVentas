@@ -71,11 +71,10 @@
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(479, 49);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(359, 40);
             this.label10.Name = "label10";
-            this.label10.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.label10.Size = new System.Drawing.Size(1490, 950);
+            this.label10.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.label10.Size = new System.Drawing.Size(1118, 772);
             this.label10.TabIndex = 198;
             // 
             // btnbuscar
@@ -90,7 +89,8 @@
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscar.IconSize = 25;
             this.btnbuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnbuscar.Location = new System.Drawing.Point(1222, 121);
+            this.btnbuscar.Location = new System.Drawing.Point(1222, 122);
+            this.btnbuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(33, 33);
             this.btnbuscar.TabIndex = 208;
@@ -105,9 +105,10 @@
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.White;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(1028, 126);
+            this.label26.Location = new System.Drawing.Point(1024, 127);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(74, 29);
+            this.label26.Size = new System.Drawing.Size(57, 24);
             this.label26.TabIndex = 209;
             this.label26.Text = "Folio:";
             // 
@@ -115,10 +116,11 @@
             // 
             this.txtnumerodocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtnumerodocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnumerodocumento.Location = new System.Drawing.Point(1089, 123);
+            this.txtnumerodocumento.Location = new System.Drawing.Point(1085, 124);
+            this.txtnumerodocumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtnumerodocumento.Name = "txtnumerodocumento";
             this.txtnumerodocumento.ReadOnly = true;
-            this.txtnumerodocumento.Size = new System.Drawing.Size(129, 29);
+            this.txtnumerodocumento.Size = new System.Drawing.Size(133, 29);
             this.txtnumerodocumento.TabIndex = 207;
             this.toolTip1.SetToolTip(this.txtnumerodocumento, "Folio de venta");
             // 
@@ -133,7 +135,8 @@
             this.btnborrar.IconColor = System.Drawing.Color.Black;
             this.btnborrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnborrar.IconSize = 25;
-            this.btnborrar.Location = new System.Drawing.Point(1258, 121);
+            this.btnborrar.Location = new System.Drawing.Point(1259, 122);
+            this.btnborrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnborrar.Name = "btnborrar";
             this.btnborrar.Size = new System.Drawing.Size(33, 33);
             this.btnborrar.TabIndex = 210;
@@ -153,10 +156,10 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(524, 214);
+            this.groupBox1.Location = new System.Drawing.Point(524, 201);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(1083, 169);
+            this.groupBox1.Size = new System.Drawing.Size(812, 137);
             this.groupBox1.TabIndex = 211;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información Venta";
@@ -165,11 +168,10 @@
             // 
             this.txtusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusuario.Location = new System.Drawing.Point(748, 85);
-            this.txtusuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtusuario.Location = new System.Drawing.Point(561, 69);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.ReadOnly = true;
-            this.txtusuario.Size = new System.Drawing.Size(267, 34);
+            this.txtusuario.Size = new System.Drawing.Size(201, 29);
             this.txtusuario.TabIndex = 93;
             this.toolTip1.SetToolTip(this.txtusuario, "Usuario que realizó la venta");
             // 
@@ -178,10 +180,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(752, 57);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(564, 46);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 25);
+            this.label2.Size = new System.Drawing.Size(68, 20);
             this.label2.TabIndex = 92;
             this.label2.Text = "Usuario:";
             // 
@@ -189,11 +190,10 @@
             // 
             this.txttipodocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txttipodocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttipodocumento.Location = new System.Drawing.Point(403, 85);
-            this.txttipodocumento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttipodocumento.Location = new System.Drawing.Point(302, 69);
             this.txttipodocumento.Name = "txttipodocumento";
             this.txttipodocumento.ReadOnly = true;
-            this.txttipodocumento.Size = new System.Drawing.Size(267, 34);
+            this.txttipodocumento.Size = new System.Drawing.Size(201, 29);
             this.txttipodocumento.TabIndex = 87;
             this.toolTip1.SetToolTip(this.txttipodocumento, "Tipo de venta");
             // 
@@ -201,11 +201,10 @@
             // 
             this.txtfecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtfecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfecha.Location = new System.Drawing.Point(71, 85);
-            this.txtfecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtfecha.Location = new System.Drawing.Point(53, 69);
             this.txtfecha.Name = "txtfecha";
             this.txtfecha.ReadOnly = true;
-            this.txtfecha.Size = new System.Drawing.Size(216, 34);
+            this.txtfecha.Size = new System.Drawing.Size(163, 29);
             this.txtfecha.TabIndex = 90;
             this.toolTip1.SetToolTip(this.txtfecha, "Folio de venta");
             // 
@@ -214,10 +213,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(65, 57);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(49, 46);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 25);
+            this.label3.Size = new System.Drawing.Size(58, 20);
             this.label3.TabIndex = 89;
             this.label3.Text = "Fecha:";
             // 
@@ -226,10 +224,9 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(411, 57);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(308, 46);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(162, 25);
+            this.label4.Size = new System.Drawing.Size(130, 20);
             this.label4.TabIndex = 91;
             this.label4.Text = "Tipo Documento:";
             // 
@@ -260,8 +257,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdata.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvdata.Location = new System.Drawing.Point(699, 470);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdata.Location = new System.Drawing.Point(524, 382);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -270,7 +266,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvdata.RowTemplate.Height = 28;
-            this.dgvdata.Size = new System.Drawing.Size(1083, 315);
+            this.dgvdata.Size = new System.Drawing.Size(812, 256);
             this.dgvdata.TabIndex = 213;
             this.toolTip1.SetToolTip(this.dgvdata, "Lista de venta");
             // 
@@ -311,9 +307,10 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(729, 693);
+            this.label6.Location = new System.Drawing.Point(714, 698);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(149, 29);
+            this.label6.Size = new System.Drawing.Size(117, 24);
             this.label6.TabIndex = 218;
             this.label6.Text = "Monto Pago:";
             // 
@@ -321,10 +318,11 @@
             // 
             this.txtmontopago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtmontopago.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmontopago.Location = new System.Drawing.Point(852, 693);
+            this.txtmontopago.Location = new System.Drawing.Point(835, 695);
+            this.txtmontopago.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtmontopago.Name = "txtmontopago";
             this.txtmontopago.ReadOnly = true;
-            this.txtmontopago.Size = new System.Drawing.Size(83, 29);
+            this.txtmontopago.Size = new System.Drawing.Size(81, 29);
             this.txtmontopago.TabIndex = 219;
             this.txtmontopago.Text = "0";
             this.toolTip1.SetToolTip(this.txtmontopago, "Total pagado");
@@ -334,9 +332,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(527, 693);
+            this.label5.Location = new System.Drawing.Point(501, 698);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 29);
+            this.label5.Size = new System.Drawing.Size(114, 24);
             this.label5.TabIndex = 216;
             this.label5.Text = "Monto Total:";
             // 
@@ -344,11 +343,10 @@
             // 
             this.txtmontocambio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtmontocambio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmontocambio.Location = new System.Drawing.Point(1447, 853);
-            this.txtmontocambio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtmontocambio.Location = new System.Drawing.Point(1067, 695);
             this.txtmontocambio.Name = "txtmontocambio";
             this.txtmontocambio.ReadOnly = true;
-            this.txtmontocambio.Size = new System.Drawing.Size(71, 29);
+            this.txtmontocambio.Size = new System.Drawing.Size(79, 29);
             this.txtmontocambio.TabIndex = 217;
             this.txtmontocambio.Text = "0";
             this.toolTip1.SetToolTip(this.txtmontocambio, "Total cambio");
@@ -358,9 +356,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(941, 696);
+            this.label1.Location = new System.Drawing.Point(924, 698);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 29);
+            this.label1.Size = new System.Drawing.Size(138, 24);
             this.label1.TabIndex = 214;
             this.label1.Text = "Monto Cambio:";
             // 
@@ -368,10 +367,11 @@
             // 
             this.txtmontototal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtmontototal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmontototal.Location = new System.Drawing.Point(637, 693);
+            this.txtmontototal.Location = new System.Drawing.Point(619, 695);
+            this.txtmontototal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtmontototal.Name = "txtmontototal";
             this.txtmontototal.ReadOnly = true;
-            this.txtmontototal.Size = new System.Drawing.Size(86, 29);
+            this.txtmontototal.Size = new System.Drawing.Size(91, 29);
             this.txtmontototal.TabIndex = 215;
             this.txtmontototal.Text = "0";
             this.toolTip1.SetToolTip(this.txtmontototal, "Total de la venta");
@@ -381,21 +381,22 @@
             this.btnconsultar.AutoSize = true;
             this.btnconsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnconsultar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnconsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnconsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnconsultar.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
             this.btnconsultar.IconColor = System.Drawing.Color.Black;
             this.btnconsultar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnconsultar.IconSize = 30;
             this.btnconsultar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnconsultar.Location = new System.Drawing.Point(1558, 844);
-            this.btnconsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnconsultar.Location = new System.Drawing.Point(1168, 686);
             this.btnconsultar.Name = "btnconsultar";
-            this.btnconsultar.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.btnconsultar.Size = new System.Drawing.Size(224, 54);
+            this.btnconsultar.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            this.btnconsultar.Size = new System.Drawing.Size(195, 46);
             this.btnconsultar.TabIndex = 220;
             this.btnconsultar.Text = "Consultar Factura";
             this.btnconsultar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnconsultar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.toolTip1.SetToolTip(this.btnconsultar, "Consultar la factura de venta");
             this.btnconsultar.UseVisualStyleBackColor = false;
             this.btnconsultar.Visible = false;
             this.btnconsultar.Click += new System.EventHandler(this.btndescargar_Click);
@@ -405,10 +406,9 @@
             this.label13.BackColor = System.Drawing.Color.MediumVioletRed;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.Control;
-            this.label13.Location = new System.Drawing.Point(856, 85);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(642, 69);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(1113, 12);
+            this.label13.Size = new System.Drawing.Size(835, 10);
             this.label13.TabIndex = 247;
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -417,30 +417,28 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(529, 73);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(397, 59);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(205, 36);
+            this.label7.Size = new System.Drawing.Size(169, 29);
             this.label7.TabIndex = 246;
             this.label7.Text = "Detalle Venta";
             // 
             // PLogo
             // 
             this.PLogo.Image = global::CapaPresentacion.Properties.Resources.logo_tienda;
-            this.PLogo.Location = new System.Drawing.Point(1809, 49);
-            this.PLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.PLogo.Location = new System.Drawing.Point(1357, 40);
             this.PLogo.Name = "PLogo";
-            this.PLogo.Size = new System.Drawing.Size(160, 148);
+            this.PLogo.Size = new System.Drawing.Size(120, 120);
             this.PLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PLogo.TabIndex = 286;
             this.PLogo.TabStop = false;
             // 
             // frmDetalleVenta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(2517, 1056);
+            this.ClientSize = new System.Drawing.Size(1888, 858);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnconsultar);
@@ -459,7 +457,6 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.PLogo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmDetalleVenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalle de Venta";
