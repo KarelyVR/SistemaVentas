@@ -1,5 +1,6 @@
 ﻿using CapaEntidad;
 using CapaNegocio;
+using CapaPresentacion.Modales;
 using DocumentFormat.OpenXml.Vml;
 using DocumentFormat.OpenXml.Wordprocessing;
 using System;
@@ -29,6 +30,15 @@ namespace CapaPresentacion
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
+            using (var modal = new mdVenta())
+            {
+                var result = modal.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    txtnumerodocumento.Text = modal._Venta.NumeroDocumento.ToString();
+                }
+            }
+
             Venta oVenta = new CN_Venta().ObtenerVenta(txtnumerodocumento.Text);
             cantidades = oVenta.oDetalle_Venta;
 
@@ -150,14 +160,37 @@ namespace CapaPresentacion
                 
                 // Suponiendo que los valores que necesitas están en la segunda y cuarta columna
                 string IdProducto = dgvdata.Rows[i].Cells[0].Value.ToString(); // Segunda columna
-                int cantidad = (int)dgvdata.Rows[i].Cells[2].Value; // Cuarta columna
+                //int cantidad = (int)dgvdata.Rows[i].Cells[2].Value; // Cuarta columna
+                
+                // Verificar si la celda no es null y convertir de manera segura
+                object cellValue = dgvdata.Rows[i].Cells[2].Value;
+                int cantidad;
 
-                // Crear un nuevo objeto Valores y añadirlo a la lista
-                CN_Reembolso reembolso = new CN_Reembolso();
-                j += reembolso.RealizarReembolso(IdProducto, (int)cantidad);
+                if (cellValue != null && int.TryParse(cellValue.ToString(), out cantidad))
+                {
+                    // Crear un nuevo objeto Valores y añadirlo a la lista
+                    CN_Reembolso reembolso = new CN_Reembolso();
+                    j += reembolso.RealizarReembolso(IdProducto, cantidad);
+                }
+                else
+                {
+                    // Manejar el caso donde la conversión no es posible (opcional)
+                    MessageBox.Show($"Error al convertir la cantidad en la fila {i + 1}");
+                    return; // Salir del método si hay un error de conversión
+                }
+
+                //// Crear un nuevo objeto Valores y añadirlo a la lista
+                //CN_Reembolso reembolso = new CN_Reembolso();
+                //j += reembolso.RealizarReembolso(IdProducto, (int)cantidad);
             }
             if(j>0)
                 MessageBox.Show("Reembolso exitoso");
+                txtfecha.Text = "";
+                txtnumerodocumento.Text = "";
+                txttipodocumento.Text = "";
+                txtusuario.Text = "";
+                txtmontototal.Text = "";
+                dgvdata.Rows.Clear();   
         }
     }
 

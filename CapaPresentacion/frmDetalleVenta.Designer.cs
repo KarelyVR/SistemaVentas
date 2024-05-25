@@ -90,7 +90,7 @@
             this.btnbuscar.IconSize = 25;
             this.btnbuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnbuscar.Location = new System.Drawing.Point(1222, 122);
-            this.btnbuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnbuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(33, 33);
             this.btnbuscar.TabIndex = 208;
@@ -117,7 +117,7 @@
             this.txtnumerodocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtnumerodocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnumerodocumento.Location = new System.Drawing.Point(1085, 124);
-            this.txtnumerodocumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtnumerodocumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtnumerodocumento.Name = "txtnumerodocumento";
             this.txtnumerodocumento.ReadOnly = true;
             this.txtnumerodocumento.Size = new System.Drawing.Size(133, 29);
@@ -136,7 +136,7 @@
             this.btnborrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnborrar.IconSize = 25;
             this.btnborrar.Location = new System.Drawing.Point(1259, 122);
-            this.btnborrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnborrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnborrar.Name = "btnborrar";
             this.btnborrar.Size = new System.Drawing.Size(33, 33);
             this.btnborrar.TabIndex = 210;
@@ -157,7 +157,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(524, 201);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(812, 137);
             this.groupBox1.TabIndex = 211;
@@ -319,7 +319,7 @@
             this.txtmontopago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtmontopago.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmontopago.Location = new System.Drawing.Point(835, 695);
-            this.txtmontopago.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtmontopago.Margin = new System.Windows.Forms.Padding(2);
             this.txtmontopago.Name = "txtmontopago";
             this.txtmontopago.ReadOnly = true;
             this.txtmontopago.Size = new System.Drawing.Size(81, 29);
@@ -368,7 +368,7 @@
             this.txtmontototal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtmontototal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmontototal.Location = new System.Drawing.Point(619, 695);
-            this.txtmontototal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtmontototal.Margin = new System.Windows.Forms.Padding(2);
             this.txtmontototal.Name = "txtmontototal";
             this.txtmontototal.ReadOnly = true;
             this.txtmontototal.Size = new System.Drawing.Size(91, 29);

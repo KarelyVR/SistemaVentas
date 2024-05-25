@@ -66,6 +66,7 @@
     <Compile Include="CD_Permiso.cs" />
     <Compile Include="CD_Producto.cs" />
     <Compile Include="CD_Proveedor.cs" />
+    <Compile Include="CD_Reembolso.cs" />
     <Compile Include="CD_Reporte.cs" />
     <Compile Include="CD_Rol.cs" />
     <Compile Include="CD_Usuario.cs" />
@@ -85,7 +86,6 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
-    <None Include="App.config" />
     <None Include="CapaDatos_Diagrama.cd" />
     <None Include="packages.config" />
   </ItemGroup>
