@@ -45,6 +45,7 @@ namespace CapaPresentacion
             this.btnsalir = new FontAwesome.Sharp.IconButton();
             this.idUser = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnNotificaciones = new FontAwesome.Sharp.IconButton();
             this.menuusuario = new FontAwesome.Sharp.IconMenuItem();
             this.menucompras = new FontAwesome.Sharp.IconMenuItem();
             this.submenuregistrarcompra = new FontAwesome.Sharp.IconMenuItem();
@@ -87,11 +88,11 @@ namespace CapaPresentacion
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.LightPink;
-            this.label1.Font = new System.Drawing.Font("Gribble", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(18, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 51);
+            this.label1.Size = new System.Drawing.Size(379, 61);
             this.label1.TabIndex = 2;
             this.label1.Text = "Abarrotes Dani";
             // 
@@ -227,6 +228,25 @@ namespace CapaPresentacion
             this.idUser.TabIndex = 7;
             this.idUser.Text = "idUser";
             this.idUser.Visible = false;
+            // 
+            // btnNotificaciones
+            // 
+            this.btnNotificaciones.BackColor = System.Drawing.Color.White;
+            this.btnNotificaciones.FlatAppearance.BorderSize = 0;
+            this.btnNotificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotificaciones.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.btnNotificaciones.IconChar = FontAwesome.Sharp.IconChar.Message;
+            this.btnNotificaciones.IconColor = System.Drawing.Color.MediumVioletRed;
+            this.btnNotificaciones.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnNotificaciones.IconSize = 40;
+            this.btnNotificaciones.Location = new System.Drawing.Point(1816, 82);
+            this.btnNotificaciones.Name = "btnNotificaciones";
+            this.btnNotificaciones.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
+            this.btnNotificaciones.Size = new System.Drawing.Size(60, 47);
+            this.btnNotificaciones.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.btnNotificaciones, "Cerrar sesión");
+            this.btnNotificaciones.UseVisualStyleBackColor = false;
+            this.btnNotificaciones.Click += new System.EventHandler(this.btnNotificaciones_Click);
             // 
             // menuusuario
             // 
@@ -482,6 +502,7 @@ namespace CapaPresentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1888, 930);
+            this.Controls.Add(this.btnNotificaciones);
             this.Controls.Add(this.idUser);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.lblusuario);
@@ -543,6 +564,7 @@ namespace CapaPresentacion
         private FontAwesome.Sharp.IconMenuItem Ayuda;
         private FontAwesome.Sharp.IconMenuItem menuacercade;
         private System.Windows.Forms.MenuStrip menu;
+        private FontAwesome.Sharp.IconButton btnNotificaciones;
     }
 }
 

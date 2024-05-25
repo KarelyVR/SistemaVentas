@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -48,6 +50,8 @@ namespace CapaPresentacion
             //al momento de cargar el formulario el lblusuario tendra el nombre del usuario que se logeo
             lblusuario.Text = usuarioActual.NombreCompleto;
             idUser.Text = usuarioActual.IdUsuario.ToString();
+
+            MostrarNotificacionesDeStockBajo(); //Se agrega esto para notificaciones
         }
 
         //evento al dar clic a cada menu
@@ -165,6 +169,83 @@ namespace CapaPresentacion
         {
             panel1.Hide();
             AbrirFormulario(Ayuda, new Ayuda());
+        }
+
+        //Se agrega esto para notificaciones
+        public List<Producto> ObtenerProductosConStockBajo(int limiteStock)
+        {
+            List<Producto> productosConStockBajo = new List<Producto>();
+
+            // Obtener la cadena de conexión desde el app.config
+            string connectionString = ConfigurationManager.ConnectionStrings["cadena_conexion"].ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("ObtenerProductosConStockBajo", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@limiteStock", limiteStock);
+
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Producto producto = new Producto
+                    {
+                        IdProducto = Convert.ToInt32(reader["IdProducto"]),
+                        Codigo = reader["Codigo"].ToString(),
+                        Nombre = reader["Nombre"].ToString(),
+                        Descripcion = reader["Descripcion"].ToString(),
+                        // Agregar los demás campos necesarios
+                        Stock = Convert.ToInt32(reader["Stock"]),
+                        PrecioCompra = Convert.ToDecimal(reader["PrecioCompra"]),
+                        PrecioVenta = Convert.ToDecimal(reader["PrecioVenta"]),
+                        Estado = Convert.ToBoolean(reader["Estado"])
+                    };
+                    productosConStockBajo.Add(producto);
+                }
+                reader.Close();
+            }
+
+            return productosConStockBajo;
+        }
+        //Se agrega esto para notificaciones
+        private void MostrarNotificacionesDeStockBajo()
+        {
+            List<Producto> productosConStockBajo = ObtenerProductosConStockBajo(10);
+
+            if (productosConStockBajo.Count > 0)
+            {
+                string mensaje = "Los siguientes productos tienen stock bajo:\n\n";
+                foreach (Producto producto in productosConStockBajo)
+                {
+                    mensaje += $"{producto.Nombre} (Stock: {producto.Stock})\n";
+                }
+                MessageBox.Show(mensaje, "Notificaciones de Stock Bajo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                MessageBox.Show("No hay productos con stock bajo.", "Notificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        //Se agrega esto para notificaciones
+        private void btnNotificaciones_Click(object sender, EventArgs e)
+        {
+            List<Producto> productosConStockBajo = ObtenerProductosConStockBajo(10);
+
+            if (productosConStockBajo.Count > 0)
+            {
+                string mensaje = "Los siguientes productos tienen stock bajo:\n\n";
+                foreach (Producto producto in productosConStockBajo)
+                {
+                    mensaje += $"{producto.Nombre} (Stock: {producto.Stock})\n";
+                }
+                MessageBox.Show(mensaje, "Notificaciones de Stock Bajo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                MessageBox.Show("No hay productos con stock bajo.", "Notificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
