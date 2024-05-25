@@ -88,7 +88,6 @@
     <Compile Include="Ayuda.Designer.cs">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </Compile>
-    <Compile Include="CN_Reembolso.cs" />
     <Compile Include="frmFacturacion.cs">
       <SubType>Form</SubType>
     </Compile>
