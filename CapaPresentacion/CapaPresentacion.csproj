@@ -88,12 +88,7 @@
     <Compile Include="Ayuda.Designer.cs">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmReembolso.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReembolso.Designer.cs">
-      <DependentUpon>frmReembolso.cs</DependentUpon>
-    </Compile>
+    <Compile Include="CN_Reembolso.cs" />
     <Compile Include="frmFacturacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +130,12 @@
     </Compile>
     <Compile Include="frmProveedores.Designer.cs">
       <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReembolso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReembolso.Designer.cs">
+      <DependentUpon>frmReembolso.cs</DependentUpon>
     </Compile>
     <Compile Include="frmReporteCompras.cs">
       <SubType>Form</SubType>
@@ -219,9 +220,6 @@
     <EmbeddedResource Include="Ayuda.resx">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmReembolso.resx">
-      <DependentUpon>frmReembolso.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmFacturacion.resx">
       <DependentUpon>frmFacturacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmProveedores.resx">
       <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReembolso.resx">
+      <DependentUpon>frmReembolso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReporteCompras.resx">
       <DependentUpon>frmReporteCompras.cs</DependentUpon>

@@ -2,15 +2,20 @@
 using CapaNegocio;
 using CapaPresentacion.Utilidades;
 using ClosedXML.Excel;
+using iTextSharp.text.pdf;
+using iTextSharp.tool.xml;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text;
+
 
 namespace CapaPresentacion
 {
@@ -82,56 +87,80 @@ namespace CapaPresentacion
 
         private void btndescargarexcel_Click(object sender, EventArgs e)
         {
-            if(dgvdata.Rows.Count < 1)
+            if (dgvdata.Rows.Count < 1)
             {
-                MessageBox.Show("No hay registros para exportar", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("No se encontraron resultados", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            string Texto_Html = "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <title>Web Page Design</title>\r\n    <style>\r\n        table.border {\r\n            border-collapse: collapse;\r\n        }\r\n\r\n            table.border th {\r\n                text-align: center;\r\n                padding: 5px;\r\n                border: 1px solid black;\r\n            }\r\n\r\n            table.border td {\r\n                text-align: center;\r\n                padding: 5px;\r\n                border: 1px solid black;\r\n            }\r\n    </style>\r\n</head>\r\n<body>\r\n    <table border=\"0\" style=\"width:100%\">\r\n        <tr>\r\n\r\n            <td style=\"width:15%\" valign=\"top\"></td>\r\n            <td style=\"width:60%\" valign=\"top\" align=\"center\">\r\n\r\n                <label style=\"font-size:20px;font-weight:bold;margin-bottom:10px\">Abarrotes</label><br />\r\n                <div style=\"height:12px !important\"></div>\r\n                <label style=\"font-size:11px;\">Dirección: Calle San Rafael #219 Col. Arcángeles, Allende, Nuevo León.</label><br />\r\n            </td>\r\n            <td style=\"width:25%;\" align=\"right\" valign=\"top\">\r\n\r\n            </td>\r\n        </tr>\r\n    </table>\r\n    <div style=\"height:15px !important\"></div>\r\n    <hr />\r\n\r\n    <table border=\"0\" style=\"width:100%\">\r\n        <tr><td><h3>Reporte de Compras</h3></td></tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"width:20%\"><label style=\"font-size:12px;font-weight:bold\">Fecha@inicio:</label></td>\r\n            <td style=\"width:20%\"><label style=\"font-size:12px;\">@fechainicio</label></td>\r\n        </tr>\r\n        <tr>\r\n            @fechafin\r\n        </tr>\r\n\r\n\r\n    </table>\r\n    <div style=\"height:15px !important\"></div>\r\n  <p>Proveedor: @proveedor</p>  <table style=\"width:100%;font-size:12px;\" class=\"border\">\r\n        <thead>\r\n            <tr style=\"background-color:#CACACA\"> <th>Fecha regisro</th><th>Tipo Documento</th><th>Numero documento</th><th>Monto total</th><th>Usuario registro</th><th>Documento Proveedor</th><th>Razon social</th><th>Codigo producto</th><th>Nombre producto</th><th>Categoria</th><th>Precio Compra</th><th>Precio Venta</th><th>Cantidad</th><th>Subtotal</th>  </tr>\r\n        </thead>\r\n        <tbody>\r\n            @filas\r\n        </tbody>\r\n    </table>\r\n\r\n    <div style=\"height:15px !important\"></div>\r\n    <table style=\"width:35%;font-size:12px;\" class=\"border\">\r\n        <thead>\r\n            <tr style=\"background-color:#CACACA\">\r\n                <th>Monto Total</th>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n            <tr>\r\n                <td>@montototal</td>\r\n            </tr>\r\n        </tbody>\r\n    </table>\r\n</body>\r\n</html>";
+
+            if (txtfechainicio.Text != txtfechafin.Text)
+            {
+                Texto_Html = Texto_Html.Replace("@inicio", " inicio");
+                Texto_Html = Texto_Html.Replace("@fechainicio", txtfechainicio.Text);
+                string fecha = txtfechafin.Text;
+                string fechafin = "<td style = \"width:20%\"><label style=\"font-size:12px;font-weight:bold\">Fecha Fin:</label></td>\r\n" +
+                    $"<td style=\"width:20%\"><label style =\"font-size:12px;\">{fecha}</label></ td >";
+                Texto_Html = Texto_Html.Replace("@fechafin", fechafin);
+
             }
             else
             {
-                DataTable dt = new DataTable();
-
-                foreach (DataGridViewColumn columna in dgvdata.Columns)
+                Texto_Html = Texto_Html.Replace("@inicio", "");
+                Texto_Html = Texto_Html.Replace("@fechainicio", txtfechainicio.Text);
+                Texto_Html = Texto_Html.Replace("@fechafin", "");
+            }
+            Texto_Html = Texto_Html.Replace("@proveedor", cboproveedor.Text);
+            double montoTotal = 0;
+            string filas = string.Empty;
+            foreach (DataGridViewRow row in dgvdata.Rows)
+            {
+                if (row.Visible == true)
                 {
-                    dt.Columns.Add(columna.HeaderText, typeof(string));
+                    filas += "<tr>";
+                    filas += "<td>" + row.Cells[0].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells[1].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells[2].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells[3].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells[4].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells[5].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells[6].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells[7].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells[8].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells[9].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells[10].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells[11].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells[12].Value.ToString() + "</td>";
+                    filas += "<td>" + row.Cells[13].Value.ToString() + "</td>";
+                    filas += "</tr>";
                 }
+                montoTotal += double.Parse(row.Cells[13].Value.ToString());
+            }
+            Texto_Html = Texto_Html.Replace("@filas", filas);
+            Texto_Html = Texto_Html.Replace("@montototal", montoTotal.ToString());
 
-                foreach (DataGridViewRow row in dgvdata.Rows)
+            SaveFileDialog savefile = new SaveFileDialog();
+            savefile.FileName = string.Format("ReporteVenta.pdf");
+            savefile.Filter = "Pdf Files|*.pdf";
+
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                using (FileStream stream = new FileStream(savefile.FileName, FileMode.Create))
                 {
-                    if (row.Visible)
-                        dt.Rows.Add(new object[] {
-                            row.Cells[0].Value.ToString(),
-                            row.Cells[1].Value.ToString(),
-                            row.Cells[2].Value.ToString(),
-                            row.Cells[3].Value.ToString(),
-                            row.Cells[4].Value.ToString(),
-                            row.Cells[5].Value.ToString(),
-                            row.Cells[6].Value.ToString(),
-                            row.Cells[7].Value.ToString(),
-                            row.Cells[8].Value.ToString(),
-                            row.Cells[9].Value.ToString(),
-                            row.Cells[10].Value.ToString(),
-                            row.Cells[11].Value.ToString(),
-                            row.Cells[12].Value.ToString(),
-                            row.Cells[13].Value.ToString()
-                        });
-                }
-                SaveFileDialog savefile = new SaveFileDialog();
-                savefile.FileName = string.Format("ReporteCompras_{0}.xlsx", DateTime.Now.ToString("ddMMyyyy"));
-                savefile.Filter = "Excel Files | *.xlsx";
 
-                if (savefile.ShowDialog() == DialogResult.OK){
-                    try
+                    Document pdfDoc = new Document(PageSize.A4, 25, 25, 25, 25);
+
+                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
+                    pdfDoc.Open();
+
+                    using (StringReader sr = new StringReader(Texto_Html))
                     {
-                        XLWorkbook wb = new XLWorkbook();
-                        var hoja = wb.Worksheets.Add(dt, "Informe");
-                        hoja.ColumnsUsed().AdjustToContents();
-                        wb.SaveAs(savefile.FileName);
-                        MessageBox.Show("Reporte Generado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
                     }
-                    catch
-                    {
-                        MessageBox.Show("Error al generar reporte", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    }
+
+                    pdfDoc.Close();
+                    stream.Close();
+                    MessageBox.Show("Documento Generado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
